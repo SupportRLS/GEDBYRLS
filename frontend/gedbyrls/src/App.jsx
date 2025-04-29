@@ -1,4 +1,6 @@
-// import { useState } from 'react'
+import React from 'react'
+//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import CareerFamily from './pages/careerFamilyPage.jsx'
 import './App.css'
 
 function App() {
@@ -6,12 +8,11 @@ function App() {
   return (
     <>
       <div>
-      <p> Hello world </p>
-      
+      <CareerFamily />
       </div>
   
     </>
   )
 }
 
-export default App
+export default App;
