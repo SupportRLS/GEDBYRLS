@@ -4,6 +4,9 @@
     "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les avocats",
     "accroche": "Une GED sécurisée et intuitive pour les cabinets d’avocats",
     "description": "ZeenDoc est une solution de Gestion Électronique de Documents (GED) française, conçue pour faciliter la numérisation, le classement, la recherche et la sécurisation des documents dans les environnements professionnels les plus exigeants, tels que les cabinets d’avocats. Grâce à une interface simple, des fonctionnalités puissantes et une conformité aux obligations légales, ZeenDoc s’impose comme un outil incontournable pour optimiser la gestion documentaire des professions juridiques.",
+    "titreEnjeux":"Les enjeux documentaires des cabinets d’avocats",
+    "descriptionEnjeux": "Les avocats doivent gérer quotidiennement une grande quantité de documents confidentiels : dossiers clients, pièces de procédure, courriers, contrats, actes, échanges avec les juridictions, etc. Cette gestion soulève plusieurs enjeux :",
+    "titreEnjeux2":"Les enjeux principaux sont :",
     "enjeux": [
       "Sécurité et confidentialité des données",
       "Accès rapide à l’information pertinente",
@@ -11,6 +14,8 @@
       "Gestion collaborative des dossiers",
       "Gain de temps sur les tâches administratives"
     ],
+    "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces besoins.",
+    "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les avocats",
     "fonctionnalites": [
       {
         "titre": "Classement automatique et intelligent",
@@ -41,6 +46,7 @@
       "titre": "Une solution conforme et hébergée en France",
       "contenu": "ZeenDoc est une solution 100 % française, hébergée en France, conforme RGPD et certifiée HDS (Hébergement de Données de Santé). Elle répond ainsi aux exigences des professions réglementées comme les avocats en matière de confidentialité et de souveraineté des données."
     },
+    "titrebenefices":"ZeenDoc, au service de la performance des cabinets d’avocats",
     "benefices": [
       "Réduction du temps de traitement administratif",
       "Amélioration de la réactivité face aux demandes clients ou judiciaires",
@@ -69,6 +75,10 @@
     "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les experts-comptables",
     "accroche": "Une GED sécurisée et intuitive pour les cabinets d’expertise comptable",
     "description": "ZeenDoc est une solution de Gestion Électronique de Documents (GED) française, conçue pour simplifier la numérisation, l’organisation, la recherche et la sécurisation des documents comptables. Grâce à une interface claire, des fonctionnalités puissantes et une conformité rigoureuse aux normes fiscales et réglementaires, ZeenDoc s’impose comme un outil indispensable pour les cabinets comptables de toutes tailles.",
+    "titreEnjeux":"Les enjeux documentaires des associations",
+    "descriptionEnjeux": "Les associations gèrent une grande diversité de documents : statuts, comptes rendus, listes d’adhérents, justificatifs de subvention, documents RH, bilans comptables, etc... ",
+    "titreEnjeux2":"Les enjeux principaux sont :",
+    
     "enjeux": [
       "Sécurité et confidentialité des données financières",
       "Accès rapide et partagé à l’information comptable",
@@ -77,6 +87,8 @@
       "Réduction de la charge administrative",
       "Conformité aux obligations fiscales et sociales"
     ],
+    "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces besoins.",
+    "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les cabinets comptables",
     "fonctionnalites": [
       {
         "titre": "Classement automatique et intelligent",
@@ -107,6 +119,7 @@
       "titre": "Une solution conforme et hébergée en France",
       "contenu": "ZeenDoc est 100 % souverain, hébergé en France dans des datacenters certifiés HDS et ISO 27001. Conforme au RGPD, il répond aux attentes strictes des métiers réglementés comme les experts-comptables en matière de protection et de confidentialité des données sensibles."
     },
+    "titrebenefices":"ZeenDoc, au service de la performance des cabinets comptables",
     "benefices": [
       "Accélération du traitement administratif",
       "Réduction des temps de recherche et de classement",
@@ -136,7 +149,11 @@
     "slug": "association",
     "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les associations",
     "accroche": "Une GED intuitive et conforme aux besoins des structures associatives",
+    
     "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED), conçue pour faciliter la gestion des documents administratifs, financiers et réglementaires au sein des associations. Grâce à une interface simple, des fonctionnalités puissantes et un respect total des obligations légales, ZeenDoc accompagne les associations dans leur transformation numérique, en toute sécurité.",
+    "titreEnjeux":"Les enjeux documentaires des associations",
+    "descriptionEnjeux":"Les associations gèrent une grande diversité de documents : statuts, comptes rendus, listes d’adhérents, justificatifs de subvention, documents RH, bilans comptables, etc.",
+    "titreEnjeux2":"Les enjeux principaux sont :",
     "enjeux": [
       "Respect des exigences réglementaires et légales",
       "Suivi transparent et sécurisé des activités",
@@ -144,6 +161,8 @@
       "Gain de temps administratif",
       "Accès à distance, même en mode collaboratif"
     ],
+    "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces besoins.",
+    "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les associations",
     "fonctionnalites": [
       {
         "titre": "Classement automatique et intelligent",
@@ -174,6 +193,7 @@
       "titre": "Une solution conforme et hébergée en France",
       "contenu": "ZeenDoc est développée et hébergée en France, certifiée HDS et conforme au RGPD. Elle répond aux besoins de souveraineté et de confidentialité des données, même dans les structures associatives les plus sensibles."
     },
+    "titrebenefices":"ZeenDoc, au service de la performance associative",
     "benefices": [
       "Gain de temps sur les tâches administratives",
       "Réduction des erreurs et de la perte de documents",
@@ -203,6 +223,9 @@
     "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les TPE et PME",
     "accroche": "Une GED simple, efficace et adaptée aux besoins des petites et moyennes entreprises",
     "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED), conçue pour accompagner les TPE et PME dans la dématérialisation, le classement, le partage et l’archivage de leurs documents. Elle permet de structurer l’information, de gagner du temps et d’assurer la conformité, le tout avec une prise en main rapide et une interface intuitive.",
+    "titreEnjeux":"Les enjeux documentaires des TPE et PME",
+    "descriptionEnjeux":"Les petites et moyennes entreprises doivent gérer une large variété de documents : devis, factures, contrats, courriers, dossiers clients, documents RH, etc. Ces documents sont souvent dispersés, non sécurisés et difficiles à retrouver sans organisation numérique.",
+    "titreEnjeux2":"Les enjeux principaux sont :",   
     "enjeux": [
       "Centralisation et accès rapide à l’information",
       "Réduction de la charge administrative",
@@ -210,6 +233,8 @@
       "Sécurisation des données sensibles",
       "Meilleure collaboration entre les équipes"
     ],
+    "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces défis.",
+    "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les TPE / PME",
     "fonctionnalites": [
       {
         "titre": "Classement automatique et intelligent",
@@ -240,6 +265,7 @@
       "titre": "Une solution conforme et hébergée en France",
       "contenu": "ZeenDoc est hébergée en France, dans des datacenters certifiés HDS et ISO 27001. Elle garantit la confidentialité et la souveraineté des données de votre entreprise, en conformité avec le RGPD."
     },
+    "titrebenefices":"ZeenDoc, au service de la productivité des TPE et PME",
     "benefices": [
       "Réduction des tâches chronophages liées à la paperasse",
       "Moins d’erreurs, plus de réactivité dans le traitement des dossiers",
@@ -270,6 +296,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les grands groupes",
   "accroche": "Une GED puissante, sécurisée et évolutive pour les entreprises multisites et les organisations complexes",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) conçue pour répondre aux exigences des grandes structures : gestion massive de données, interconnexion des services, sécurité renforcée, conformité réglementaire et optimisation des workflows. Elle offre une plateforme performante, adaptée à une utilisation multisite, multi-utilisateur et multilingue.",
+  "titreEnjeux":"Les enjeux documentaires des grands groupes",
+    "descriptionEnjeux":"Les grandes entreprises génèrent chaque jour un volume important de documents issus de différents services : RH, juridique, finance, achats, IT, qualité, etc. Cette volumétrie impose une structuration rigoureuse et des outils adaptés.",
+    "titreEnjeux2":"Les enjeux principaux sont :",   
   "enjeux": [
     "Centralisation des données sur l’ensemble des sites et services",
     "Automatisation des processus métier",
@@ -277,6 +306,8 @@
     "Traçabilité et gouvernance documentaire",
     "Collaboration fluide entre services ou filiales à l’international"
   ],
+  "paragrapheEnjeux":"ZeenDoc a été conçu pour adresser chacun de ces enjeux de manière scalable et personnalisable.",
+    "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les grands groupes",
   "fonctionnalites": [
     {
       "titre": "Classement automatisé multisource",
@@ -303,6 +334,7 @@
     "titre": "Une solution conforme, interopérable et hébergée en France",
     "contenu": "ZeenDoc est interopérable avec les ERP, CRM et outils métiers via API. Elle est hébergée en France dans des datacenters certifiés ISO 27001, HDS et RGPD. La solution garantit la souveraineté et la sécurité des données stratégiques de l’entreprise."
   },
+  "titrebenefices":"ZeenDoc, au service de la performance des grands groupes",
   "benefices": [
     "Rationalisation des processus documentaires internes",
     "Réduction du coût de traitement et de stockage",
@@ -334,6 +366,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les établissements de santé",
   "accroche": "Une GED sécurisée, conforme et performante pour les hôpitaux, cliniques et pharmacies",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) conçue pour répondre aux besoins critiques des acteurs de la santé. Elle permet de gérer efficacement les dossiers patients, documents administratifs, comptes rendus, ordonnances ou protocoles, dans le respect des réglementations les plus strictes (HDS, RGPD, etc.). ZeenDoc facilite la digitalisation du secteur médical tout en garantissant la sécurité, la traçabilité et l’accessibilité de l’information.",
+  "titreEnjeux":"Les enjeux documentaires des établissements de santé",
+    "descriptionEnjeux":"Dans les structures médicales, la gestion documentaire est au cœur de l’organisation. Elle concerne à la fois des documents médicaux confidentiels et des flux administratifs critiques. La sécurité, la réactivité et la conformité sont des impératifs absolus.",
+    "titreEnjeux2":"Parmi les enjeux principaux :",  
   "enjeux": [
     "Confidentialité des données de santé",
     "Conformité aux normes HDS, RGPD, DMP",
@@ -342,6 +377,8 @@
     "Réduction du temps consacré à l’administratif",
     "Interconnexion avec les SI existants (SIH, LGC, etc.)"
   ],
+  "paragrapheEnjeux":"ZeenDoc répond à ces exigences en alliant performance, sécurité et simplicité.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les professionnels de santé",
   "fonctionnalites": [
     {
       "titre": "Classement automatique par type de document ou dossier patient",
@@ -368,6 +405,7 @@
     "titre": "Une solution hébergée en France et certifiée HDS",
     "contenu": "ZeenDoc est hébergée dans des datacenters français certifiés HDS (Hébergement de Données de Santé), ISO 27001 et ISO 9001. Elle respecte le RGPD et toutes les normes en vigueur relatives à la protection des données de santé."
   },
+  "titrebenefices":"ZeenDoc, au service de la qualité de soin et de la performance administrative",
   "benefices": [
     "Réduction de la charge administrative pour le personnel",
     "Sécurisation complète des documents sensibles",
@@ -399,6 +437,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les architectes",
   "accroche": "Une GED intelligente et adaptée aux besoins des cabinets d’architecture",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) qui accompagne les architectes dans la gestion de leurs dossiers techniques, plans, contrats, devis, appels d’offres et documents réglementaires. Grâce à une interface simple, des fonctionnalités puissantes et un haut niveau de sécurité, ZeenDoc facilite le suivi des projets de construction et la collaboration avec tous les intervenants du secteur du bâtiment.",
+  "titreEnjeux":"Les enjeux documentaires des cabinets d’architecture",
+    "descriptionEnjeux":"Un cabinet d’architecte gère au quotidien une grande diversité de documents, à la fois techniques, administratifs et contractuels. Il doit assurer la versioning, la traçabilité et l’accès rapide à ces informations tout au long des projets.",
+    "titreEnjeux2":"Les principaux enjeux sont :",  
   "enjeux": [
     "Gestion des plans, croquis, maquettes et photos",
     "Suivi des versions et archivage des modifications",
@@ -406,6 +447,8 @@
     "Respect des obligations légales (DCE, permis, assurances, etc.)",
     "Accès à distance aux dossiers sur chantier ou en déplacement"
   ],
+  "paragrapheEnjeux":"ZeenDoc permet aux architectes de centraliser et sécuriser tous leurs flux documentaires, tout en gagnant en efficacité.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les architectes",
   "fonctionnalites": [
     {
       "titre": "Classement automatique des documents de projet",
@@ -432,6 +475,7 @@
     "titre": "Une solution souveraine, conforme et hébergée en France",
     "contenu": "ZeenDoc est hébergée dans des datacenters français certifiés ISO 27001 et conformes RGPD. Elle assure la confidentialité des documents sensibles, des contrats aux dossiers techniques."
   },
+  "titrebenefices":"ZeenDoc, au service de la performance et de la créativité des architectes",
   "benefices": [
     "Gain de temps sur la recherche et le classement des documents",
     "Sécurité et traçabilité des échanges professionnels",
@@ -461,6 +505,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les entreprises du BTP",
   "accroche": "Une GED robuste et mobile pour gérer vos chantiers et documents techniques en toute simplicité",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) conçue pour accompagner les entreprises du BTP dans la gestion de leurs documents administratifs, techniques, financiers et réglementaires. Accessible depuis le bureau ou le chantier, ZeenDoc centralise l’ensemble des données liées à vos projets et vous permet de sécuriser vos processus documentaires dans un environnement exigeant.",
+  "titreEnjeux":"Les enjeux documentaires des entreprises du BTP",
+  "descriptionEnjeux":"Dans le secteur du BTP, la gestion documentaire est critique : chaque chantier génère une quantité importante de documents, souvent répartis entre plusieurs intervenants. Ces documents doivent être accessibles, à jour, sécurisés et archivés.",
+  "titreEnjeux2":"Les principaux enjeux :",  
   "enjeux": [
     "Centralisation des documents par chantier ou client",
     "Suivi des devis, plans, DCE, factures, appels d’offres…",
@@ -468,6 +515,8 @@
     "Conformité légale (signature, archivage, traçabilité)",
     "Réduction du temps passé sur les tâches administratives"
   ],
+  "paragrapheEnjeux":"ZeenDoc permet de répondre à ces défis avec une solution GED agile, simple à déployer et taillée pour vos équipes.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour le BTP",
   "fonctionnalites": [
     {
       "titre": "Classement automatique des documents de chantier",
@@ -494,6 +543,7 @@
     "titre": "Une solution conforme, hébergée en France, pensée pour le BTP",
     "contenu": "ZeenDoc est hébergée dans des datacenters français certifiés ISO 27001. Elle garantit la sécurité de vos documents sensibles tout en vous assurant la conformité réglementaire."
   },
+  "titrebenefices":"ZeenDoc, au service de la performance et de la réactivité terrain",
   "benefices": [
     "Accès aux documents où que vous soyez (chantier, siège, véhicule)",
     "Réduction des erreurs liées aux versions de documents",
@@ -523,6 +573,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour le secteur public",
   "accroche": "Une GED souveraine et conforme pour moderniser la gestion documentaire des collectivités",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) adaptée aux besoins spécifiques des mairies, intercommunalités, départements, établissements publics ou services déconcentrés. Elle permet de gérer efficacement les flux documentaires, de garantir la traçabilité et la conformité des données, tout en facilitant le travail des agents au quotidien.",
+  "titreEnjeux":"Les enjeux documentaires du secteur public",
+  "descriptionEnjeux":"Le service public est confronté à des volumes croissants de documents à archiver, à partager et à sécuriser. Qu’il s’agisse de délibérations, arrêtés, factures, marchés publics ou dossiers administratifs, les collectivités doivent répondre à des obligations strictes en matière de conservation, de transparence et de confidentialité.",
+  "titreEnjeux2":"Les enjeux majeurs sont :",  
   "enjeux": [
     "Centralisation et organisation des documents administratifs",
     "Accès rapide et maîtrisé à l’information",
@@ -530,6 +583,8 @@
     "Transparence et traçabilité des actions",
     "Optimisation des processus et réduction de la charge administrative"
   ],
+  "paragrapheEnjeux":"ZeenDoc répond à ces besoins avec une solution GED simple, performante et conçue pour les exigences du service public.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les collectivités",
   "fonctionnalites": [
     {
       "titre": "Classement automatique par service ou type de document",
@@ -560,6 +615,7 @@
     "titre": "Une solution conforme, souveraine, hébergée en France",
     "contenu": "ZeenDoc est 100 % française, hébergée sur des serveurs certifiés HDS et ISO 27001. Elle assure la souveraineté et la protection des données publiques sensibles."
   },
+  "titrebenefices":"ZeenDoc, au service de l’administration moderne",
   "benefices": [
     "Accès rapide à l’information pour les agents et les élus",
     "Allègement des tâches administratives répétitives",
@@ -589,6 +645,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour le secteur financier",
   "accroche": "Une GED ultra-sécurisée et conforme aux exigences réglementaires des métiers de la finance",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) qui répond aux enjeux critiques des entreprises de la finance : sécurité des données sensibles, conformité réglementaire, fluidité des processus, et productivité. Elle permet de centraliser, classer, retrouver, archiver et partager les documents de manière fiable, tout en respectant les normes strictes du secteur.",
+  "titreEnjeux":"Les enjeux documentaires du secteur de la finance",
+  "descriptionEnjeux":"Banques, assurances, sociétés de gestion ou fintechs manipulent un volume important de documents hautement sensibles : contrats, justificatifs clients, reporting réglementaire, bordereaux, relevés, déclarations fiscales… Ces documents doivent être accessibles rapidement tout en étant parfaitement sécurisés et conformes aux normes.",
+  "titreEnjeux2":"Les enjeux clés :",  
   "enjeux": [
     "Sécurisation des données confidentielles et financières",
     "Conformité réglementaire (RGPD, eIDAS, normes d’archivage)",
@@ -596,6 +655,8 @@
     "Accès rapide à l’information",
     "Fluidité des échanges internes et avec les clients"
   ],
+  "paragrapheEnjeux":"ZeenDoc permet d’automatiser et de fiabiliser tous ces aspects dans un environnement conforme et sécurisé.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les professionnels de la finance",
   "fonctionnalites": [
     {
       "titre": "Classement automatique des documents par client, produit ou dossier",
@@ -626,6 +687,7 @@
     "titre": "Une solution souveraine, conforme et hébergée en France",
     "contenu": "ZeenDoc est hébergée sur des infrastructures françaises certifiées ISO 27001 et HDS. Elle garantit souveraineté, intégrité et conformité de vos données critiques."
   },
+  "titrebenefices":"ZeenDoc, un levier de performance pour le secteur financier",
   "benefices": [
     "Réduction du risque documentaire et des erreurs humaines",
     "Gain de temps sur la recherche d’information et la gestion administrative",
@@ -655,6 +717,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour le secteur commercial",
   "accroche": "Une GED agile pour fluidifier les échanges commerciaux et centraliser les documents des forces de vente",
   "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) conçue pour les entreprises commerciales : réseaux de distribution, franchises, grossistes, retailers, etc. Elle permet de centraliser et sécuriser les documents contractuels, commerciaux, logistiques et administratifs, tout en facilitant la collaboration entre les équipes terrain et les services support.",
+  "titreEnjeux":"Les enjeux documentaires du secteur commercial",
+  "descriptionEnjeux":"Les acteurs du commerce doivent traiter un grand nombre de documents chaque jour : devis, bons de commande, contrats de vente, factures, catalogues produits, documents de transport… Le tout souvent réparti entre plusieurs sites ou collaborateurs.",
+  "titreEnjeux2":"Les enjeux principaux :",  
   "enjeux": [
     "Accès rapide et mobile aux documents clients ou fournisseurs",
     "Sécurisation des informations commerciales sensibles",
@@ -662,6 +727,8 @@
     "Archivage réglementaire des documents de vente",
     "Coordination fluide entre terrain, back-office et direction"
   ],
+  "paragrapheEnjeux":"ZeenDoc simplifie cette gestion, tout en assurant un cadre sécurisé et conforme.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les entreprises commerciales",
   "fonctionnalites": [
     {
       "titre": "Classement automatique par client, produit ou canal de vente",
@@ -692,6 +759,7 @@
     "titre": "Une solution souveraine et conforme RGPD",
     "contenu": "ZeenDoc est hébergée sur des infrastructures françaises certifiées, assurant une souveraineté totale sur vos données commerciales. Conforme RGPD et aux normes ISO/NF d’archivage électronique."
   },
+  "titrebenefices":"ZeenDoc, un outil de performance commerciale",
   "benefices": [
     "Réduction du temps administratif pour les forces de vente",
     "Amélioration du service client (réactivité, fiabilité, traçabilité)",
@@ -721,6 +789,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les freelances et indépendants",
   "accroche": "Une GED simple, intuitive et sécurisée pour les professionnels autonomes",
   "description": "ZeenDoc permet aux freelances, consultants, auto-entrepreneurs et indépendants de gagner du temps, de sécuriser leurs documents et de mieux organiser leur activité. Grâce à une interface claire, des automatisations puissantes et une conformité totale, la gestion documentaire devient un levier de productivité au quotidien.",
+  "titreEnjeux":"Les enjeux documentaires des indépendants et freelances",
+  "descriptionEnjeux":"Travailler à son compte implique de gérer seul un grand nombre de documents : factures, devis, contrats, justificatifs, documents comptables, fichiers clients… Sans outil adapté, cela devient vite chronophage et source d’erreurs.",
+  "titreEnjeux2":"Les besoins essentiels :",  
   "enjeux": [
     "Centraliser tous les documents professionnels",
     "Gagner du temps sur les tâches administratives",
@@ -728,6 +799,8 @@
     "Pouvoir retrouver rapidement un fichier ou une information",
     "Garantir la conformité (RGPD, archivage)"
   ],
+  "paragrapheEnjeux":"ZeenDoc automatise et simplifie toutes ces tâches, pour que les indépendants puissent se concentrer sur leur métier.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les freelances",
   "fonctionnalites": [
     {
       "titre": "Classement automatique des documents par client ou projet",
@@ -758,6 +831,7 @@
     "titre": "Une solution conforme, française et simple à prendre en main",
     "contenu": "ZeenDoc est hébergée en France, conforme RGPD, et conçue pour des utilisateurs non techniques. Elle est facile à utiliser, sans besoin d’installation complexe, et accessible via un simple navigateur."
   },
+  "titrebenefices":"ZeenDoc, votre assistant numérique au quotidien",
   "benefices": [
     "Réduction du temps passé sur l’administratif",
     "Meilleure organisation des documents professionnels",
@@ -787,6 +861,9 @@
   "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour le secteur médico-social et associatif",
   "accroche": "Une GED adaptée aux structures médico-sociales, entre exigence réglementaire et réalité terrain",
   "description": "ZeenDoc accompagne les établissements médico-sociaux (EHPAD, foyers, centres d’accueil, associations du secteur social) dans la gestion et la sécurisation de leurs documents : dossiers usagers, RH, administratifs, financiers. Une solution intuitive, conforme et accessible à tous les profils pour gagner du temps, améliorer le suivi et garantir la confidentialité.",
+  "titreEnjeux":"Les enjeux documentaires dans le secteur médico-social et associatif",
+  "descriptionEnjeux":"Les structures médico-sociales doivent gérer de nombreux types de documents sensibles : dossiers des résidents ou bénéficiaires, conventions, documents de soins, dossiers RH, factures, subventions… La gestion de ces documents est soumise à des exigences de sécurité, de conformité, et d’accessibilité au quotidien.",
+  "titreEnjeux2":"Les défis courants :",  
   "enjeux": [
     "Gestion sécurisée des dossiers usagers et résidents",
     "Respect des normes légales (RGPD, archivage à valeur probante)",
@@ -794,6 +871,8 @@
     "Suivi et partage sécurisé des documents",
     "Coordination entre plusieurs établissements ou services"
   ],
+  "paragrapheEnjeux":"ZeenDoc répond à tous ces enjeux, avec une solution complète et facile à mettre en œuvre.",
+  "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour le médico-social associatif",
   "fonctionnalites": [
     {
       "titre": "Classement automatique des documents par bénéficiaire, service ou établissement",
@@ -824,6 +903,7 @@
     "titre": "Une solution 100 % française, conforme RGPD et pensée pour le médico-social",
     "contenu": "ZeenDoc est hébergée en France, sur des serveurs certifiés HDS (Hébergement de Données de Santé) et conforme aux exigences RGPD et sectorielles. Elle garantit la souveraineté et la confidentialité de vos données."
   },
+  "titrebenefices":"ZeenDoc, un levier d’efficacité pour les établissements médico-sociaux",
   "benefices": [
     "Allègement de la charge administrative",
     "Fiabilité accrue des suivis de dossier",

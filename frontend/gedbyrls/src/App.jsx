@@ -1,18 +1,16 @@
 import React from 'react'
-//import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import CareerFamily from './pages/careerFamilyPage.jsx'
+import { Route, Routes } from 'react-router-dom';
+import SecteurPage from './pages/secteurPage.jsx';
+import HomePage from './pages/homePage.jsx';
 import './App.css'
 
 function App() {
-
   return (
-    <>
-      <div>
-      <CareerFamily />
-      </div>
-  
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage/>} />
+      <Route path="/secteur/:slug" element={<SecteurPage />} />
+    </Routes>
+  );
 }
 
 export default App;
