@@ -1,0 +1,19 @@
+.ContactLink{
+    background-color: #F71344;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color : white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.ButtonContactHeader{
+    font-size: 0.8em ;
+    margin-left: auto;
+    margin-right: 10%;
+ 
+}
+
+.ContactLink:hover{
+    background-color: #9C0526;
+}
