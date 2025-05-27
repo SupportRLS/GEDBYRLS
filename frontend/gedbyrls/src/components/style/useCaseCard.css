@@ -1,0 +1,52 @@
+.useCaseCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    padding : 3% 3%;
+    border-radius: 20px;
+    justify-items: center;
+}
+.useCaseCard {
+  background-color: #F5F1EB;
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  gap: 1.5rem;
+}
+
+.useCaseLogo {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.useCaseLogo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.useCaseCard h3 {
+  color: #E63946;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.useCaseCard p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}

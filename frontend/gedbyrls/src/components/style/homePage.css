@@ -1,0 +1,29 @@
+.SectionOnePage {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  
+ 
+}
+
+.textBlock h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: -18%;
+  padding-bottom : 5%;
+}
+
+.textBlock p {
+  line-height: 2rem;
+  font-size: 1rem;
+}
+.buttonSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center ;
+  margin-top : 2rem;
+}
+
+

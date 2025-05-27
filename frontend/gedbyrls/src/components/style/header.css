@@ -1,5 +1,5 @@
 .HeaderNav {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: start;
   gap: 40px;

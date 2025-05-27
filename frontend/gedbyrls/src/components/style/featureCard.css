@@ -1,0 +1,40 @@
+.featureCard {
+    margin-top : 2%;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.featureCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #EBE2D4;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.featureIcon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e1d21;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  font-size: 1.5rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.featureIcon:hover {
+    background-color: #9C0526;
+    transition: background-color 0.3s ease;
+}
+
+
