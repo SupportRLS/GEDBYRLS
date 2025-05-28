@@ -85,7 +85,7 @@ const TestimonialSlider = () => {
         <h2 className="testimonial-title">
           Ce que disent nos clients
         </h2>
-        <p className="testimonial-subtitle">
+        <p>
           Découvrez les témoignages de nos utilisateurs satisfaits
         </p>
       </div>

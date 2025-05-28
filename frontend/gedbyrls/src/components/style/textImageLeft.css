@@ -1,0 +1,34 @@
+.text-image-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 4rem;
+}
+
+.image-content {
+    order: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.text-content {
+    order: 2;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+}
+
+li {
+    padding-bottom: 1rem;
+    padding-left: 0;
+    font-size: 1rem
+}

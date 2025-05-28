@@ -9,13 +9,21 @@ import Button from "../components/ButtonComponents";
 import FeatureCard from "../components/FeatureCard";
 import UseCaseCard from "../components/UseCaseCard";
 import TestimonialSlider from "../components/testimonialSlider";
+import TextImageLeft from "../components/TextImageLeft";
 //icons
-import { FaCloudUploadAlt, FaSearch, FaCog, FaLock } from "react-icons/fa";
+import { FaCloudUploadAlt, FaSearch, FaLock, FaCog, FaCheckCircle, FaSignature, FaTags, FaFileAlt, FaMobileAlt, FaHistory, FaBell, FaPlug, FaDatabase,} from "react-icons/fa";
 import LogoRLS from "../assets/logoRLS.webp";
 
 
 function HomePage() {
+const avantagesListe = [
+  "Travaillez en toute flexibilité : que vous soyez au bureau, en télétravail ou en déplacement, vos fichiers restent accessibles à tout moment via une plateforme cloud sécurisée.",
+"Accédez instantanément à vos données : retrouvez en quelques secondes n’importe quel document grâce à un moteur de recherche intelligent.",
+"Gagnez en productivité : automatisez les tâches répétitives, fluidifiez vos processus de validation et réduisez le temps de traitement de vos flux documentaires.",
+"Réduisez vos coûts : diminuez les dépenses liées à l’impression, au stockage papier et à la gestion manuelle des documents." 
 
+
+];
 
   return (
     <>
@@ -48,7 +56,20 @@ function HomePage() {
           <FeatureCard icon={<FaLock />} title="Sécurité renforcée des données" />
         </div>
       </div>
+ <div className="sectionThreePage">
+  <h2>Optimisez votre efficacité et réduisez vos coûts opérationnels</h2>
+  <p>Centralisez l’ensemble de vos documents professionnels dans un espace sécurisé, accessible à tout moment et depuis n’importe où. Notre solution de Gestion Électronique de Documents vous permet de gagner un temps précieux en facilitant la recherche, la consultation et le partage d’informations critiques.</p>
+          </div>
+          <TextImageLeft 
+          list={avantagesListe}
+          imageSrc="https://www.zeendoc.com/wp-content/uploads/2022/10/edition-en-ligne-office-ged.jpg"
+          imageAlt={"Image de la solution GED"}
 
+          />
+
+
+       
+        
       <div className="SectionThreePage">
         <h2>Cas d'utilisation</h2>
         <div className="useCaseCards">
@@ -77,6 +98,43 @@ function HomePage() {
       <div className="SectionFourPage">
         <TestimonialSlider />
       </div>
+
+      <div className="SectionFivePage">
+        <h2>Les principales fonctionnalités </h2>
+        <div className="featureCardsMap">
+         <FeatureCard icon={<FaCloudUploadAlt />} title="Archivage électronique sécurisé" />
+      <FeatureCard icon={<FaSearch />} title="Recherche intelligente" />
+      <FeatureCard icon={<FaLock />} title="Gestion des droits d’accès" />
+      <FeatureCard icon={<FaCheckCircle />} title="Workflow de validation" />
+      <FeatureCard icon={<FaSignature />} title="Signature électronique" />
+      <FeatureCard icon={<FaTags />} title="Indexation automatique" />
+      <FeatureCard icon={<FaFileAlt />} title="Compatibilité multi-formats" />
+      <FeatureCard icon={<FaMobileAlt />} title="Accès mobile et à distance" />
+      <FeatureCard icon={<FaHistory />} title="Historique et traçabilité" />
+      <FeatureCard icon={<FaBell />} title="Notifications automatiques" />
+      <FeatureCard icon={<FaPlug />} title="Connexion avec outils métiers" />
+      <FeatureCard icon={<FaDatabase />} title="Sauvegarde et redondance" />
+          </div>
+           </div>
+
+           
+          <h2> Prêt à simplifier la gestion de vos documents ?</h2>
+          <div className="display-grid">
+            <div className="sectionConvesion">
+              <h3>Rejoignez les milliers d'entreprises qui nous font confiance</h3>
+          <p> Faites le choix d'une solution moderne, performante et 100% sécurisée. Reprenez le contrôle sur vos informations, réduisez les tâches administratives et boostez la productivité de vos équipes.  
+    Nos experts sont à votre écoute pour analyser vos besoins et vous accompagner dans votre transition numérique.
+  </p>
+  <div className="buttonSection">
+    <ButtonContactHeader />
+ <Button text="Demander une démonstration" />
+  
+  </div>
+  </div>
+  <FormHomePage />
+   </div>
+  
+       
     </>
   )
 

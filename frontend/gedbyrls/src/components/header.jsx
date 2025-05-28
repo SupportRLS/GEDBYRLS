@@ -83,7 +83,9 @@ return (
  
     <NavLink to="/formation">Formation</NavLink>
     <NavLink to="/contact">Contact</NavLink>
-    <ButtonContactHeader /> 
+    <div className="ButtonHeader">
+    <ButtonContactHeader  /> 
+    </div>
   </div>
 </>
   )

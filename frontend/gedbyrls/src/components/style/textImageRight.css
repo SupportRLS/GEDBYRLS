@@ -1,0 +1,14 @@
+
+.text-image-right{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+.image-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: auto;
+}

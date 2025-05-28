@@ -13,7 +13,6 @@
 .featureCards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: #EBE2D4;
   justify-items: center;
   align-items: center;
   border-radius: 20px;

@@ -9,6 +9,10 @@
   border-radius: 20px;
   
 }
+.buttonHeader {
+  margin-left:50%;
+  display: flex;
+}
 a {
     text-decoration: none ;
     color: #2E1E21;
