@@ -4,6 +4,8 @@ import arrow from '../assets/Arrow.png';
 import logo from '../assets/logoRLS.webp';
 import ButtonContactHeader from './ButtonContactHeader';
 import './style/header.css'; 
+import letter from '../assets/letter.svg';
+import phone from '../assets/phone.svg';
 
 function Header() {
 const [openSolutions, setOpenSolutions] = useState(false);
@@ -83,7 +85,11 @@ return (
  
     <NavLink to="/formation">Formation</NavLink>
     <NavLink to="/contact">Contact</NavLink>
-    <div className="ButtonHeader">
+   
+  <div className="ContactHeader">
+    <img src={letter} alt="" />
+    |
+    <img src={phone} alt="" />
     <ButtonContactHeader  /> 
     </div>
   </div>

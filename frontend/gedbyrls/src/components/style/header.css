@@ -86,6 +86,12 @@ transition: color 0.2s ease;
 color: #F71344; 
 }
 
+.ContactHeader{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+};
 /* Icône à gauche de chaque lien */
 /* .Menu a img {
 width: 24px;

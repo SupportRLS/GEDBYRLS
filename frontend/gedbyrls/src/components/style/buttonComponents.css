@@ -7,6 +7,7 @@
   font-size: 1rem;
   transition: background-color 0.3s ease;
   width: auto;
+  cursor: pointer;
 }
 
 .customButton:hover {

@@ -10,6 +10,7 @@ import FeatureCard from "../components/FeatureCard";
 import UseCaseCard from "../components/UseCaseCard";
 import TestimonialSlider from "../components/testimonialSlider";
 import TextImageLeft from "../components/TextImageLeft";
+import Footer from "../components/footer";
 //icons
 import { FaCloudUploadAlt, FaSearch, FaLock, FaCog, FaCheckCircle, FaSignature, FaTags, FaFileAlt, FaMobileAlt, FaHistory, FaBell, FaPlug, FaDatabase,} from "react-icons/fa";
 import LogoRLS from "../assets/logoRLS.webp";
@@ -133,7 +134,7 @@ const avantagesListe = [
   </div>
   <FormHomePage />
    </div>
-  
+  <Footer />
        
     </>
   )
