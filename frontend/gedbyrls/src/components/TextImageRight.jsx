@@ -1,7 +1,7 @@
 import React from "react";
 import "../components/style/textImageRight.css"; 
 
-function TextImageRight({ title, text, list, imageSrc, imageAlt }) {
+function TextImageRight({ title, text, list, imageSrc, imageAlt, children }) {
   return (
     <div className="text-image-right">
       <div className="text-content">
@@ -12,11 +12,15 @@ function TextImageRight({ title, text, list, imageSrc, imageAlt }) {
             {list.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
-          </ul>
+          </ul>  
+          
         )}
+        {children && <div className="children-content">{children}</div>}
       </div>
       <div className="image-content">
         <img src={imageSrc} alt={imageAlt} />
+
+      
       </div>
     </div>
   );

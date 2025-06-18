@@ -1,5 +1,5 @@
-.customButton {
-  background-color: #E9A431;
+.customButtonRed {
+    background-color: #F71344;
   color: white;
   padding: 0.5rem 1rem;
   border: none;
@@ -9,8 +9,9 @@
   width: auto;
   cursor: pointer;
   margin: 1rem;
+  
 }
 
-.customButton:hover {
-  background-color: #C38B2D;
+.customButtonRed:hover {
+  background-color: #9C0526;
 }

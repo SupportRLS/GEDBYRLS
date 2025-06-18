@@ -1,23 +1,23 @@
 import React from "react";
 import "../components/style/TextImageLeft.css";
 
-function TextImageLeft({ title, text, list, imageSrc, imageAlt }) {
+function TextImageLeft({ title, text, list, imageSrc, imageAlt, children  }) {
   return (
-    <div className="text-image-left">
-      <div className="text-content">
+    <div className="til-container">
+      <div className="til-image-content">
+        <img src={imageSrc} alt={imageAlt} />
+      </div>
+      <div className="til-text-content">
         <h2>{title}</h2>
         <p>{text}</p>
-       
         {list && list.length > 0 && (
-          <ul className="text-list">
+          <ul className="til-text-list">
             {list.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>
         )}
-      </div>
-      <div className="image-content">
-        <img src={imageSrc} alt={imageAlt} />
+        {children && <div className="til-children-content">{children}</div>}
       </div>
     </div>
   );

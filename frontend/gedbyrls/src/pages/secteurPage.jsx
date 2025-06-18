@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
-import data from "../data/data.json";  // Assurez-vous que le chemin vers le fichier JSON est correct
+import data from "../data/data.json";  
 import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
+import FonctionnaliteSlider from "../components/SectorSlider"; 
 
 function SecteurPage() {
   const { slug } = useParams();
@@ -13,6 +15,7 @@ function SecteurPage() {
   return (
     <>
       <Header />
+
       <div className="sectionOnePage">
         <h1>{secteur.titre}</h1>
         <h2>{secteur.accroche}</h2>
@@ -24,7 +27,6 @@ function SecteurPage() {
         <p>{secteur.descriptionEnjeux}</p>
         <p>{secteur.titreEnjeux2}</p>
         <ul>
-          {/* Rendu des enjeux sous forme de liste */}
           {secteur.enjeux.map((enjeu, index) => (
             <li key={index}>{enjeu}</li>
           ))}
@@ -34,15 +36,7 @@ function SecteurPage() {
 
       <div className="sectionThreePage">
         <h3>{secteur.titreFonctionnalité}</h3>
-        <ul>
-          {/* Rendu des fonctionnalités */}
-          {secteur.fonctionnalites.map((fonctionnalite, index) => (
-            <li key={index}>
-              <h4>{fonctionnalite.titre}</h4>
-              <p>{fonctionnalite.contenu}</p>
-            </li>
-          ))}
-        </ul>
+        <FonctionnaliteSlider fonctionnalites={secteur.fonctionnalites} />
       </div>
 
       <div className="sectionFourPage">
@@ -77,6 +71,8 @@ function SecteurPage() {
         <h3>{secteur.cta}</h3>
         <p>{secteur.contenu}</p>
       </div>
+
+      <Footer />
     </>
   );
 }

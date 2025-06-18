@@ -1,0 +1,49 @@
+h1{
+    padding : 2rem 4rem 2rem 4rem;
+    font-size: 2.5rem;
+}
+
+.sectionOneText{
+    max-width: 1440px;
+    margin : auto;
+    padding: 2rem 4rem;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 30px ;
+    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.2);
+}
+.sectionOneText p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+.feature-cards{
+    padding : 5rem 0rem 5rem 0rem;
+    max-width: 1240px ;
+    align-items: center ;
+    margin: auto;
+}
+.lineOne{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lineTwo{
+    display: grid;
+  grid-template-columns: 400px 400px ;
+  justify-content: center;
+}
+
+.sectionTwo {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  border: solid 5px white;
+  border-radius: 25px;
+  background-color: #EBE2D4;
+  
+  display: flex;
+  flex-direction: column; /* S'assure que tout s'empile verticalement */
+  gap: 2rem; /* Un peu d'espace entre les blocs */
+}
+
+
