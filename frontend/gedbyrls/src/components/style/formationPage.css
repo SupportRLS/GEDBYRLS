@@ -3,6 +3,9 @@ h1{
     font-size: 2.5rem;
 }
 
+.text-image-right{
+    margin-bottom : 4rem;
+}
 .sectionOneText{
     max-width: 1440px;
     margin : auto;

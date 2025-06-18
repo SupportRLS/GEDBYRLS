@@ -1,0 +1,152 @@
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 4rem 10%;
+  flex-wrap: wrap;
+}
+
+.contactLeft {
+  flex: 1.5;
+}
+.contactLeft p{
+  font-size : 1.2rem;
+  padding : 1rem ;
+}
+
+.contactLeft h5 {
+  color: #F71344;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top : 5rem;
+  margin-bottom : -4rem;
+  margin-left : -25rem;
+}
+
+.contactLeft h2 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.contactItem {
+  background-color: #EBE2D4;
+    border-radius: 10px;
+    border: solid 2px #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.2);
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top : 1rem;
+    padding : 0.5rem 0rem 0.5rem 0.5rem;
+}
+
+.contactItem p {
+    font-size : 1.1rem;
+}
+.contactItem:hover {
+  transform: scale(1.05);
+}
+
+.icons {
+    background-color : #2E1E21;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-left : 0.5rem;
+    display: flex;
+    color : #ffffff;
+}
+
+
+.socialIcons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-left : 6.5rem;
+  font-size: 1.6rem;
+  color: #2E1D21;
+}
+
+.socialIcons svg:hover {
+  color: #F71344;
+  cursor: pointer;
+}
+
+.contactRight {
+  flex: 1;
+  padding: 2rem;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .contactSection {
+    flex-direction: column;
+    padding: 3rem 5%;
+  }
+
+  .contactLeft h5 {
+    margin-left: 0;
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .contactLeft h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .contactLeft p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .contactItem {
+    width: 90%;
+  }
+
+  .socialIcons {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .contactRight {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactLeft h2 {
+    font-size: 2rem;
+  }
+
+  .contactItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .icons {
+    margin: 0 0 1rem 0;
+  }
+
+  .contactItem p {
+    text-align: left;
+  }
+
+  .socialIcons {
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
+}
+

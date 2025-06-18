@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import SecteurPage from './pages/secteurPage.jsx';
 import HomePage from './pages/homePage.jsx';
 import FormationPage from './pages/formationPage.jsx';
+import ContactPage from './pages/contactPage.jsx';
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Route path="/" element={<HomePage/>} />
       <Route path="/formation" element={<FormationPage />} />
       <Route path="/secteur/:slug" element={<SecteurPage />} />
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 }
