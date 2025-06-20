@@ -3,16 +3,32 @@
     "slug": "avocat",
     "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les avocats",
     "accroche": "Une GED sécurisée et intuitive pour les cabinets d’avocats",
+    "image": "/secteurs/avocat/avocat_1.webp",
     "description": "ZeenDoc est une solution de Gestion Électronique de Documents (GED) française, conçue pour faciliter la numérisation, le classement, la recherche et la sécurisation des documents dans les environnements professionnels les plus exigeants, tels que les cabinets d’avocats. Grâce à une interface simple, des fonctionnalités puissantes et une conformité aux obligations légales, ZeenDoc s’impose comme un outil incontournable pour optimiser la gestion documentaire des professions juridiques.",
     "titreEnjeux":"Les enjeux documentaires des cabinets d’avocats",
     "descriptionEnjeux": "Les avocats doivent gérer quotidiennement une grande quantité de documents confidentiels : dossiers clients, pièces de procédure, courriers, contrats, actes, échanges avec les juridictions, etc. Cette gestion soulève plusieurs enjeux :",
     "titreEnjeux2":"Les enjeux principaux sont :",
     "enjeux": [
-      "Sécurité et confidentialité des données",
-      "Accès rapide à l’information pertinente",
-      "Archivage légal des documents",
-      "Gestion collaborative des dossiers",
-      "Gain de temps sur les tâches administratives"
+    {
+      "title": "Sécurité et confidentialité des données",
+      "icone": "BsShieldLock"
+    },
+    {
+      "title": "Accès rapide à l’information pertinente",
+      "icone": "FaSearch"
+    },
+    {
+      "title": "Archivage légal des documents",
+      "icone": "FaFileArchive"
+    },
+    {
+      "title": "Gestion collaborative des dossiers",
+      "icone": "FaUsers"
+    },
+    {
+      "title": "Gain de temps sur les tâches administratives",
+      "icone": "FaClock"
+    }
     ],
     "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces besoins.",
     "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les avocats",
@@ -46,25 +62,45 @@
       "titre": "Une solution conforme et hébergée en France",
       "contenu": "ZeenDoc est une solution 100 % française, hébergée en France, conforme RGPD et certifiée HDS (Hébergement de Données de Santé). Elle répond ainsi aux exigences des professions réglementées comme les avocats en matière de confidentialité et de souveraineté des données."
     },
+    
     "titrebenefices":"ZeenDoc, au service de la performance des cabinets d’avocats",
+    "imagebenefices": "/secteurs/avocat/avocat_8.webp",
     "benefices": [
       "Réduction du temps de traitement administratif",
       "Amélioration de la réactivité face aux demandes clients ou judiciaires",
       "Réduction des coûts de papier, d’impression et d’archivage physique",
       "Sécurisation complète des données sensibles"
+      
     ],
+    
     "prise_en_main": {
       "titre": "Une prise en main rapide et un accompagnement sur mesure",
-      "contenu": "ZeenDoc propose une interface intuitive, accessible depuis un simple navigateur web, sans installation complexe. Un accompagnement personnalisé est assuré dès la mise en place, avec des formations adaptées aux besoins spécifiques des cabinets juridiques."
+      "contenu": "ZeenDoc propose une interface intuitive, accessible depuis un simple navigateur web, sans installation complexe. Un accompagnement personnalisé est assuré dès la mise en place, avec des formations adaptées aux besoins spécifiques des cabinets juridiques.",
+      "image": "/secteurs/avocat/avocat_9.webp"
     },
     "formation": {
       "titre": "Formation dédiée aux cabinets d’avocats",
-      "contenu": [
-        "Organisation des dossiers clients par affaire ou juridiction",
-        "Sécurisation des données sensibles et confidentialité",
-        "Utilisation de la signature électronique pour les actes et mandats",
-        "Mise en place d’une gestion documentaire conforme aux normes (Barreau, RGPD...)",
-        "Optimisation des échanges internes et externes (greffes, confrères, clients)"
+        "contenu": [
+    {
+      "title": "Organisation des dossiers clients par affaire ou juridiction",
+      "icone": "FaFolderOpen"
+    },
+    {
+      "title": "Sécurisation des données sensibles et confidentialité",
+      "icone": "AiOutlineLock"
+    },
+    {
+      "title": "Utilisation de la signature électronique pour les actes et mandats",
+      "icone": "FaSignature"
+    },
+    {
+      "title": "Mise en place d’une gestion documentaire conforme aux normes (Barreau, RGPD...)",
+      "icone": "FaGavel"
+    },
+    {
+      "title": "Optimisation des échanges internes et externes (greffes, confrères, clients)",
+      "icone": "FaExchangeAlt"
+    }
       ]
     },
     "cta": "Contactez-nous pour une démonstration personnalisée ou une version d’essai.",
@@ -79,14 +115,29 @@
     "descriptionEnjeux": "Les associations gèrent une grande diversité de documents : statuts, comptes rendus, listes d’adhérents, justificatifs de subvention, documents RH, bilans comptables, etc... ",
     "titreEnjeux2":"Les enjeux principaux sont :",
     
-    "enjeux": [
-      "Sécurité et confidentialité des données financières",
-      "Accès rapide et partagé à l’information comptable",
-      "Archivage légal et traçabilité",
-      "Automatisation des traitements récurrents",
-      "Réduction de la charge administrative",
-      "Conformité aux obligations fiscales et sociales"
-    ],
+"enjeux": [
+  {
+    "title": "Sécurité et confidentialité des données financières",
+    "icone": "BsShieldLock"
+  },
+ 
+  {
+    "title": "Archivage légal et traçabilité",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Automatisation des traitements récurrents",
+    "icone": "FaClock"
+  },
+  {
+    "title": "Réduction de la charge administrative",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Conformité aux obligations fiscales et sociales",
+    "icone": "FaGavel"
+  }
+],
     "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces besoins.",
     "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les cabinets comptables",
     "fonctionnalites": [
@@ -134,12 +185,27 @@
     "formation": {
       "titre": "Formations dédiées aux experts-comptables",
       "contenu": [
-        "Mise en place du plan de classement comptable",
-        "Gestion des flux entrants et sortants (factures, paie, TVA, etc.)",
-        "Archivage légal selon les contraintes URSSAF, CNCC et fiscales",
-        "Bonnes pratiques de collaboration cabinet/client",
-        "Automatisation des relances et échanges de pièces justificatives"
-      ]
+  {
+    "title": "Mise en place du plan de classement comptable",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Gestion des flux entrants et sortants (factures, paie, TVA, etc.)",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Archivage légal selon les contraintes URSSAF, CNCC et fiscales",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Bonnes pratiques de collaboration cabinet/client",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Automatisation des relances et échanges de pièces justificatives",
+    "icone": "FaSignature"
+  }
+]
     },
     "cta": "Contactez-nous pour une démonstration personnalisée ou pour tester la solution.",
     "contenu": "Découvrez comment ZeenDoc vous aide à optimiser vos processus comptables, améliorer la qualité de service à vos clients et garantir la conformité documentaire de votre cabinet."
@@ -154,13 +220,28 @@
     "titreEnjeux":"Les enjeux documentaires des associations",
     "descriptionEnjeux":"Les associations gèrent une grande diversité de documents : statuts, comptes rendus, listes d’adhérents, justificatifs de subvention, documents RH, bilans comptables, etc.",
     "titreEnjeux2":"Les enjeux principaux sont :",
-    "enjeux": [
-      "Respect des exigences réglementaires et légales",
-      "Suivi transparent et sécurisé des activités",
-      "Centralisation des informations pour tous les membres",
-      "Gain de temps administratif",
-      "Accès à distance, même en mode collaboratif"
-    ],
+   "enjeux": [
+  {
+    "title": "Respect des exigences réglementaires et légales",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Suivi transparent et sécurisé des activités",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Centralisation des informations pour tous les membres",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Gain de temps administratif",
+    "icone": "FaClock"
+  },
+  {
+    "title": "Accès à distance, même en mode collaboratif",
+    "icone": "FaExchangeAlt"
+  }
+],
     "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces besoins.",
     "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les associations",
     "fonctionnalites": [
@@ -204,15 +285,30 @@
       "titre": "Une prise en main rapide et un accompagnement personnalisé",
       "contenu": "ZeenDoc ne nécessite pas d’installation complexe. L’interface est intuitive et accessible en ligne. Un accompagnement est prévu dès le départ, avec des formations adaptées aux profils des utilisateurs associatifs."
     },
-    "formation": {
-      "titre": "Formation dédiée aux associations",
-      "contenu": [
-        "Organisation des documents administratifs, financiers et de projet",
-        "Structuration de l’archivage par thématiques (adhérents, subventions, événements…)",
-        "Collaboration sécurisée avec les membres, bénévoles et partenaires",
-        "Respect des obligations réglementaires (comptes annuels, bilans moraux, etc.)",
-        "Formation à la gestion documentaire pour les structures sans équipe IT"
-      ]
+"formation": {
+  "titre": "Formation dédiée aux associations",
+  "contenu": [
+    {
+      "title": "Organisation des documents administratifs, financiers et de projet",
+      "icone": "FaFolderOpen"
+    },
+    {
+      "title": "Structuration de l’archivage par thématiques (adhérents, subventions, événements…)",
+      "icone": "FaFileArchive"
+    },
+    {
+      "title": "Collaboration sécurisée avec les membres, bénévoles et partenaires",
+      "icone": "FaUsers"
+    },
+    {
+      "title": "Respect des obligations réglementaires (comptes annuels, bilans moraux, etc.)",
+      "icone": "FaGavel"
+    },
+    {
+      "title": "Formation à la gestion documentaire pour les structures sans équipe IT",
+      "icone": "FaSignature"
+    }
+  ]
     },
     "cta": "Essayez ZeenDoc et simplifiez la gestion documentaire de votre association.",
     "contenu": "Contactez-nous pour une démonstration gratuite ou une version d’essai. Découvrez comment ZeenDoc peut transformer votre gestion, renforcer votre transparence et libérer du temps pour vos actions de terrain."
@@ -226,13 +322,28 @@
     "titreEnjeux":"Les enjeux documentaires des TPE et PME",
     "descriptionEnjeux":"Les petites et moyennes entreprises doivent gérer une large variété de documents : devis, factures, contrats, courriers, dossiers clients, documents RH, etc. Ces documents sont souvent dispersés, non sécurisés et difficiles à retrouver sans organisation numérique.",
     "titreEnjeux2":"Les enjeux principaux sont :",   
-    "enjeux": [
-      "Centralisation et accès rapide à l’information",
-      "Réduction de la charge administrative",
-      "Conformité aux obligations légales (fiscales, sociales, RGPD)",
-      "Sécurisation des données sensibles",
-      "Meilleure collaboration entre les équipes"
-    ],
+"enjeux": [
+  {
+    "title": "Centralisation et accès rapide à l’information",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Réduction de la charge administrative",
+    "icone": "FaClock"
+  },
+  {
+    "title": "Conformité aux obligations légales (fiscales, sociales, RGPD)",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Sécurisation des données sensibles",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Meilleure collaboration entre les équipes",
+    "icone": "FaUsers"
+  }
+],
     "paragrapheEnjeux":"ZeenDoc répond précisément à chacun de ces défis.",
     "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les TPE / PME",
     "fonctionnalites": [
@@ -276,15 +387,30 @@
       "titre": "Une mise en route rapide et un accompagnement adapté",
       "contenu": "ZeenDoc est conçu pour les équipes non techniques. L’interface est accessible en ligne, sans installation lourde. Nos équipes accompagnent les entreprises dès la mise en place avec des formations ciblées et un support réactif."
     },
-    "formation": {
-      "titre": "Formation dédiée aux TPE / PME",
-      "contenu": [
-        "Classement intelligent des documents clients, RH, fournisseurs",
-        "Automatisation de la gestion documentaire pour gagner en efficacité",
-        "Collaboration fluide entre services sans surcharge technique",
-        "Respect des obligations comptables, sociales et fiscales",
-        "Formation rapide et opérationnelle pour toute l’équipe"
-      ]
+"formation": {
+  "titre": "Formation dédiée aux TPE / PME",
+  "contenu": [
+    {
+      "title": "Classement intelligent des documents clients, RH, fournisseurs",
+      "icone": "FaFolderOpen"
+    },
+    {
+      "title": "Automatisation de la gestion documentaire pour gagner en efficacité",
+      "icone": "FaClock"
+    },
+    {
+      "title": "Collaboration fluide entre services sans surcharge technique",
+      "icone": "FaUsers"
+    },
+    {
+      "title": "Respect des obligations comptables, sociales et fiscales",
+      "icone": "FaGavel"
+    },
+    {
+      "title": "Formation rapide et opérationnelle pour toute l’équipe",
+      "icone": "FaSignature"
+    }
+  ]
     },
     "cta": "Essayez ZeenDoc et digitalisez la gestion documentaire de votre entreprise.",
     "contenu": "Contactez-nous pour une démonstration personnalisée ou testez gratuitement la solution. Découvrez comment ZeenDoc peut accélérer vos processus internes, améliorer votre efficacité et sécuriser vos documents stratégiques."
@@ -299,13 +425,28 @@
   "titreEnjeux":"Les enjeux documentaires des grands groupes",
     "descriptionEnjeux":"Les grandes entreprises génèrent chaque jour un volume important de documents issus de différents services : RH, juridique, finance, achats, IT, qualité, etc. Cette volumétrie impose une structuration rigoureuse et des outils adaptés.",
     "titreEnjeux2":"Les enjeux principaux sont :",   
-  "enjeux": [
-    "Centralisation des données sur l’ensemble des sites et services",
-    "Automatisation des processus métier",
-    "Sécurité et conformité (RGPD, normes ISO, archivage légal)",
-    "Traçabilité et gouvernance documentaire",
-    "Collaboration fluide entre services ou filiales à l’international"
-  ],
+"enjeux": [
+  {
+    "title": "Centralisation des données sur l’ensemble des sites et services",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Automatisation des processus métier",
+    "icone": "FaClock"
+  },
+  {
+    "title": "Sécurité et conformité (RGPD, normes ISO, archivage légal)",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Traçabilité et gouvernance documentaire",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Collaboration fluide entre services ou filiales à l’international",
+    "icone": "FaUsers"
+  }
+],
   "paragrapheEnjeux":"ZeenDoc a été conçu pour adresser chacun de ces enjeux de manière scalable et personnalisable.",
     "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les grands groupes",
   "fonctionnalites": [
@@ -346,15 +487,30 @@
     "titre": "Déploiement rapide, accompagné et adaptable à l’échelle",
     "contenu": "ZeenDoc est pensé pour un déploiement progressif ou global, avec une architecture modulaire. Les équipes projet bénéficient d’un accompagnement personnalisé, de formations sur mesure et d’un support technique expert à chaque étape."
   },
-  "formation": {
-    "titre": "Formation dédiée aux grands groupes",
-    "contenu": [
-      "Déploiement multi-services et inter-sites",
-      "Gestion des habilitations avancées et de la traçabilité",
-      "Mise en place de processus de validation et de circuit documentaire",
-      "Conformité aux politiques internes et réglementations sectorielles",
-      "Formation en silo ou par filière pour une appropriation progressive"
-    ]
+"formation": {
+  "titre": "Formation dédiée aux grands groupes",
+  "contenu": [
+    {
+      "title": "Déploiement multi-services et inter-sites",
+      "icone": "FaExchangeAlt"
+    },
+    {
+      "title": "Gestion des habilitations avancées et de la traçabilité",
+      "icone": "FaFileArchive"
+    },
+    {
+      "title": "Mise en place de processus de validation et de circuit documentaire",
+      "icone": "FaGavel"
+    },
+    {
+      "title": "Conformité aux politiques internes et réglementations sectorielles",
+      "icone": "MdVerifiedUser"
+    },
+    {
+      "title": "Formation en silo ou par filière pour une appropriation progressive",
+      "icone": "GiProgression"
+    }
+  ]
   },
   "cta": "Essayez ZeenDoc et faites évoluer votre gestion documentaire à l’échelle de votre organisation. ",
   "contenu": "Demandez une démonstration personnalisée. Découvrez comment ZeenDoc peut accompagner la transformation digitale de votre entreprise, améliorer votre gouvernance documentaire et renforcer votre compétitivité."
@@ -369,13 +525,27 @@
   "titreEnjeux":"Les enjeux documentaires des établissements de santé",
     "descriptionEnjeux":"Dans les structures médicales, la gestion documentaire est au cœur de l’organisation. Elle concerne à la fois des documents médicaux confidentiels et des flux administratifs critiques. La sécurité, la réactivité et la conformité sont des impératifs absolus.",
     "titreEnjeux2":"Parmi les enjeux principaux :",  
-  "enjeux": [
-    "Confidentialité des données de santé",
-    "Conformité aux normes HDS, RGPD, DMP",
-    "Traçabilité des accès et actions sur les documents",
-    "Accès rapide à l’information pour les soignants et administratifs",
-    "Réduction du temps consacré à l’administratif",
-    "Interconnexion avec les SI existants (SIH, LGC, etc.)"
+"enjeux": [
+  {
+    "title": "Confidentialité des données de santé",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Conformité aux normes HDS, RGPD, DMP",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Traçabilité des accès et actions sur les documents",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Accès rapide à l’information pour les soignants et administratifs",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Réduction du temps consacré à l’administratif",
+    "icone": "FaClock"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc répond à ces exigences en alliant performance, sécurité et simplicité.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les professionnels de santé",
@@ -419,12 +589,27 @@
   },
   "formation": {
     "titre": "Formation dédiée aux acteurs de la santé (hôpitaux, cliniques, pharmacies)",
-    "contenu": [
-      "Archivage et sécurisation des données de santé (conformité HDS)",
-      "Organisation des dossiers patients, prescriptions, commandes",
-      "Optimisation des flux internes (laboratoires, facturation, gestion des stocks)",
-      "Respect des exigences CNIL et RGPD",
-      "Prise en main rapide même pour les équipes non techniques"
+"contenu": [
+  {
+    "title": "Archivage et sécurisation des données de santé (conformité HDS)",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Organisation des dossiers patients, prescriptions, commandes",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Optimisation des flux internes (laboratoires, facturation, gestion des stocks)",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Respect des exigences CNIL et RGPD",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Prise en main rapide même pour les équipes non techniques",
+    "icone": "FaClock"
+  }
     ]
   },
   "cta": "Essayez ZeenDoc et transformez la gestion documentaire de votre établissement.",
@@ -440,12 +625,27 @@
   "titreEnjeux":"Les enjeux documentaires des cabinets d’architecture",
     "descriptionEnjeux":"Un cabinet d’architecte gère au quotidien une grande diversité de documents, à la fois techniques, administratifs et contractuels. Il doit assurer la versioning, la traçabilité et l’accès rapide à ces informations tout au long des projets.",
     "titreEnjeux2":"Les principaux enjeux sont :",  
-  "enjeux": [
-    "Gestion des plans, croquis, maquettes et photos",
-    "Suivi des versions et archivage des modifications",
-    "Partage sécurisé des documents avec les clients, BET, entreprises, collectivités",
-    "Respect des obligations légales (DCE, permis, assurances, etc.)",
-    "Accès à distance aux dossiers sur chantier ou en déplacement"
+"enjeux": [
+  {
+    "title": "Gestion des plans, croquis, maquettes et photos",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Suivi des versions et archivage des modifications",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Partage sécurisé des documents avec les clients, BET, entreprises, collectivités",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Respect des obligations légales (DCE, permis, assurances, etc.)",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Accès à distance aux dossiers sur chantier ou en déplacement",
+    "icone": "FaUsers"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc permet aux architectes de centraliser et sécuriser tous leurs flux documentaires, tout en gagnant en efficacité.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les architectes",
@@ -489,12 +689,27 @@
   },
   "formation": {
     "titre": "Formation dédiée aux architectes",
-    "contenu": [
-      "Structuration des dossiers par projet et par phase (PC, plans, DOE, etc.)",
-      "Organisation des échanges avec les partenaires (MOA, MOE, bureaux d’études…)",
-      "Archivage de maquettes, schémas et visuels de grandes tailles",
-      "Utilisation des tags et filtres pour gérer les typologies de documents",
-      "Formation pour une adoption rapide dans des environnements dynamiques"
+"contenu": [
+  {
+    "title": "Structuration des dossiers par projet et par phase (PC, plans, DOE, etc.)",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Organisation des échanges avec les partenaires (MOA, MOE, bureaux d’études…)",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Archivage de maquettes, schémas et visuels de grandes tailles",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Utilisation des tags et filtres pour gérer les typologies de documents",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Formation pour une adoption rapide dans des environnements dynamiques",
+    "icone": "FaClock"
+  }
     ]
   },
   "cta": "Essayez ZeenDoc et libérez votre temps pour vous concentrer sur la création",
@@ -508,12 +723,28 @@
   "titreEnjeux":"Les enjeux documentaires des entreprises du BTP",
   "descriptionEnjeux":"Dans le secteur du BTP, la gestion documentaire est critique : chaque chantier génère une quantité importante de documents, souvent répartis entre plusieurs intervenants. Ces documents doivent être accessibles, à jour, sécurisés et archivés.",
   "titreEnjeux2":"Les principaux enjeux :",  
-  "enjeux": [
-    "Centralisation des documents par chantier ou client",
-    "Suivi des devis, plans, DCE, factures, appels d’offres…",
-    "Mobilité : accès aux documents sur le terrain",
-    "Conformité légale (signature, archivage, traçabilité)",
-    "Réduction du temps passé sur les tâches administratives"
+"enjeux": [
+  {
+    "title": "Centralisation des documents par chantier ou client",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Suivi des devis, plans, DCE, factures, appels d’offres…",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Mobilité : accès aux documents sur le terrain",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Conformité légale (signature, archivage, traçabilité)",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Réduction du temps passé sur les tâches administratives",
+    "icone": "FaClock"
+  }
+
   ],
   "paragrapheEnjeux":"ZeenDoc permet de répondre à ces défis avec une solution GED agile, simple à déployer et taillée pour vos équipes.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour le BTP",
@@ -557,12 +788,27 @@
   },
   "formation": {
     "titre": "Formation dédiée au BTP",
-    "contenu": [
-      "Organisation documentaire par chantier, lot, entreprise ou phase",
-      "Suivi et archivage des documents contractuels (marchés, devis, bons de commande…)",
-      "Gestion des documents terrain (rapports, photos, plans annotés…)",
-      "Sensibilisation des équipes de terrain à l’usage mobile de la GED",
-      "Conformité des archives selon les exigences des marchés publics/privés"
+"contenu": [
+  {
+    "title": "Organisation documentaire par chantier, lot, entreprise ou phase",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Suivi et archivage des documents contractuels (marchés, devis, bons de commande…)",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Gestion des documents terrain (rapports, photos, plans annotés…)",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Sensibilisation des équipes de terrain à l’usage mobile de la GED",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Conformité des archives selon les exigences des marchés publics/privés",
+    "icone": "FaGavel"
+  }
     ]
   },
   "cta": "Essayez ZeenDoc et transformez la gestion de vos chantiers",
@@ -576,12 +822,27 @@
   "titreEnjeux":"Les enjeux documentaires du secteur public",
   "descriptionEnjeux":"Le service public est confronté à des volumes croissants de documents à archiver, à partager et à sécuriser. Qu’il s’agisse de délibérations, arrêtés, factures, marchés publics ou dossiers administratifs, les collectivités doivent répondre à des obligations strictes en matière de conservation, de transparence et de confidentialité.",
   "titreEnjeux2":"Les enjeux majeurs sont :",  
-  "enjeux": [
-    "Centralisation et organisation des documents administratifs",
-    "Accès rapide et maîtrisé à l’information",
-    "Archivage légal et durable",
-    "Transparence et traçabilité des actions",
-    "Optimisation des processus et réduction de la charge administrative"
+"enjeux": [
+  {
+    "title": "Centralisation et organisation des documents administratifs",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Accès rapide et maîtrisé à l’information",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Archivage légal et durable",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Transparence et traçabilité des actions",
+    "icone": "BsTransparency"
+  },
+  {
+    "title": "Optimisation des processus et réduction de la charge administrative",
+    "icone": "FaClock"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc répond à ces besoins avec une solution GED simple, performante et conçue pour les exigences du service public.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les collectivités",
@@ -629,13 +890,28 @@
   },
   "formation": {
     "titre": "Formation dédiée au secteur public (mairies, collectivités, établissements publics)",
-    "contenu": [
-      "Organisation par service et type de document (urbanisme, RH, finances…)",
-      "Respect des exigences d’archivage public (instruction, conservation, traçabilité)",
-      "Gestion des circuits de validation interne",
-      "Conformité RGPD et souveraineté des données",
-      "Sensibilisation à la dématérialisation dans le cadre des politiques publiques"
-    ]
+"contenu": [
+  {
+    "title": "Organisation par service et type de document (urbanisme, RH, finances…)",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Respect des exigences d’archivage public (instruction, conservation, traçabilité)",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Gestion des circuits de validation interne",
+    "icone": "PiCircuitry"
+  },
+  {
+    "title": "Conformité RGPD et souveraineté des données",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Sensibilisation à la dématérialisation dans le cadre des politiques publiques",
+    "icone": "FaUsers"
+  }
+]
   },
   "cta": "Adoptez ZeenDoc pour une gestion documentaire moderne et conforme",
   "contenu": "Demandez une démonstration personnalisée. Découvrez comment ZeenDoc peut vous aider à améliorer la gestion documentaire au sein de votre collectivité, tout en assurant sécurité, conformité et efficacité."
@@ -648,12 +924,27 @@
   "titreEnjeux":"Les enjeux documentaires du secteur de la finance",
   "descriptionEnjeux":"Banques, assurances, sociétés de gestion ou fintechs manipulent un volume important de documents hautement sensibles : contrats, justificatifs clients, reporting réglementaire, bordereaux, relevés, déclarations fiscales… Ces documents doivent être accessibles rapidement tout en étant parfaitement sécurisés et conformes aux normes.",
   "titreEnjeux2":"Les enjeux clés :",  
-  "enjeux": [
-    "Sécurisation des données confidentielles et financières",
-    "Conformité réglementaire (RGPD, eIDAS, normes d’archivage)",
-    "Traçabilité des échanges et des actions",
-    "Accès rapide à l’information",
-    "Fluidité des échanges internes et avec les clients"
+"enjeux": [
+  {
+    "title": "Sécurisation des données confidentielles et financières",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Conformité réglementaire (RGPD, eIDAS, normes d’archivage)",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Traçabilité des échanges et des actions",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Accès rapide à l’information",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Fluidité des échanges internes et avec les clients",
+    "icone": "FaUsers"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc permet d’automatiser et de fiabiliser tous ces aspects dans un environnement conforme et sécurisé.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les professionnels de la finance",
@@ -701,12 +992,27 @@
   },
   "formation": {
     "titre": "Formation dédiée à la finance, banque, assurance",
-    "contenu": [
-      "Classification des documents sensibles (KYC, contrats, justificatifs…)",
-      "Conformité avec les exigences de l’ACPR, RGPD et normes de sécurité",
-      "Traçabilité et auditabilité des accès et modifications",
-      "Optimisation des flux internes entre agences, clients et partenaires",
-      "Formation des équipes en conformité, gestion de risques et back-office"
+"contenu": [
+  {
+    "title": "Classification des documents sensibles (KYC, contrats, justificatifs…)",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Conformité avec les exigences de l’ACPR, RGPD et normes de sécurité",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Traçabilité et auditabilité des accès et modifications",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Optimisation des flux internes entre agences, clients et partenaires",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Formation des équipes en conformité, gestion de risques et back-office",
+    "icone": "GrCloudComputer"
+  }
     ]
   },
   "cta": "Demandez une démonstration personnalisée de ZeenDoc",
@@ -720,12 +1026,27 @@
   "titreEnjeux":"Les enjeux documentaires du secteur commercial",
   "descriptionEnjeux":"Les acteurs du commerce doivent traiter un grand nombre de documents chaque jour : devis, bons de commande, contrats de vente, factures, catalogues produits, documents de transport… Le tout souvent réparti entre plusieurs sites ou collaborateurs.",
   "titreEnjeux2":"Les enjeux principaux :",  
-  "enjeux": [
-    "Accès rapide et mobile aux documents clients ou fournisseurs",
-    "Sécurisation des informations commerciales sensibles",
-    "Réduction des erreurs et doublons dans les échanges",
-    "Archivage réglementaire des documents de vente",
-    "Coordination fluide entre terrain, back-office et direction"
+"enjeux": [
+  {
+    "title": "Accès rapide et mobile aux documents clients ou fournisseurs",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Sécurisation des informations commerciales sensibles",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Réduction des erreurs et doublons dans les échanges",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Archivage réglementaire des documents de vente",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Coordination fluide entre terrain, back-office et direction",
+    "icone": "FaUsers"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc simplifie cette gestion, tout en assurant un cadre sécurisé et conforme.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les entreprises commerciales",
@@ -773,12 +1094,27 @@
   },
   "formation": {
     "titre": "Formation dédiée au commerce et à la distribution",
-    "contenu": [
-      "Organisation des documents clients, fournisseurs, logistique",
-      "Centralisation des documents liés aux points de vente",
-      "Suivi documentaire des contrats, bons de livraison, garanties…",
-      "Automatisation des relances, des réclamations et SAV",
-      "Formation axée sur la rapidité de traitement et la coordination multisite"
+"contenu": [
+  {
+    "title": "Organisation des documents clients, fournisseurs, logistique",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Centralisation des documents liés aux points de vente",
+    "icone": "MdOutlineSell"
+  },
+  {
+    "title": "Suivi documentaire des contrats, bons de livraison, garanties…",
+    "icone": "FaSignature"
+  },
+  {
+    "title": "Automatisation des relances, des réclamations et SAV",
+    "icone": "FaClock"
+  },
+  {
+    "title": "Formation axée sur la rapidité de traitement et la coordination multisite",
+    "icone": "FaUsers"
+  }
     ]
   },
   "cta": "Essayez ZeenDoc et dynamisez votre gestion commerciale",
@@ -792,12 +1128,27 @@
   "titreEnjeux":"Les enjeux documentaires des indépendants et freelances",
   "descriptionEnjeux":"Travailler à son compte implique de gérer seul un grand nombre de documents : factures, devis, contrats, justificatifs, documents comptables, fichiers clients… Sans outil adapté, cela devient vite chronophage et source d’erreurs.",
   "titreEnjeux2":"Les besoins essentiels :",  
-  "enjeux": [
-    "Centraliser tous les documents professionnels",
-    "Gagner du temps sur les tâches administratives",
-    "Faciliter la gestion comptable",
-    "Pouvoir retrouver rapidement un fichier ou une information",
-    "Garantir la conformité (RGPD, archivage)"
+"enjeux": [
+  {
+    "title": "Centraliser tous les documents professionnels",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Gagner du temps sur les tâches administratives",
+    "icone": "FaClock"
+  },
+  {
+    "title": "Faciliter la gestion comptable",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Pouvoir retrouver rapidement un fichier ou une information",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Garantir la conformité (RGPD, archivage)",
+    "icone": "FaGavel"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc automatise et simplifie toutes ces tâches, pour que les indépendants puissent se concentrer sur leur métier.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour les freelances",
@@ -845,12 +1196,27 @@
   },
   "formation": {
     "titre": "Formation dédiée aux freelances et indépendants",
-    "contenu": [
-      "Organisation personnelle des documents clients, devis, factures",
-      "Automatisation des tâches répétitives et gestion simplifiée des flux",
-      "Archivage légal des pièces comptables et justificatives",
-      "Accès mobile pour gérer sa documentation où que l’on soit",
-      "Formation personnalisée sur les cas d’usage spécifiques"
+"contenu": [
+  {
+    "title": "Organisation personnelle des documents clients, devis, factures",
+    "icone": "FaFolderOpen"
+  },
+  {
+    "title": "Automatisation des tâches répétitives et gestion simplifiée des flux",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Archivage légal des pièces comptables et justificatives",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Accès mobile pour gérer sa documentation où que l’on soit",
+    "icone": "FaSearch"
+  },
+  {
+    "title": "Formation personnalisée sur les cas d’usage spécifiques",
+    "icone": "FaSignature"
+  }
     ]
   },
   "cta": "Essayez ZeenDoc et simplifiez votre quotidien professionnel",
@@ -864,12 +1230,27 @@
   "titreEnjeux":"Les enjeux documentaires dans le secteur médico-social et associatif",
   "descriptionEnjeux":"Les structures médico-sociales doivent gérer de nombreux types de documents sensibles : dossiers des résidents ou bénéficiaires, conventions, documents de soins, dossiers RH, factures, subventions… La gestion de ces documents est soumise à des exigences de sécurité, de conformité, et d’accessibilité au quotidien.",
   "titreEnjeux2":"Les défis courants :",  
-  "enjeux": [
-    "Gestion sécurisée des dossiers usagers et résidents",
-    "Respect des normes légales (RGPD, archivage à valeur probante)",
-    "Accès simple pour les professionnels terrain comme les services administratifs",
-    "Suivi et partage sécurisé des documents",
-    "Coordination entre plusieurs établissements ou services"
+"enjeux": [
+  {
+    "title": "Gestion sécurisée des dossiers usagers et résidents",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Respect des normes légales (RGPD, archivage à valeur probante)",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Accès simple pour les professionnels terrain comme les services administratifs",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Suivi et partage sécurisé des documents",
+    "icone": "FaExchangeAlt"
+  },
+  {
+    "title": "Coordination entre plusieurs établissements ou services",
+    "icone": "FaUsers"
+  }
   ],
   "paragrapheEnjeux":"ZeenDoc répond à tous ces enjeux, avec une solution complète et facile à mettre en œuvre.",
   "titreFonctionnalité":"Les fonctionnalités clés de ZeenDoc pour le médico-social associatif",
@@ -917,12 +1298,27 @@
   },
   "formation": {
     "titre": "Formation dédiée au secteur médico-social associatif (EHPAD, ESAT, hébergement)",
-    "contenu": [
-      "Gestion des dossiers usagers / résidents dans le respect du secret médical",
-      "Archivage des documents administratifs, médicaux, RH et institutionnels",
-      "Conformité aux obligations ARS, HADS et RGPD",
-      "Formation des équipes pluridisciplinaires sur la collaboration via la GED",
-      "Utilisation intuitive pour des personnels non experts en informatique"
+"contenu": [
+  {
+    "title": "Gestion des dossiers usagers / résidents dans le respect du secret médical",
+    "icone": "BsShieldLock"
+  },
+  {
+    "title": "Archivage des documents administratifs, médicaux, RH et institutionnels",
+    "icone": "FaFileArchive"
+  },
+  {
+    "title": "Conformité aux obligations ARS, HADS et RGPD",
+    "icone": "FaGavel"
+  },
+  {
+    "title": "Formation des équipes pluridisciplinaires sur la collaboration via la GED",
+    "icone": "FaUsers"
+  },
+  {
+    "title": "Utilisation intuitive pour des personnels non experts en informatique",
+    "icone": "FaClock"
+  }
     ]
   },
   "cta": "Essayez ZeenDoc et optimisez la gestion documentaire de votre structure",

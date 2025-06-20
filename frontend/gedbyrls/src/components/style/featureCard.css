@@ -1,4 +1,4 @@
-.featureCard {
+.featureCardContainer {
     margin-top : 2%;
   padding: 1.5rem 1rem;
   border-radius: 12px;
@@ -8,19 +8,20 @@
   display: flex;
   align-items: center;
   text-align: center;
+  
 }
 
-.featureCards {
+.Featurelist {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   border-radius: 20px;
 }
 
-.featureIcon {
-  width: 70px;
-  height: 70px;
+.featureCardIcon {
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +32,7 @@
   color: white;
 }
 
-.featureIcon:hover {
+.featureCardIcon:hover {
     background-color: #9C0526;
     transition: background-color 0.3s ease;
 }

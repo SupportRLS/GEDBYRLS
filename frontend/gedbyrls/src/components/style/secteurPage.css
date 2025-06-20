@@ -1,6 +1,211 @@
-.sectionEnjeux{
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 2rem 3rem;
-    
+body {
+  line-height: 1.6;
+}
+
+.sectionOnePage {
+  text-align: center;
+  padding: 5rem 10% 3rem;
+}
+.sectionOnePage p{
+  font-size: 1.4rem;
+}
+.sectionOnePage h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.sectionOnePage h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.descriptionSectionOne{
+  font-size: 1.2rem;
+  margin: 2.5rem 0rem 3.5rem 0rem;
+  display: flex ;
+margin-left: auto;
+margin-right: auto;
+  max-width : 90%;
+ 
+}
+/* === ENJEUX === */
+
+.sectionEnjeuxBackground {
+  background-color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 4rem 10%;
+}
+
+.sectionEnjeux h3 {
+  font-size: 2.5rem; /* Couleur primaire */
+  margin-bottom: 1rem;
+}
+
+.sectionEnjeux .descriptionEnjeux,
+.sectionEnjeux .titreEnjeux2,
+.sectionEnjeux .paragrapheEnjeux {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+.featureListContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:4rem;
+  max-width: 1440px;
+  margin: 3rem auto;
+}
+
+
+
+
+
+
+/* === SLIDER === */
+.sectionThreePage {
+  padding: 4rem 10%;
+  text-align: center;
+}
+
+.sectionThreePage h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+/* === CONFORMITÉ === */
+.sectionFourPage {
+  padding: 4rem 15%;
+  text-align: center;
+  background-color: #fff;
+  border-radius : 30px;
+   border-radius : 30px;
+}
+.sectionFourPage p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.sectionFourPage h3 {
+  font-size: 2.2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* === TEXTE IMAGE LEFT (sectionFivePage) === */
+.sectionFivePage {
+  padding: 4rem 10%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.sectionFivePage h2 {
+  flex: 1 1 100%;
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.sectionFivePage ul {
+  flex: 1;
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+/* === TEXTE IMAGE RIGHT (sectionSixPage) === */
+.sectionSixPage {
+  padding: 4rem 10%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.sectionSixPage h2 {
+  flex: 1 1 100%;
+  font-size: 2.3rem;
+  text-align: center;
+}
+.sectionSixPage p{
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+/* === FORMATION === */
+.sectionSevenPage {
+  padding: 4rem 10%;
+  background-color: #fff;
+  text-align: center;
+   border-radius : 30px;
+}
+
+.sectionSevenPage h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.sectionSevenPage ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sectionSevenPage li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+/* === CTA === */
+.ctaSection {
+  padding: 4rem 10%;
+  background-color: var(--light-bg);
+  text-align: center;
+}
+
+.ctaSection h3 {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sectionFivePage,
+  .sectionSixPage {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sectionFivePage ul,
+  .sectionSixPage p {
+    width: 100%;
+  }
+
+  .sectionEnjeux ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectionOnePage h1 {
+    font-size: 2.2rem;
+  }
+
+  .sectionOnePage h2 {
+    font-size: 1.6rem;
+  }
+
+  .ctaSection h3 {
+    font-size: 2rem;
+  }
 }
