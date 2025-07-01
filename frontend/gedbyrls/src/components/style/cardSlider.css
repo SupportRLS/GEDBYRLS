@@ -1,0 +1,71 @@
+.card-icone {
+  font-size: 3rem; /* taille de l'icône */
+  color: #f71344; /* ou une autre couleur */
+  margin-bottom: 1rem;
+}
+
+.card {
+  flex: 0 0 280px;
+  background-color: #fdf6ef;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.card.active {
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #f71344;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card-button {
+  margin-top: 1rem;
+  background-color: #e9a431;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.arrow-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f71344;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.arrow-button:hover {
+  transform: scale(1.2);
+}

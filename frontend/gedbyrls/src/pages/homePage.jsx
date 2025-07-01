@@ -79,6 +79,8 @@ const avantagesListe = [
             title="Gestion des factures"
             description="Centralisez et automatisez le traitement de vos factures fournisseurs."
             buttonText="Solution Comptable"
+            href="/secteur/expert-comptable"
+            
           />
 
           <UseCaseCard
@@ -86,13 +88,16 @@ const avantagesListe = [
             logo={<img src={LogoRLS} alt="Logo Use Case 2" />}
             title="Archivage des contrats"
             description="Assurez la conformité et la traçabilité de vos contrats en un clic."
-            buttonText="Solution PME"
+            buttonText="Solution PME" 
+            href="/secteur/tpe-pme"
+            
           />
           <UseCaseCard
             logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
             title="Gestion des ressources humaines"
             description="Simplifiez la gestion des dossiers du personnel et des documents RH."
             buttonText="Solution RH"
+            href="/secteur/grands-groupes"
           />
         </div>
       </div>
@@ -102,7 +107,7 @@ const avantagesListe = [
 
       <div className="SectionFivePage">
         <h2>Les principales fonctionnalités </h2>
-        <div className="featureCardsMap">
+        <div className="featureCards">
          <FeatureCard icon={<FaCloudUploadAlt />} title="Archivage électronique sécurisé" />
       <FeatureCard icon={<FaSearch />} title="Recherche intelligente" />
       <FeatureCard icon={<FaLock />} title="Gestion des droits d’accès" />

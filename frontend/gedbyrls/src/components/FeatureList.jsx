@@ -1,4 +1,4 @@
-//composant wrapper de
+//composant wrapper de FeatureCard pour afficher une liste de fonctionnalités
 import React from "react";
 import FeatureCard from "./FeatureCard";
 

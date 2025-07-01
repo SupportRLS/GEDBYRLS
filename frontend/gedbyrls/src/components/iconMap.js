@@ -1,5 +1,5 @@
 import { BsShieldLock, BsTransparency  } from "react-icons/bs";
-import { FaSearch, FaFileArchive, FaUsers, FaClock, FaFolderOpen, FaSignature, FaGavel, FaExchangeAlt } from  "react-icons/fa";
+import { FaAngleDown, FaSearch, FaFileArchive, FaUsers, FaClock, FaFolderOpen, FaSignature, FaGavel, FaExchangeAlt } from  "react-icons/fa";
 import { AiOutlineLock  } from "react-icons/ai";
 import { MdVerifiedUser, MdOutlineSell } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
@@ -8,6 +8,7 @@ import { GrCloudComputer } from "react-icons/gr";
 
 
 export const iconMap = {
+  FaAngleDown: FaAngleDown,
   MdOutlineSell : MdOutlineSell,
   GrCloudComputer: GrCloudComputer,
   BsTransparency : BsTransparency,

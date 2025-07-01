@@ -1,0 +1,7 @@
+.featureCardsStartGed{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1440px;
+    align-items: center;
+    margin: 5rem auto 5rem auto ;
+}

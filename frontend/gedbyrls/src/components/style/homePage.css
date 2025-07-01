@@ -32,7 +32,8 @@ p {
   margin-top : 4rem;
   margin-bottom : 2rem;
 }
-.featureCardsMap{
+
+.featureCards{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.5rem;
