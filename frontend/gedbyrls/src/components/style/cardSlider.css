@@ -1,7 +1,20 @@
-.card-icone {
-  font-size: 3rem; /* taille de l'icône */
-  color: #f71344; /* ou une autre couleur */
-  margin-bottom: 1rem;
+.slider-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+.cards-wrapper {
+  position: relative;
+  width: 900px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -10,15 +23,44 @@
   border-radius: 20px;
   text-align: center;
   padding: 1.5rem;
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  opacity: 0.5;
-  transform: scale(0.95);
+  position: absolute;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  transform: scale(0.8);
+  pointer-events: none;
 }
 
-.card.active {
-  transform: scale(1.05);
+.card.center {
   opacity: 1;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.card.left {
+  transform: translateX(-300px) scale(0.9);
+  opacity: 0.6;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.card.right {
+  transform: translateX(300px) scale(0.9);
+  opacity: 0.6;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.card.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  z-index: 1;
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #f71344;
+  margin-bottom: 1rem;
 }
 
 .card h3 {
@@ -30,42 +72,4 @@
 .card p {
   font-size: 0.9rem;
   color: #333;
-}
-
-.card-button {
-  margin-top: 1rem;
-  background-color: #e9a431;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
-
-.cards-wrapper {
-  display: flex;
-  gap: 1rem;
-  transition: transform 0.4s ease-in-out;
-}
-
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem;
-  overflow: hidden;
-}
-
-.arrow-button {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: #f71344;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.arrow-button:hover {
-  transform: scale(1.2);
 }

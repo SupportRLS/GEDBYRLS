@@ -21,7 +21,7 @@ function JeDebuteDansLaGed() {
 
     { title: "1. Vous déposez vos documents", description: "Par glisser-déposer, Par scanner connecté, Par e-mail ou synchronisation automatique", icon: "GrCloudComputer" },
     { title: "2. Zeendoc les classe pour vous", description: "La plateforme reconnaît le type de document (facture, bulletin de paie, contrat...), en extrait les informations importantes (date, montant, client...) et le range dans le bon dossier.", icon: "GrCloudComputer"},
-    { title: "3. Vous retrouvez tout en un clic", description: "Besoin de retrouver une facture EDF de janvier 2023 ? Tapez 'EDF janvier 2023' et Zeendoc la retrouve instantanément, même si c’est un PDF scanné." },
+    { title: "3. Vous retrouvez tout en un clic", description: "Besoin de retrouver une facture EDF de janvier 2023 ? Tapez 'EDF janvier 2023' et Zeendoc la retrouve instantanément, même si c’est un PDF scanné.", icon: "GrCloudComputer" },
     { title: "4. Vous partagez ou signez en toute sécurité", description: "Partagez un contrat avec un collaborateur ou un client, faites-le signer électroniquement, tout en gardant une traçabilité complète.", icon: "GrCloudComputer"},
     { title: "5. Vos documents sont archivés légalement", description: "Zeendoc garantit l’intégrité et la conservation de vos documents selon les normes en vigueur (NF Z42-013, RGPD...).", icon: "GrCloudComputer"},
 
@@ -38,10 +38,9 @@ function JeDebuteDansLaGed() {
     <div className="jeDebuteDansLaGed">
         <Header />
     <div className="sectionTitle">
-      <h1>Je débute dans la GED avec Zeendoc</h1>
-      <h2>
+      <h1>
 Tout ce qu’il faut savoir pour comprendre et adopter la Gestion Électronique de Documents simplement
-      </h2>
+      </h1>
       </div>
 
       <p>
