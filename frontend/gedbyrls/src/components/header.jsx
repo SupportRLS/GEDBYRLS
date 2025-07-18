@@ -8,6 +8,38 @@ import './style/header.css';
 import letter from '../assets/letter.svg';
 import phone from '../assets/phone.svg';
 
+import { iconMap } from './iconMap';
+
+const metiers = [
+  { path: "/secteur/avocat", label: "Avocats", iconKey: "GiHammerDrop" },
+  { path: "/secteur/expert-comptable", label: "Expert-comptable", iconKey: "FaCalculator" },
+  { path: "/secteur/association", label: "Association", iconKey: "LuHeartHandshake" },
+  { path: "/secteur/tpe-pme", label: "TPE-PME", iconKey: "BiSolidBusiness" },
+  { path: "/secteur/grands-groupes", label: "Grands-Groupes", iconKey: "IoBusiness" },
+  { path: "/secteur/sante", label: "Santé", iconKey: "FaHandHoldingMedical" },
+  { path: "/secteur/architectes", label: "Architectes", iconKey: "FaHouseChimneyWindow" },
+  { path: "/secteur/btp", label: "BTP", iconKey: "FaHelmetSafety" },
+  { path: "/secteur/secteur-public", label: "Secteur public", iconKey: "MdOutlineMuseum" },
+  { path: "/secteur/finance", label: "Finance", iconKey: "GrMoney" },
+  { path: "/secteur/commercial", label: "Commercial", iconKey: "MdOutlineSell" },
+  { path: "/secteur/freelance-independant", label: "Freelance-Indépendant", iconKey: "MdWork" },
+  { path: "/secteur/medico-social-associatif", label: "Médico-social-associatif", iconKey: "FaHouseMedicalFlag" },
+];
+
+const solutions =[
+  {path: "/solution/je-debute-dans-la-ged", label: "Je Débute dans la GED", iconKey: "GiCloudDownload"},
+  {path: "/solution/la-signature-electronique", label: "La Signature Électronique", iconKey: "FaSignature"},
+  {path: "/solution/faq", label: "FAQ", iconKey: "FaFileCircleQuestion"},
+  {path: "/solution/integration-des-logiciels-compatibles", label: "Intégration des logiciels", iconKey: "MdOutlineWeb"},
+  {path: "/solution/De-larchivage-papier-à-larchivage-numerique", label: "Du papier au numérique", iconKey: "IoNewspaperOutline"},
+  {path: "/solution/securisation-rgpd-tracabilite", label: "Sécurisation | RGPD | Traçabilité", iconKey: "MdSecurity"},
+  {path: "/solution/Articles", label: "Articles", iconKey: "PiArticleThin"},
+  {path: "/solution/fonctionnalites", label: "Fonctionnalités", iconKey: "RiFunctionLine"},
+  {path: "/solution/galerie", label: "Galerie", iconKey: "MdOutlineAddAPhoto"
+    
+  }
+]
+          
 function Header() {
   const [openSolutions, setOpenSolutions] = useState(false);
   const [isActiveSolutions, setIsActiveSolutions] = useState(false);
@@ -65,13 +97,15 @@ function Header() {
           </div>
           {openSolutions && (
             <ul className="Menu">
-              <NavLink to="/solution/je-debute-dans-la-ged">Je Débute dans la GED</NavLink>
-              <NavLink to="/solution/faq">FAQ</NavLink>
-              <NavLink to="/solution/integration-des-logiciels-compatibles">Intégration des logiciels compatibles</NavLink>
-              <NavLink to="/solution/De-larchivage-papier-à-larchivage-numerique">De l’archivage papier à l’archivage numérique</NavLink>
-              <NavLink to="/solution/securisation-rgpd-tracabilite">Sécurisation | RGPD | Traçabilité</NavLink>
-              <NavLink to="/solution/Articles">Articles</NavLink>
-              <NavLink to="/solution/fonctionnalites">Fonctionnalités</NavLink>
+             {solutions.map(({ path, label, iconKey }) => {
+                const Icon = iconMap[iconKey]; // Récupère le composant
+                return (
+                  <NavLink to={path} key={path}>
+                    {Icon && <Icon />} {label}
+                  </NavLink>
+                );
+              }
+              )}
             </ul>
           )}
         </div>
@@ -87,22 +121,17 @@ function Header() {
             />
           </div>
           {openMetiers && (
-            <ul className="Menu">
-              <NavLink to="/secteur/avocat">Avocats</NavLink>
-              <NavLink to="/secteur/expert-comptable">Expert-comptable</NavLink>
-              <NavLink to="/secteur/association">Association</NavLink>
-              <NavLink to="/secteur/tpe-pme">TPE-PME</NavLink>
-              <NavLink to="/secteur/grands-groupes">Grands-Groupes</NavLink>
-              <NavLink to="/secteur/sante">Santé</NavLink>
-              <NavLink to="/secteur/architectes">Architectes</NavLink>
-              <NavLink to="/secteur/btp">BTP</NavLink>
-              <NavLink to="/secteur/secteur-public">Secteur-public</NavLink>
-              <NavLink to="/secteur/finance">Finance</NavLink>
-              <NavLink to="/secteur/commercial">Commercial</NavLink>
-              <NavLink to="/secteur/freelance-independant">Freelance-Independant</NavLink>
-              <NavLink to="/secteur/medico-social-associatif">Médico-social-associatif</NavLink>
-            </ul>
-          )}
+  <ul className="Menu">
+    {metiers.map(({ path, label, iconKey }) => {
+      const Icon = iconMap[iconKey]; // Récupère le composant
+      return (
+        <NavLink to={path} key={path}>
+          {Icon && <Icon  />} {label}
+        </NavLink>
+      );
+    })}
+  </ul>
+)}
         </div>
 
         <NavLink to="/formation">Formation</NavLink>

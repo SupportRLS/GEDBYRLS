@@ -5,6 +5,8 @@ import HomePage from './pages/homePage.jsx';
 import FormationPage from './pages/formationPage.jsx';
 import ContactPage from './pages/contactPage.jsx';
 import JeDebuteDansLaGed from './pages/jeDebuteDansLaGed.jsx';
+import Faq from './pages/Faq.jsx';
+import GaleriePhoto from './pages/Galerie.jsx';
 import './App.css'
 
 function App() {
@@ -13,10 +15,14 @@ function App() {
       <Route path="/" element={<HomePage/>} />
       <Route path="/formation" element={<FormationPage />} />
       <Route path="/contact" element={<ContactPage />} />
-
+      
+      
+      {/* Dynamic route for secteur pages */}
       <Route path="/secteur/:slug" element={<SecteurPage />} />
 
       <Route path='/solution/je-debute-dans-la-ged' element={<JeDebuteDansLaGed />} />
+      <Route path="/solution/faq" element={<Faq />} />
+      <Route path='/solution/galerie' element={<GaleriePhoto />} />
     </Routes>
   );
 }

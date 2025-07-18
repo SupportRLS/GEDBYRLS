@@ -5,3 +5,76 @@
     align-items: center;
     margin: 5rem auto 5rem auto ;
 }
+p {
+
+    font-size: 1.2rem;
+
+}
+
+h1 {
+    margin-bottom : 2rem;
+
+}
+h2 {
+    font-size: 1.8rem;
+}
+.SliderSection {
+ 
+    margin-top : 5rem;
+    margin-bottom : 5rem;
+}
+.sectionAvis {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.avis-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Avis gauche */
+.displayGridAvis1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 500px;
+  text-align: center;
+  padding: 1.5rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Avis droite */
+.displayGridAvis2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 500px;
+  text-align: center;
+  padding: 1.5rem;
+  flex: 1;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive : en colonne sur mobile */
+@media (max-width: 768px) {
+  .avis-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .displayGridAvis1,
+  .displayGridAvis2 {
+    text-align: center;
+  }
+
+}

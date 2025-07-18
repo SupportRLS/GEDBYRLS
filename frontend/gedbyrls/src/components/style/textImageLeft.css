@@ -20,12 +20,15 @@
   order: 1;
   justify-content: center;
   align-items: center;
+
 }
 
 .til-image-content img {
   max-width: 100%;
-  height: auto;
+  max-width: 600px;
   border-radius: 1rem;
+  object-fit: contain;
+   max-height : 500px;
 }
 
 .til-text-content {
@@ -33,17 +36,20 @@
   order: 2;
   flex-direction: column;
   justify-content: start;
+  padding-top : 1rem;
 }
 
 .til-text-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  margin-top: -1rem;;
 }
 
 .til-text-content p {
   font-size: 1.125rem;
   margin-bottom: 1rem;
   line-height: 1.6;
+ 
 }
 
 .til-text-list {

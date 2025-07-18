@@ -1,4 +1,6 @@
 .slider-container {
+    background-color: white;
+  border-radius: 25px;
   margin-top: 3rem;
   display: flex;
   justify-content: center;
@@ -6,6 +8,7 @@
   overflow: hidden;
   position: relative;
   height: 400px;
+  margin-bottom: 3rem;
 }
 
 .cards-wrapper {

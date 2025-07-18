@@ -17,6 +17,7 @@
 a {
     text-decoration: none ;
     color: #2E1E21;
+    
 }
 .Logo {
   width: 4rem; 
@@ -27,6 +28,14 @@ a {
   text-decoration-line: none;
 }
 
+
+.Menu svg {
+  margin-right : 8px;
+  width: 1.4rem;
+  height: 1.4rem;
+ 
+
+}
 .Dropdown {
  position: relative;
 }
@@ -75,7 +84,6 @@ transform: translateY(0);
 .Menu a {
 display: flex;
 align-items: start;
-justify-content: center;
 text-decoration: none;
 color: #2E1D21;
 font-weight: 500;
@@ -94,10 +102,3 @@ color: #F71344;
   width: 100%;
 };
 /* Icône à gauche de chaque lien */
-/* .Menu a img {
-width: 24px;
-height: 24px;
-margin-right: 10px;
-object-fit: contain;
-filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(-10deg) saturate(500%) brightness(90%);
-} */
