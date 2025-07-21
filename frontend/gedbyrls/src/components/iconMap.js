@@ -1,5 +1,5 @@
 import { BsShieldLock, BsTransparency  } from "react-icons/bs";
-import { FaCalculator, FaHandHoldingMedical, FaAngleDown, FaSearch, FaFileArchive, FaUsers, FaClock, FaFolderOpen, FaSignature, FaGavel, FaExchangeAlt } from  "react-icons/fa";
+import { FaArchive, FaPaperPlane, FaPenNib, FaCalculator, FaHandHoldingMedical, FaAngleDown, FaSearch, FaFileArchive, FaUsers, FaClock, FaFolderOpen, FaSignature, FaGavel, FaExchangeAlt } from  "react-icons/fa";
 import { AiOutlineLock  } from "react-icons/ai";
 import { MdOutlineAddAPhoto, MdSecurity, MdOutlineWeb , MdVerifiedUser, MdOutlineSell } from "react-icons/md";
 import { GiCloudDownload , GiHammerDrop, GiProgression } from "react-icons/gi";
@@ -47,7 +47,9 @@ PiArticleThin: PiArticleThin, // articles
 RiFunctionLine: RiFunctionLine, // fonctionnalités
 MdOutlineAddAPhoto : MdOutlineAddAPhoto, // galerie
 //icons
-
+  archive: FaArchive,
+  send: FaPaperPlane,
+  sign: FaPenNib,
   HiOutlineUpload: HiOutlineUpload,
   FiSearch: FiSearch,
   BiLockAlt: BiLockAlt,

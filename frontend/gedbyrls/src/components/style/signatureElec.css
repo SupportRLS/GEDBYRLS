@@ -1,0 +1,141 @@
+.page-main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.page-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2E1D21;
+  text-align: center;
+}
+
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #2E1D21;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-content {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+
+.highlight-signature {
+  font-weight: 700;
+  background: linear-gradient(90deg, #bd1338, #E9A431);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 4px;
+}
+
+.conclusion {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  color: #9C0526;
+  text-align: center;
+  background-color: #FFFAF4;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Responsive timeline */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1rem;
+  }
+  .timeline-bullet {
+    width: 30px;
+    height: 30px;
+    font-size: 0.95rem;
+    margin-left: -2.2rem;
+  }
+  .timeline-content h3 {
+    font-size: 1.1rem;
+  }
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-main {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .page-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
+
+  .conclusion {
+    font-size: 1.125rem;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    height: 150px;
+  }
+
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .section-content {
+    font-size: 0.95rem;
+    gap: 1rem;
+  }
+
+  .conclusion {
+    font-size: 1rem;
+  }
+}

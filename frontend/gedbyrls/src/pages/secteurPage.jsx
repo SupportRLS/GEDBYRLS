@@ -66,7 +66,7 @@ function SecteurPage() {
       <div className="sectionFivePage">
         <TextImageLeft
           title={secteur.titrebenefices}
-          list={secteur.benefices}
+          text={secteur.benefices}
           imageSrc={secteur.imagebenefices}
           imageAlt={secteur.titrebenefices}
         

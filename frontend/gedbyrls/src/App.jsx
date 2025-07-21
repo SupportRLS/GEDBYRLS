@@ -7,6 +7,7 @@ import ContactPage from './pages/contactPage.jsx';
 import JeDebuteDansLaGed from './pages/jeDebuteDansLaGed.jsx';
 import Faq from './pages/Faq.jsx';
 import GaleriePhoto from './pages/Galerie.jsx';
+import PageSignatureElectronique from './pages/SignatureElectronique.jsx';
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path='/solution/je-debute-dans-la-ged' element={<JeDebuteDansLaGed />} />
       <Route path="/solution/faq" element={<Faq />} />
       <Route path='/solution/galerie' element={<GaleriePhoto />} />
+      <Route path='/solution/la-signature-electronique' element={<PageSignatureElectronique/>} />
     </Routes>
   );
 }

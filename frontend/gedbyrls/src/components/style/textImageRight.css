@@ -1,17 +1,18 @@
 .text-image-right {
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr; 
+  grid-template-columns: 1.5fr 1.5fr;
   gap: 4rem;
   align-items: start;
   padding: 2rem 4rem;
   max-width: 1440px;
   margin: 0 auto;
 }
+
 .children-content {
   display: flex;
   margin-top: 1rem;
   gap: 1rem;
-  justify-content: center; 
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -31,19 +32,21 @@
   align-items: center;
   padding-top: 1rem;
 }
+
 .text-content h2 {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  margin-top : -1rem;
+  margin-top: -1rem;
 }
 
 .image-content img {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   object-fit: contain;
   border-radius: 1rem;
-  max-height : 400px;
+  max-height: 500px;
+
 }
 
 
@@ -66,7 +69,8 @@
 /* --- Responsive --- */
 @media (max-width: 1240px) {
   .text-content h2 {
-  font-size: 2rem;}
+    font-size: 2rem;
+  }
 
 }
 
