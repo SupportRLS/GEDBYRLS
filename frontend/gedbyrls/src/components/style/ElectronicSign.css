@@ -1,0 +1,84 @@
+.electronic-sign {
+  line-height: 1.6;
+  padding: 2rem;
+max-width: 1440px;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+.hero img{
+    object-fit: cover;
+    width: 900px;
+    height: 100%;
+    border-radius: 25px;
+    justify-content: flex-start;
+    display: flex;
+    margin-left: 5rem;
+}
+
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2E1D21;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.definition .definition-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.fonctionnement .steps {
+  list-style-position: inside;
+  padding-left: 1rem;
+}
+
+.avantages .advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.avantages h3 {
+  margin-bottom: 0.5rem;
+  color: #F71344;
+}
+
+.final-cta {
+  background-color: #E9A431;
+  color: #2E1D21;
+  padding: 2rem;
+  border-radius: 2xl;
+  text-align: center;
+}
+
+.final-cta ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.final-cta li::before {
+  content: '✓';
+  color: #9C0526;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}

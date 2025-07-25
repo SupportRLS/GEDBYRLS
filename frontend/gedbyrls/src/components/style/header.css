@@ -1,104 +1,209 @@
 .HeaderNav {
-  width: auto;
   display: flex;
-  justify-content: start;
-  gap: 40px;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   background-color: #ffffff;
   border-radius: 20px;
-  margin : 0rem 2rem
-  
+  margin: 0 2rem;
+  gap: 40px;
+}
+
+.LogoNav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .buttonHeader {
-  margin-left:50%;
+  margin-left: 50%;
   display: flex;
 }
 a {
-    text-decoration: none ;
-    color: #2E1E21;
-    
+  text-decoration: none;
+  color: #2e1e21;
 }
 .Logo {
-  width: 4rem; 
-  margin-right: 5%;
+  width: 4rem;
 }
 .active {
-  color : #F71344 ;
+  color: #f71344;
   text-decoration-line: none;
 }
 
-
 .Menu svg {
-  margin-right : 8px;
+  margin-right: 8px;
   width: 1.4rem;
   height: 1.4rem;
- 
-
 }
 .Dropdown {
- position: relative;
+  position: relative;
 }
 .Dropdown > div {
-cursor: pointer;
-display: flex;
-align-items: center;
-gap: 5px;
-font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
 }
 .Arrow {
-padding-left: 5px;
-transition: transform 0.3s ease;
+  padding-left: 5px;
+  transition: transform 0.3s ease;
 }
 .Arrow.active {
-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .Menu {
-position: absolute;
-top: 100%;
-left: 0;
-margin-top: 10px;
-background-color: #fff;
-border-radius: 20px;
-padding: 50px 70px;
-box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-display: grid;
-grid-template-columns: repeat(3, minmax(300px, 1fr));
-gap: 20px 40px;
-z-index: 1000;
-animation: fadeSlide 0.3s ease-out forwards;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px 70px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 20px 40px;
+  z-index: 1000;
+  animation: fadeSlide 0.3s ease-out forwards;
 }
 @keyframes fadeSlide {
-0% {
-opacity: 0;
-transform: translateY(10px);
-}
-100% {
-opacity: 1;
-transform: translateY(0);
-}
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Chaque lien dans le menu */
 .Menu a {
-display: flex;
-align-items: start;
-text-decoration: none;
-color: #2E1D21;
-font-weight: 500;
-font-size: 1rem;
-transition: color 0.2s ease;
+  display: flex;
+  align-items: start;
+  text-decoration: none;
+  color: #2e1d21;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
 }
 
 .Menu a:hover {
-color: #F71344; 
+  color: #f71344;
 }
 
-.ContactHeader{
+.ContactHeader {
   display: flex;
   align-items: center;
+  gap: 10px;
   justify-content: flex-end;
-  width: 100%;
-};
-/* Icône à gauche de chaque lien */
+}
+
+.BurgerButton {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1500;
+}
+
+.BurgerButton span {
+  width: 2rem;
+  height: 0.25rem;
+  background: #2e1d21;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Animation quand burger est ouvert */
+.BurgerButton.open span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.BurgerButton.open span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.BurgerButton.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.NavMenu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .HeaderNav {
+    padding: 20px 15px;
+    margin: 0 1rem;
+  }
+
+  /* Afficher burger en mobile */
+  .BurgerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Cacher menu par défaut */
+  .NavMenu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #fff;
+    padding: 2rem;
+    overflow-y: auto;
+    z-index: 1400;
+    gap: 1.5rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Afficher menu quand burger est open */
+  .NavMenu.open {
+    display: flex;
+  }
+
+  /* Modifier les Dropdown pour s'adapter */
+  .Dropdown > div {
+    font-weight: 600;
+  }
+
+  /* Menu dropdown en mode mobile = simple liste vertical */
+  .Menu {
+    position: static;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    grid-template-columns: unset;
+    gap: 0;
+  }
+
+  .Menu a {
+    padding-left: 1rem;
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  /* ContactHeader dans le menu en mobile */
+  .ContactHeader {
+    display: none;
+  }
+}

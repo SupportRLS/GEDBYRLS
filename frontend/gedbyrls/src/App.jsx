@@ -7,8 +7,10 @@ import ContactPage from './pages/contactPage.jsx';
 import JeDebuteDansLaGed from './pages/jeDebuteDansLaGed.jsx';
 import Faq from './pages/Faq.jsx';
 import GaleriePhoto from './pages/Galerie.jsx';
-import PageSignatureElectronique from './pages/SignatureElectronique.jsx';
-import './App.css'
+import PaperToDigital from './pages/PaperToDigital.jsx';
+import ElectronicSign from './pages/ElectronicSign.jsx';
+import './App.css';
+import './index.css';
 
 function App() {
   return (
@@ -20,11 +22,13 @@ function App() {
       
       {/* Dynamic route for secteur pages */}
       <Route path="/secteur/:slug" element={<SecteurPage />} />
-
+      {/* <Route path="//solution/Articles" element={< />} /> */}
+       {/* <Route path="/solution/integration-des-logiciels-compatibles" element={< />} /> */}
       <Route path='/solution/je-debute-dans-la-ged' element={<JeDebuteDansLaGed />} />
       <Route path="/solution/faq" element={<Faq />} />
       <Route path='/solution/galerie' element={<GaleriePhoto />} />
-      <Route path='/solution/la-signature-electronique' element={<PageSignatureElectronique/>} />
+      <Route path='/solution/la-signature-electronique' element={<ElectronicSign/>} />
+      <Route path='/solution/De-larchivage-papier-à-larchivage-numerique' element={<PaperToDigital/>} />
     </Routes>
   );
 }

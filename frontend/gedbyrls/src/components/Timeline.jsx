@@ -5,6 +5,7 @@ import TimelineIMG from "../assets/timeline_image.png";
 
 export default function Timeline({ steps }) {
   return (
+    
     <section className="timeline-section">
       <h2 className="section-title">Comment se déroule la signature avec Zeendoc ?</h2>
       <div className="timeline-wrapper">
@@ -32,5 +33,6 @@ export default function Timeline({ steps }) {
         </div>
       </div>
     </section>
+   
   );
 }

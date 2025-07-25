@@ -1,18 +1,21 @@
-.ContactLink{
-    background-color: #F71344;
-    border-radius: 10px;
-    padding: 10px 20px;
-    color : white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 50%;
+.ContactLink {
+  background-color: #f71344;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
 }
-.ButtonContactHeader{
-    font-size: 0.8em ;
-    
- 
+.ButtonContactHeader {
+  font-size: 0.8em;
 }
 
-.ContactLink:hover{
-    background-color: #9C0526;
+.ContactLink:hover {
+  background-color: #9c0526;
+}
+@media (max-width: 1100px) {
+  .ContactLink {
+    font-size: 10px;
+  }
 }

@@ -1,15 +1,32 @@
 .timeline-section {
+  position: relative;
   padding: 2rem 0;
+  z-index: 1;
 }
 
+/* Background étendu centré */
+.timeline-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: -1;
+}
+
+/* Wrapper principal */
 .timeline-wrapper {
   display: grid;
-  grid-template-columns: 3fr 2fr; 
+  grid-template-columns: 3fr 2fr;
   gap: 3rem;
   margin-top: 2rem;
   align-items: start;
 }
 
+/* Timeline verticale */
 .timeline {
   display: flex;
   flex-direction: column;
@@ -19,17 +36,19 @@
   border-left: 3px solid #E9A431;
 }
 
+/* Étapes */
 .timeline-step {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
 
+/* Pastille numérotée */
 .timeline-bullet {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin-left : -3.2rem;
+  margin-left: -3.2rem;
   background-color: #F71344;
   color: white;
   font-weight: 700;
@@ -40,12 +59,14 @@
   flex-shrink: 0;
 }
 
+/* Titres */
 .timeline-content h3 {
   font-size: 1.25rem;
   color: #2E1D21;
   margin-bottom: 0.5rem;
 }
 
+/* Textes */
 .timeline-content p {
   margin: 0;
   font-size: 1.05rem;
@@ -53,6 +74,7 @@
   color: #333;
 }
 
+/* Image à droite */
 .timeline-image-wrapper {
   display: flex;
   justify-content: center;
@@ -65,7 +87,6 @@
   object-fit: contain;
 }
 
-
 /* Responsive */
 @media (max-width: 768px) {
   .timeline-wrapper {
@@ -76,9 +97,11 @@
     padding-left: 1rem;
     border-left: 3px solid #E9A431;
   }
-  .timeline-bullet{
+
+  .timeline-bullet {
     margin-left: -2.2rem;
   }
+
   .timeline-image-wrapper {
     display: none;
   }
