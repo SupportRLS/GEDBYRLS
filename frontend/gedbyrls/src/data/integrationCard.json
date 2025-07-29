@@ -1,0 +1,619 @@
+[
+  {
+    "title": "Compta XL",
+    "logo": "/public/logo_logiciel/comptaxl-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solution comptable complète pour TPE/PME. Gestion factures, écritures et déclarations fiscales."
+  },
+  {
+    "title": "CIEL",
+    "logo": "/public/logo_logiciel/ciel-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Suite logicielle comptable française. Gestion complète comptabilité, paie et facturation TPE/PME."
+  },
+  {
+    "title": "EBP",
+    "logo": "/public/logo_logiciel/ebp-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solutions de gestion intégrées. Comptabilité, CRM, paie et facturation pour PME."
+  },
+  {
+    "title": "AGATE",
+    "logo": "/public/logo_logiciel/agate-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Automatisation comptable intelligente. Intégration native avec Pennylane et OCR avancé."
+  },
+  {
+    "title": "Charlemagne",
+    "logo": "/public/logo_logiciel/charlemagne-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Éducation",
+    "tags": "ERP éducatif complet. Gestion administrative, pédagogique et financière des établissements scolaires."
+  },
+  {
+    "title": "SAGE GENERATION EXPERT",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solution expert-comptable Sage. Gestion collaborative cabinet-entreprise avec dématérialisation."
+  },
+  {
+    "title": "PAPERSTREAM",
+    "logo": "/public/logo_logiciel/paperstream-reprolanguedocsolutions.webp",
+    "categorie": "Autre",
+    "secteur": "Dématérialisation",
+    "tags": "Logiciel de numérisation Fujitsu. OCR avancé et traitement intelligent des documents."
+  },
+  {
+    "title": "VILOGI",
+    "logo": "/public/logo_logiciel/vilogi-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Immobilier",
+    "tags": "ERP immobilier spécialisé. Gestion syndic, locative et copropriété pour professionnels."
+  },
+  {
+    "title": "DCSnet NEO",
+    "logo": "/public/logo_logiciel/dcsnet-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Automobile",
+    "tags": "ERP automobile intégré. Gestion concessions, SAV, stock et relation client secteur auto."
+  },
+  {
+    "title": "DOLIBARR",
+    "logo": "/public/logo_logiciel/dolibarr-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP/CRM open source modulaire. Solution complète pour PME tous secteurs confondus."
+  },
+  {
+    "title": "SAP Business ByDesign",
+    "logo": "/public/logo_logiciel/sapbusiness-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Industrie",
+    "tags": "ERP cloud SAP pour PME. Gestion complète finance, ventes, achats et production industrielle."
+  },
+  {
+    "title": "OPTIM'BTP",
+    "logo": "/public/logo_logiciel/optimbtp-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "BTP",
+    "tags": "ERP BTP métier. Devis, chantiers, facturation et gestion spécifique aux entreprises du bâtiment."
+  },
+  {
+    "title": "CADOR/COMPTA EXPERT",
+    "logo": "/public/logo_logiciel/cador-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solution comptable experte. Gestion avancée pour cabinets comptables et grandes entreprises."
+  },
+  {
+    "title": "CEGID",
+    "logo": "/public/logo_logiciel/cegid-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP français multi-secteurs. Solutions métiers RH, finance, retail et services professionnels."
+  },
+  {
+    "title": "BATIGEST Connect",
+    "logo": "/public/logo_logiciel/batigest-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "BTP",
+    "tags": "ERP BTP connecté. Gestion intégrée chantiers, devis, facturation pour artisans et PME bâtiment."
+  },
+  {
+    "title": "SAGE 100",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP Sage PME. Comptabilité, gestion commerciale et analytique complète pour moyennes entreprises."
+  },
+  {
+    "title": "SAGE 30",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité Sage TPE. Solution simple comptabilité et facturation pour très petites entreprises."
+  },
+  {
+    "title": "SAGE 50",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP Sage petites entreprises. Comptabilité, facturation et gestion commerciale intégrée."
+  },
+  {
+    "title": "SAGE i7",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP Sage grandes entreprises. Solution comptable et financière avancée multi-sites et multi-devises."
+  },
+  {
+    "title": "ABJ COMPTA",
+    "logo": "/public/logo_logiciel/abjcompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité simplifiée TPE. Solution accessible et intuitive pour micro-entreprises et artisans."
+  },
+  {
+    "title": "ACD COMPTA",
+    "logo": "/public/logo_logiciel/acdcompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solution comptable ACD. Gestion financière complète avec modules complémentaires intégrés."
+  },
+  {
+    "title": "ADVENTI COMPTA",
+    "logo": "/public/logo_logiciel/adventicompta-reprolanguedocsolutions.webp",
+    "categorie": "Autre",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité cloud PME. Solution en ligne moderne avec synchronisation bancaire automatique."
+  },
+  {
+    "title": "ALCOR",
+    "logo": "/public/logo_logiciel/alcor-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable intégré. Gestion complète comptabilité, facturation et relation client pour PME."
+  },
+  {
+    "title": "MICROSOFT DYNAMICS AX",
+    "logo": "/public/logo_logiciel/microsoftdynamicsax-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Industrie",
+    "tags": "ERP Microsoft entreprises. Solution complète finance, supply chain et production pour grandes organisations."
+  },
+  {
+    "title": "BELAMI",
+    "logo": "/public/logo_logiciel/belami-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP cabinet comptable. Solution collaborative expert-comptable avec portail client intégré."
+  },
+  {
+    "title": "COMPT'ACT",
+    "logo": "/public/logo_logiciel/comptact-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité active PME. Gestion financière temps réel avec tableaux de bord décisionnels."
+  },
+  {
+    "title": "COPILOTE",
+    "logo": "/public/logo_logiciel/copilote-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Assistant comptable intelligent. Automatisation saisies et aide à la gestion pour cabinets."
+  },
+  {
+    "title": "COSOLUCE CORAIL",
+    "logo": "/public/logo_logiciel/cosoluce-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Suite comptable Corail. Gestion intégrée comptabilité, paie et déclarations sociales/fiscales."
+  },
+  {
+    "title": "DATACAR DMS",
+    "logo": "/public/logo_logiciel/datacar-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Automobile",
+    "tags": "DMS automobile complet. Gestion concessions, SAV, garanties et relation client secteur auto."
+  },
+  {
+    "title": "DIACOMPTA - COMPTA EXPERT",
+    "logo": "/public/logo_logiciel/diacompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité experte ACD. Solution avancée pour cabinets avec outils d'analyse financière."
+  },
+  {
+    "title": "DIVALTO",
+    "logo": "/public/logo_logiciel/divalto-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP/CRM français complet. Solution modulaire pour PME/ETI tous secteurs avec BI intégré."
+  },
+  {
+    "title": "EIC",
+    "logo": "/public/logo_logiciel/eic-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité simplifiée. Solution accessible pour petites entreprises avec formation incluse."
+  },
+  {
+    "title": "EIG",
+    "logo": "/public/logo_logiciel/eig-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Gestion intégrée PME. Comptabilité, facturation et gestion commerciale pour entreprises de service."
+  },
+  {
+    "title": "PRIMAVERA",
+    "logo": "/public/logo_logiciel/primavera-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Gestion de projets",
+    "tags": "Gestion de projets Oracle. Planification, suivi et contrôle projets complexes multi-ressources."
+  },
+  {
+    "title": "EUREKA",
+    "logo": "/public/logo_logiciel/eureka-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solution comptable innovante. Gestion financière moderne avec intelligence artificielle intégrée."
+  },
+  {
+    "title": "EVOLUTION ERP",
+    "logo": "/public/logo_logiciel/evolution-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP évolutif PME. Plateforme modulaire adaptable aux besoins sectoriels spécifiques."
+  },
+  {
+    "title": "EXCALIBUR ",
+    "logo": "/public/logo_logiciel/excalibur-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable puissant. Gestion financière avancée avec reporting et consolidation multi-sociétés."
+  },
+  {
+    "title": "GESTIMUM",
+    "logo": "/public/logo_logiciel/gestimum-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP français modulaire. Gestion complète commerce, production et services pour PME/ETI."
+  },
+  {
+    "title": "HIBGEST",
+    "logo": "/public/logo_logiciel/hibgest-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Gestion hybride PME. Comptabilité et gestion commerciale connectée avec mobilité intégrée."
+  },
+  {
+    "title": "IBIZA SOFTWARE",
+    "logo": "/public/logo_logiciel/ibiza-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "Suite logicielle métiers. Solutions spécialisées pour secteurs spécifiques avec personnalisation."
+  },
+  {
+    "title": "IDYLIS",
+    "logo": "/public/logo_logiciel/idylis-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable moderne. Interface intuitive avec automatisation et intelligence artificielle."
+  },
+  {
+    "title": "IGE COMPTA",
+    "logo": "/public/logo_logiciel/igecompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité IGE complète. Gestion financière avec modules paie et déclarations intégrés."
+  },
+  {
+    "title": "INFORCE",
+    "logo": "/public/logo_logiciel/inforce-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP force de vente. CRM et gestion commerciale avec mobilité pour équipes terrain."
+  },
+  {
+    "title": "INTEGRAAL V 4,01",
+    "logo": "/public/logo_logiciel/integraal-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP intégral belge. Gestion complète comptabilité, facturation et relation client PME."
+  },
+  {
+    "title": "IRIUM",
+    "logo": "/public/logo_logiciel/irium-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Solution comptable cloud. Gestion financière moderne avec synchronisation bancaire automatique."
+  },
+  {
+    "title": "ISUITE/ICOMPTA x",
+    "logo": "/public/logo_logiciel/isuite-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Suite comptable cabinet. Plateforme collaborative expert-comptable avec portail client sécurisé."
+  },
+  {
+    "title": "ITOOL",
+    "logo": "/public/logo_logiciel/itool-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Outil comptable intelligent. Automatisation comptable avec reconnaissance factures et OCR."
+  },
+  {
+    "title": "LD COMPTA",
+    "logo": "/public/logo_logiciel/ldcompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité LD simplifiée. Solution intuitive pour artisans et petites entreprises de service."
+  },
+  {
+    "title": "LELY SFX 2.0",
+    "logo": "/public/logo_logiciel/lelysfx-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Agriculture",
+    "tags": "ERP agricole Lely. Gestion intégrée exploitations agricoles avec suivi production et équipements."
+  },
+  {
+    "title": "LOGOL",
+    "logo": "/public/logo_logiciel/logol-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Logiciel comptable classique. Gestion traditionnelle comptabilité avec fonctionnalités essentielles."
+  },
+  {
+    "title": "LOOP SOFTWARE",
+    "logo": "/public/logo_logiciel/loop-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "Solutions métiers Loop. ERP modulaire avec workflow automatisé et processus optimisés."
+  },
+  {
+    "title": "LOOMA",
+    "logo": "/public/logo_logiciel/looma-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable évolutif. Gestion financière moderne avec intelligence artificielle et mobilité."
+  },
+  {
+    "title": "MediSys",
+    "logo": "/public/logo_logiciel/medisys-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Santé",
+    "tags": "ERP hospitalier complet. Gestion administrative, médicale et financière établissements de santé."
+  },
+  {
+    "title": "Microsoft Dynamics 365",
+    "logo": "/public/logo_logiciel/microsoftdynamics365-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP/CRM Microsoft cloud. Plateforme unifiée ventes, service, finance et opérations."
+  },
+  {
+    "title": "mistral from aptean",
+    "logo": "/public/logo_logiciel/mistral-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Agriculture",
+    "tags": "ERP agricole Aptean. Gestion concessionnaires matériels agricoles et équipements construction."
+  },
+  {
+    "title": "MULTIVERS VERSION SPE",
+    "logo": "/public/logo_logiciel/multivers-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable multi-entités. Gestion consolidée groupes avec comptabilité analytique avancée."
+  },
+  {
+    "title": "Microsoft Dynamics NAV",
+    "logo": "/public/logo_logiciel/microsoftdynamicsnav-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP Microsoft PME. Solution complète finance, supply chain et production pour moyennes entreprises."
+  },
+  {
+    "title": "NET EXCOM",
+    "logo": "/public/logo_logiciel/netexcom-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité réseau PME. Gestion multi-sites avec consolidation et reporting centralisé."
+  },
+  {
+    "title": "OCÉA",
+    "logo": "/public/logo_logiciel/ocea-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable océanique. Gestion financière complète avec spécificités géographiques intégrées."
+  },
+  {
+    "title": "ONAYA",
+    "logo": "/public/logo_logiciel/onaya-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "BTP",
+    "tags": "ERP BTP métier spécialisé. Gestion intégrée chantiers, devis et facturation entreprises bâtiment."
+  },
+  {
+    "title": "OPEN COMPTA",
+    "logo": "/public/logo_logiciel/opencompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité open source. Solution libre et gratuite pour associations et petites entreprises."
+  },
+  {
+    "title": "ORACLE",
+    "logo": "/public/logo_logiciel/oracle-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP Oracle entreprise. Suite complète cloud pour grandes organisations avec IA intégrée."
+  },
+  {
+    "title": "OSIRIS",
+    "logo": "/public/logo_logiciel/osiris-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable modulaire. Gestion financière évolutive avec modules complémentaires spécialisés."
+  },
+  {
+    "title": "Prestige",
+    "logo": "/public/logo_logiciel/prestige-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité prestige haut de gamme. Solution premium avec accompagnement personnalisé inclus."
+  },
+  {
+    "title": "PRISMASOFT",
+    "logo": "/public/logo_logiciel/prismasoft-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP Prisma modulaire. Solutions métiers avec personnalisation avancée et intégrations tierces."
+  },
+  {
+    "title": "PRIOS",
+    "logo": "/public/logo_logiciel/prios-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité prioritaire PME. Gestion financière avec priorisation automatique des tâches."
+  },
+  {
+    "title": "PROGEMA",
+    "logo": "/public/logo_logiciel/progema-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP programmable PME. Plateforme adaptable avec développement sur mesure et évolutivité."
+  },
+  {
+    "title": "PROGINOV",
+    "logo": "/public/logo_logiciel/proginov-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Industrie",
+    "tags": "ERP industriel français. Gestion complète production, supply chain et maintenance pour PME industrielles."
+  },
+  {
+    "title": "Sage 1000",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP Sage grandes entreprises. Solution complète multi-sites avec consolidation et BI avancé."
+  },
+  {
+    "title": "SODECOMPTA",
+    "logo": "/public/logo_logiciel/sodecompta-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité société PME. Gestion financière simplifiée avec accompagnement formation inclus."
+  },
+  {
+    "title": "SAP Business One",
+    "logo": "/public/logo_logiciel/sapbusiness-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP SAP PME. Solution intégrée finance, ventes, achats et production pour petites/moyennes entreprises."
+  },
+  {
+    "title": "SOUBABERE",
+    "logo": "/public/logo_logiciel/soubabere-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité traditionnelle. Solution classique éprouvée pour gestion financière entreprises familiales."
+  },
+  {
+    "title": "SAP DUCATI",
+    "logo": "/public/logo_logiciel/sapducati-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Industrie",
+    "tags": "ERP SAP manufacturier. Solution spécialisée production industrielle avec MES intégré."
+  },
+  {
+    "title": "SPACEX",
+    "logo": "/public/logo_logiciel/spacex-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP spatial innovant. Gestion avancée projets complexes avec technologie de pointe intégrée."
+  },
+  {
+    "title": "STRIKE",
+    "logo": "/public/logo_logiciel/strike-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité impact PME. Gestion financière efficace avec tableaux de bord temps réel."
+  },
+  {
+    "title": "TENCO",
+    "logo": "/public/logo_logiciel/tenco-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable technique. Gestion financière avec outils d'analyse et contrôle de gestion."
+  },
+  {
+    "title": "UNIT 4 BUSINESS ",
+    "logo": "/public/logo_logiciel/unit4business-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Services",
+    "tags": "ERP Unit4 services. Solution cloud pour organisations de services avec gestion projets avancée."
+  },
+  {
+    "title": "VULCAIN",
+    "logo": "/public/logo_logiciel/vulcain-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP comptable puissant. Gestion financière robuste avec fonctionnalités avancées et sécurité renforcée."
+  },
+  {
+    "title": "WAVESOFT PRO",
+    "logo": "/public/logo_logiciel/waveSoft-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Multi-secteurs",
+    "tags": "ERP Wave professionnel. Solution modulaire avec workflow intelligent et automatisation processus."
+  },
+  {
+    "title": "WINFIC FIDUCIAL",
+    "logo": "/public/logo_logiciel/winfic-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP Fiducial complet. Suite comptable cabinet avec gestion sociale et fiscale intégrée."
+  },
+
+  {
+    "title": "WINLOGIC",
+    "logo": "/public/logo_logiciel/winlogic-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP logique Windows. Gestion comptable et commerciale intégrée avec interface Windows native."
+  },
+  {
+    "title": "WINMOTOR",
+    "logo": "/public/logo_logiciel/winmotor-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Automobile",
+    "tags": "ERP automobile Windows. Gestion concessions, garage et pièces détachées secteur automobile."
+  },
+  {
+    "title": "FINTECTURE",
+    "logo": "/public/logo_logiciel/fintecture-reprolanguedocsolutions.webp",
+    "categorie": "Autre",
+    "secteur": "Fintech",
+    "tags": "API paiement instantané. Solutions de virement immédiat et open banking pour entreprises."
+  },
+  {
+    "title": "AZURE AD",
+    "logo": "/public/logo_logiciel/azure-reprolanguedocsolutions.webp",
+    "categorie": "Autre",
+    "secteur": "Sécurité IT",
+    "tags": "Gestion identités Microsoft. Solution SSO et sécurité des accès cloud avec authentification multi-facteurs."
+  },
+  {
+    "title": "XBAT",
+    "logo": "/public/logo_logiciel/xbat-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "BTP",
+    "tags": "ERP BTP expert. Gestion complète entreprises bâtiment avec suivi chantiers et rentabilité."
+  },
+  {
+    "title": "SALESFORCE",
+    "logo": "/public/logo_logiciel/salesforce-reprolanguedocsolutions.webp",
+    "categorie": "CRM",
+    "secteur": "CRM / Relation Client",
+    "tags": "CRM cloud leader mondial. Plateforme complète ventes, marketing et service client avec IA intégrée."
+  },
+  {
+    "title": "NUMM",
+    "logo": "/public/logo_logiciel/numm-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "Comptabilité Salesforce native. Solution comptable française intégrée à l'écosystème Salesforce."
+  },
+  {
+    "title": "SAGE INTACCT",
+    "logo": "/public/logo_logiciel/sage-reprolanguedocsolutions.webp",
+    "categorie": "ERP",
+    "secteur": "Comptabilité",
+    "tags": "ERP financier cloud Sage. Gestion financière avancée pour entreprises en croissance et groupes internationaux."
+  }
+]
