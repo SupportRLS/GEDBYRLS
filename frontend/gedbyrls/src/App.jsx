@@ -10,6 +10,7 @@ import GaleriePhoto from "./pages/Galerie.jsx";
 import PaperToDigital from "./pages/PaperToDigital.jsx";
 import ElectronicSign from "./pages/ElectronicSign.jsx";
 import IntegrationLogicielsPage from "./pages/IntegrationLogiciels.jsx";
+import SecurityPage from "./pages/SecurityPage.jsx";
 import "./App.css";
 import "./index.css";
 
@@ -41,6 +42,10 @@ function App() {
       <Route
         path="/solution/integration-des-logiciels-compatibles"
         element={<IntegrationLogicielsPage />}
+      />
+      <Route
+        path="solution/securisation-rgpd-tracabilite"
+        element={<SecurityPage />}
       />
     </Routes>
   );
