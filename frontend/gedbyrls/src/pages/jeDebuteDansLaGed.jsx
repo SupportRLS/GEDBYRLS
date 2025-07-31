@@ -13,7 +13,8 @@ import "../components/style/debuteDansLaGed.css";
 import Interface from "../assets/interface_zeendoc.webp";
 import PhotoPersonne from "../assets/personne_devant_pc.webp";
 import Button from "../components/ButtonComponents";
-import ButtonContactHeader from "../components/ButtonContactHeader";
+import ButtonComponentRed from "../components/ButtonComponentsRed";
+import ButtonComponent from "../components/ButtonComponents";
 import Image3 from "../assets/imageGed.webp";
 function JeDebuteDansLaGed() {
   const items = [
@@ -60,7 +61,7 @@ function JeDebuteDansLaGed() {
     <div className="jeDebuteDansLaGed">
       <Header />
       <div className="sectionTitle">
-        <h1 className="font-bold">
+        <h1 className=" font-bold">
           Tout ce qu’il faut savoir pour comprendre et adopter la Gestion
           Électronique de Documents simplement
         </h1>
@@ -84,11 +85,14 @@ function JeDebuteDansLaGed() {
         conçue pour être simple, intuitive et efficace.
       </p>
       <div className="buttonSection">
-        <ButtonContactHeader
+        <ButtonComponentRed
           text={"Contactez-nous pour débuter"}
           href={"/contact"}
         />
-        <Button text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent
+          text={"Contactez-nous pour débuter"}
+          href={"/contact"}
+        />
       </div>
       <div className="feature-cards">
         <div className="lineOne">
@@ -131,11 +135,11 @@ function JeDebuteDansLaGed() {
         intelligent.
       </p>
       <div className="buttonSection">
-        <ButtonContactHeader
+        <ButtonComponentRed
           text={"Contactez-nous pour débuter"}
           href={"/contact"}
         />
-        <Button text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent text={"Plus de question ?"} href={"/faq"} />
       </div>
       <TextImageLeft
         title={"Pourquoi débuter la GED avec Zeendoc ?"}
@@ -154,7 +158,7 @@ function JeDebuteDansLaGed() {
       </p>
 
       <div className="SliderSection">
-        <h2>Comment fonctionne Zeendoc en pratique ?</h2>
+        <h2 className="font-bold">Comment fonctionne Zeendoc en pratique ?</h2>
         <p> Découvrez les étapes simples pour gérer vos documents.</p>
         <CardSlider items={items} />
       </div>
@@ -177,39 +181,45 @@ function JeDebuteDansLaGed() {
         un expert en informatique.
       </p>
       <div className="buttonSection">
-        <ButtonContactHeader
+        <ButtonComponentRed
           text={"Contactez-nous pour débuter"}
           href={"/contact"}
         />
-        <Button text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent text={"Plus de question ? "} href={"/faq"} />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white p-6 rounded-2xl justify-items-center">
-        <UseCaseCard
-          title={"Une formation personnalisée "}
-          description={"Adaptée à votre métier et à vos besoins"}
-          buttonText={"Découvrir la formation"}
-          href={"/formation"}
-        />
-        <UseCaseCard
-          title={"Un support technique en France"}
-          description={
-            "disponible pour vous guider pas à pas dans la prise en main de Zeendoc"
-          }
-          buttonText={"Contacter maintenant"}
-          href={"/contact"}
-        />
-        <UseCaseCard
-          title={"Des parcours d'intégration simplifiés"}
-          description={
-            "Prendre en main les fonctionnalités essentielles de Zeendoc en quelques minutes"
-          }
-          buttonText={"Commencer mon intégration"}
-          href={"/intégration"}
-        />
+      <div className="bg-white w-full py-16 mt-15">
+        <div className="max-w-[1440px] mx-auto px-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            <UseCaseCard
+              title={"Une formation personnalisée "}
+              description={
+                "Une formation, entièrement conçue pour s’adapter à vos besoins spécifiques et à votre propre rythme. "
+              }
+              buttonText={"Découvrir la formation"}
+              href={"/formation"}
+            />
+            <UseCaseCard
+              title={"Un support technique en France"}
+              description={
+                "Disponible pour vous guider pas à pas dans la prise en main de Zeendoc"
+              }
+              buttonText={"Contacter maintenant"}
+              href={"/contact"}
+            />
+            <UseCaseCard
+              title={"Des parcours d'intégration simplifiés"}
+              description={
+                "Prendre en main les fonctionnalités essentielles de Zeendoc en quelques minutes"
+              }
+              buttonText={"Commencer mon intégration"}
+              href={"/intégration"}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="sectionAvis">
-        <h2>
+        <h2 className="font-bold">
           Ils ont débuté comme vous, ils ne reviendraient en arrière pour rien
           au monde
         </h2>
@@ -235,11 +245,11 @@ function JeDebuteDansLaGed() {
         </div>
       </div>
       <div className="buttonSection">
-        <ButtonContactHeader
+        <ButtonComponentRed
           text={"Contactez-nous pour débuter"}
           href={"/contact"}
         />
-        <Button text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent text={"plus de question ? "} href={"/faq"} />
       </div>
       <div className="featureCardsStartGed">
         <FeatureCard
@@ -256,7 +266,9 @@ function JeDebuteDansLaGed() {
         />
       </div>
       <div className="sectionFaq">
-        <h2>Questions fréquentes sur la GED pour les débutants</h2>
+        <h2 className="font-bold pb-8">
+          Questions fréquentes sur la GED pour les débutants
+        </h2>
         <FaqComponents
           question={
             "Je n’ai jamais utilisé de logiciel de GED, est-ce compliqué ?"
@@ -285,12 +297,12 @@ function JeDebuteDansLaGed() {
         />
       </div>
 
-      <div className="buttonSection">
-        <ButtonContactHeader
+      <div className="buttonSection pb-8">
+        <ButtonComponentRed
           text={"Contactez-nous pour débuter"}
           href={"/contact"}
         />
-        <Button text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent text={"Plus de question ? "} href={"/faq"} />
       </div>
       <Footer />
     </div>

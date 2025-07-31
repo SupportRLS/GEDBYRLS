@@ -172,7 +172,8 @@ function HomePage() {
         {" "}
         Prêt à simplifier la gestion de vos documents ?
       </h2>
-      <div className="display-grid container mx-auto px-3 ">
+      {/* grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center justify-items-center px-6  */}
+      <div className="display-grid container mx-auto px-3 lg:grid-cols-[2fr_1fr] items-center justify-items-center">
         <div className="sectionConvesion">
           <h3>Rejoignez les milliers d'entreprises qui nous font confiance</h3>
           <p>
@@ -188,6 +189,7 @@ function HomePage() {
             <Button text="Demander une démonstration" />
           </div>
         </div>
+
         <FormHomePage />
       </div>
       <Footer />

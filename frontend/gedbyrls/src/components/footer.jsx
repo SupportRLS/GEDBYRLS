@@ -4,10 +4,13 @@ import logo from "../assets/logoRLS.webp";
 
 function Footer() {
   return (
-    <footer className=" pt-10 pb-4 px-4" style={{ backgroundColor: "#fff5e9" }}>
+    <footer
+      className=" mt-10 pt-10 pb-4 px-4"
+      style={{ backgroundColor: "#fff5e9" }}
+    >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8 border-b border-gray-700 pb-8">
         <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
-          <img src={logo} alt="Logo RLS" className="w-32 mb-3" />
+          <img src={logo} alt="Logo RLS" className="w-24 mb-3" />
           <p className="font-semibold text-center md:text-left">
             A votre service depuis plus de 40 ans
           </p>

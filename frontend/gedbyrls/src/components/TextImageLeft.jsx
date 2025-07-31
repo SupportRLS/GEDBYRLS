@@ -18,7 +18,7 @@ function TextImageLeft({ title, text, list, imageSrc, imageAlt, children }) {
         <p className="text-lg mt-4 mr-10">{text}</p>
 
         {list && list.length > 0 && (
-          <ul className="list-disc pl-2 lg:text-left text-center text-base leading-7">
+          <ul className=" pl-2 lg:text-center text-center text-base leading-7">
             {list.map((item, index) => (
               <li key={index} className="mb-3 text-lg">
                 {item}

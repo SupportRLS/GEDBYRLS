@@ -14,7 +14,7 @@ function TextImageRight({ title, text, list, imageSrc, imageAlt, children }) {
             {list.map((item, index) => (
               <li
                 key={index}
-                className="list-disc text-base lg:text-left text-center lg:pl-6"
+                className="ml-8 list-none lg:text-left text-center lg:pl-6 "
               >
                 {item}
               </li>
