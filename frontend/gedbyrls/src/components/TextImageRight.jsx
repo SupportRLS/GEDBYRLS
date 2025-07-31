@@ -4,10 +4,10 @@ function TextImageRight({ title, text, list, imageSrc, imageAlt, children }) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start px-4 lg:px-16 py-6 max-w-[1640px] mb-4 mx-auto">
       <div className="flex flex-col justify-start order-1 lg:text-left text-center">
-        <h2 className="text-2xl font-bold flex justify-center lg:justify-center pb-3.5">
+        <h2 className="text-2xl font-bold flex justify-center lg:justify-center pt-8 pb-3.5">
           {title}
         </h2>
-        <p className="mt-2">{text}</p>
+        <p className="mt-2 text-lg">{text}</p>
 
         {list && list.length > 0 && (
           <ul className="flex flex-col justify-start text-lg leading-8 mt-6 text-list">
@@ -29,11 +29,11 @@ function TextImageRight({ title, text, list, imageSrc, imageAlt, children }) {
         )}
       </div>
 
-      <div className="flex justify-center items-center pt-8 order-2 mt-5">
+      <div className="flex justify-center items-center order-2 mt-5">
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="w-full max-w-[500px] max-h-[500px] object-contain rounded-xl"
+          className="w-full max-w-[600px] max-h-[500px] object-contain rounded-xl"
         />
       </div>
     </div>

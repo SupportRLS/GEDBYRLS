@@ -11,183 +11,288 @@ import CardSlider from "../components/CardSlider";
 import "../components/iconMap";
 import "../components/style/debuteDansLaGed.css";
 import Interface from "../assets/interface_zeendoc.webp";
-import PhotoPersonne  from "../assets/personne_devant_pc.webp";
+import PhotoPersonne from "../assets/personne_devant_pc.webp";
 import Button from "../components/ButtonComponents";
 import ButtonContactHeader from "../components/ButtonContactHeader";
 import Image3 from "../assets/imageGed.webp";
 function JeDebuteDansLaGed() {
   const items = [
-    
-
-
-
-    { title: "1. Vous déposez vos documents", description: "Par glisser-déposer, Par scanner connecté, Par e-mail ou synchronisation automatique", icon: "HiOutlineUpload" },
-    { title: "2. Zeendoc les classe pour vous", description: "La plateforme reconnaît le type de document (facture, bulletin de paie, contrat...), en extrait les informations importantes (date, montant, client...) et le range dans le bon dossier.", icon: "MdAutoAwesome"},
-    { title: "3. Vous retrouvez tout en un clic", description: "Besoin de retrouver une facture EDF de janvier 2023 ? Tapez 'EDF janvier 2023' et Zeendoc la retrouve instantanément, même si c’est un PDF scanné.", icon: "FiSearch" },
-    { title: "4. Vous partagez ou signez en toute sécurité", description: "Partagez un contrat avec un collaborateur ou un client, faites-le signer électroniquement, tout en gardant une traçabilité complète.", icon: "FaSignature"},
-    { title: "5. Vos documents sont archivés légalement", description: "Zeendoc garantit l’intégrité et la conservation de vos documents selon les normes en vigueur (NF Z42-013, RGPD...).", icon: "AiOutlineLock"},
-
+    {
+      title: "1. Vous déposez vos documents",
+      description:
+        "Par glisser-déposer, Par scanner connecté, Par e-mail ou synchronisation automatique",
+      icon: "HiOutlineUpload",
+    },
+    {
+      title: "2. Zeendoc les classe pour vous",
+      description:
+        "La plateforme reconnaît le type de document (facture, bulletin de paie, contrat...), en extrait les informations importantes (date, montant, client...) et le range dans le bon dossier.",
+      icon: "MdAutoAwesome",
+    },
+    {
+      title: "3. Vous retrouvez tout en un clic",
+      description:
+        "Besoin de retrouver une facture EDF de janvier 2023 ? Tapez 'EDF janvier 2023' et Zeendoc la retrouve instantanément, même si c’est un PDF scanné.",
+      icon: "FiSearch",
+    },
+    {
+      title: "4. Vous partagez ou signez en toute sécurité",
+      description:
+        "Partagez un contrat avec un collaborateur ou un client, faites-le signer électroniquement, tout en gardant une traçabilité complète.",
+      icon: "FaSignature",
+    },
+    {
+      title: "5. Vos documents sont archivés légalement",
+      description:
+        "Zeendoc garantit l’intégrité et la conservation de vos documents selon les normes en vigueur (NF Z42-013, RGPD...).",
+      icon: "AiOutlineLock",
+    },
   ];
-    const startGed=[
-"D’une interface claire et intuitive, pensée pour les utilisateurs non techniques",
- "D’un classement automatique des documents grâce à l’intelligence embarquée",
- "D’une recherche instantanée grâce à l’OCR (reconnaissance du texte) ",
- "D’un accès sécurisé en ligne, depuis n’importe quel appareil",
- "D’un accompagnement humain avec nos formateurs et support dédié"];
+  const startGed = [
+    "D’une interface claire et intuitive, pensée pour les utilisateurs non techniques",
+    "D’un classement automatique des documents grâce à l’intelligence embarquée",
+    "D’une recherche instantanée grâce à l’OCR (reconnaissance du texte) ",
+    "D’un accès sécurisé en ligne, depuis n’importe quel appareil",
+    "D’un accompagnement humain avec nos formateurs et support dédié",
+  ];
 
- 
   return (
     <div className="jeDebuteDansLaGed">
-        <Header />
-    <div className="sectionTitle">
-
-      <h1>
-Tout ce qu’il faut savoir pour comprendre et adopter la Gestion Électronique de Documents simplement
-      </h1>
-      <TextImageRight
-  title="La GED, c’est quoi ?"
-text="La GED (Gestion Électronique de Documents) permet de stocker, classer, rechercher, partager et sécuriser tous vos documents professionnels sous format numérique. Grâce à elle, vous centralisez toutes vos informations au même endroit, accessibles en quelques clics. Fini les papiers éparpillés, les armoires surchargées, les doublons ou les pertes de documents importants. Vous gagnez du temps au quotidien, améliorez votre organisation, et répondez plus facilement aux exigences légales en matière d’archivage et de confidentialité."  
-  imageSrc={ PhotoPersonne }
-  imageAlt="Une personne devant un ordinateur, se prennant la tête avec la gestion de ses documents"
-/>
-
+      <Header />
+      <div className="sectionTitle">
+        <h1 className="font-bold">
+          Tout ce qu’il faut savoir pour comprendre et adopter la Gestion
+          Électronique de Documents simplement
+        </h1>
+        <TextImageRight
+          title="La GED, c’est quoi ?"
+          text="La GED (Gestion Électronique de Documents) permet de stocker, classer, rechercher, partager et sécuriser tous vos documents professionnels sous format numérique. Grâce à elle, vous centralisez toutes vos informations au même endroit, accessibles en quelques clics. Fini les papiers éparpillés, les armoires surchargées, les doublons ou les pertes de documents importants. Vous gagnez du temps au quotidien, améliorez votre organisation, et répondez plus facilement aux exigences légales en matière d’archivage et de confidentialité."
+          imageSrc={PhotoPersonne}
+          imageAlt="Une personne devant un ordinateur, se prennant la tête avec la gestion de ses documents"
+        />
       </div>
 
       <p>
-      La Gestion Électronique de Documents, ou GED, peut sembler complexe lorsqu’on débute. Pourtant, il s’agit d’un outil précieux pour toutes les organisations, petites ou grandes, qui souhaitent gagner du temps, sécuriser leurs documents et améliorer leur productivité.
+        La Gestion Électronique de Documents, ou GED, peut sembler complexe
+        lorsqu’on débute. Pourtant, il s’agit d’un outil précieux pour toutes
+        les organisations, petites ou grandes, qui souhaitent gagner du temps,
+        sécuriser leurs documents et améliorer leur productivité.
       </p>
       <p>
-Avec Zeendoc, la GED devient accessible à tous. Vous n’avez pas besoin d’être informaticien ou expert en dématérialisation : la solution a été conçue pour être simple, intuitive et efficace.
+        Avec Zeendoc, la GED devient accessible à tous. Vous n’avez pas besoin
+        d’être informaticien ou expert en dématérialisation : la solution a été
+        conçue pour être simple, intuitive et efficace.
       </p>
-          <div className="buttonSection">
-<ButtonContactHeader text={"Contactez-nous pour débuter"} href={"/contact"} />
-<Button text={"Plus de question ? "} href={"/faq"}/> 
-</div>
+      <div className="buttonSection">
+        <ButtonContactHeader
+          text={"Contactez-nous pour débuter"}
+          href={"/contact"}
+        />
+        <Button text={"Plus de question ? "} href={"/faq"} />
+      </div>
       <div className="feature-cards">
         <div className="lineOne">
-        <FeatureCard icon={'GrCloudComputer'} title={"Centraliser tous vos documents (factures, contrats, bulletins de paie, courriers, etc.)"} />
-        <FeatureCard icon={'FaFolderOpen'} title={"Classer automatiquement selon des règles intelligentes"}/>
-        <FeatureCard icon={'FaSearch'} title={"Rechercher en quelques secondes n’importe quel document ou information"}/>
-        </div>      
-        <div className="lineTwo"> 
-        <FeatureCard icon={'FaFileArchive'} title={"Partager de façon sécurisée avec vos équipes, clients ou partenaires"}/>
-        <FeatureCard icon={'MdVerifiedUser'} title={"Archiver en respectant les obligations légales (URSSAF, CNIL, CNCC, etc.)"}/>
+          <FeatureCard
+            icon={"GrCloudComputer"}
+            title={
+              "Centraliser tous vos documents (factures, contrats, bulletins de paie, courriers, etc.)"
+            }
+          />
+          <FeatureCard
+            icon={"FaFolderOpen"}
+            title={"Classer automatiquement selon des règles intelligentes"}
+          />
+          <FeatureCard
+            icon={"FaSearch"}
+            title={
+              "Rechercher en quelques secondes n’importe quel document ou information"
+            }
+          />
         </div>
+        <div className="lineTwo">
+          <FeatureCard
+            icon={"FaFileArchive"}
+            title={
+              "Partager de façon sécurisée avec vos équipes, clients ou partenaires"
+            }
+          />
+          <FeatureCard
+            icon={"MdVerifiedUser"}
+            title={
+              "Archiver en respectant les obligations légales (URSSAF, CNIL, CNCC, etc.)"
+            }
+          />
         </div>
-        
-<p>En résumé, la GED vous aide à remplacer les classeurs poussiéreux, les documents égarés et les processus manuels par un système numérique intelligent.</p>
-             <div className="buttonSection">
-<ButtonContactHeader text={"Contactez-nous pour débuter"} href={"/contact"} />
-<Button text={"Plus de question ? "} href={"/faq"}/> 
-</div>
-     <TextImageLeft 
-      title={"Pourquoi débuter la GED avec Zeendoc ?"}
-      text={"Parce que Zeendoc simplifie tout. Dès la première utilisation, vous profitez :"}
-      list={startGed}
-      imageSrc={Interface}
-        imageAlt={"Interface de Zeendoc, la solution GED intuitive et accessible pour les débutants"}
-      />
-      <p>Vous commencez doucement, à votre rythme, avec des outils puissants mais faciles à prendre en main.</p>
-      
-
-    <div className="SliderSection">
-      <h2>Comment fonctionne Zeendoc en pratique ?</h2>
-      <p> Découvrez les étapes simples pour gérer vos documents.</p>
-     <CardSlider
-        items={items}
-      />
       </div>
-            
-  <TextImageRight 
-  title="Les bénéfices immédiats, même pour les débutants"
-  text="Découvrez tous les avantages concrets de la GED dès la première utilisation."
-  list={[
-    "Fini les pertes de documents",
-    "Moins de papier, moins de stress",
-    "Gain de temps administratif",
-    "Collaboration facilitée",
-    "Conformité assurée"
-  ]}
-imageSrc={Image3}
-imageAlt={"Bénéfices de la GED pour les débutants"}
- 
-/>
-<p>Et surtout : vous gardez le contrôle total sur vos documents sans être un expert en informatique.</p>
-          <div className="buttonSection">
-<ButtonContactHeader text={"Contactez-nous pour débuter"} href={"/contact"} />
-<Button text={"Plus de question ? "} href={"/faq"}/> 
-</div>
-<div className="useCaseCards">
-<UseCaseCard 
-title={"Une formation personnalisée "}
-description={"Adaptée à votre métier et à vos besoins"}
-buttonText={"Découvrir la formation"}
-href={"/formation"}
-/>
-<UseCaseCard
-title={"Un support technique en France"}
-description={"disponible pour vous guider pas à pas dans la prise en main de Zeendoc"}
-buttonText={"Contacter maintenant"}
-href={"/contact"}
-/>
-<UseCaseCard
-title={"Des parcours d'intégration simplifiés"}
-description={"Prendre en main les fonctionnalités essentielles de Zeendoc en quelques minutes"}
-buttonText={"Commencer mon intégration"}
-href={"/intégration"}
-/>
-</div>
 
-<div className="sectionAvis">
-  <h2>Ils ont débuté comme vous, ils ne reviendraient en arrière pour rien au monde</h2>
-  
-  <div className="avis-wrapper">
-    <div className="displayGridAvis1">
-      <p>"Je pensais que la GED, c’était uniquement pour les grosses structures. Zeendoc m’a prouvé le contraire. En une semaine, j’avais tout centralisé !"</p>
-      <p>— Lucie, gérante d’une TPE de 4 salariés</p>
-    </div>
-    
-    <div className="displayGridAvis2">
-<p>"Enfin une solution simple à prendre en main, qui me fait vraiment gagner du temps au quotidien, même sans être expert en informatique."</p>
-      <p>– Michel, responsable administratif </p>
-    </div>
-  </div>
-</div>
-          <div className="buttonSection">
-<ButtonContactHeader text={"Contactez-nous pour débuter"} href={"/contact"} />
-<Button text={"Plus de question ? "} href={"/faq"}/> 
-</div>
-<div className="featureCardsStartGed">
-<FeatureCard icon={'GrCloudComputer'} title={"Démo gratuite et sans engagement"} />
-<FeatureCard icon={'FaFolderOpen'} title={"Formation personnalisée pour débutants"} />
-<FeatureCard icon={'FaUsers'} title={"Conseiller dédié pour vous accompagner"} />
+      <p>
+        En résumé, la GED vous aide à remplacer les classeurs poussiéreux, les
+        documents égarés et les processus manuels par un système numérique
+        intelligent.
+      </p>
+      <div className="buttonSection">
+        <ButtonContactHeader
+          text={"Contactez-nous pour débuter"}
+          href={"/contact"}
+        />
+        <Button text={"Plus de question ? "} href={"/faq"} />
+      </div>
+      <TextImageLeft
+        title={"Pourquoi débuter la GED avec Zeendoc ?"}
+        text={
+          "Parce que Zeendoc simplifie tout. Dès la première utilisation, vous profitez :"
+        }
+        list={startGed}
+        imageSrc={Interface}
+        imageAlt={
+          "Interface de Zeendoc, la solution GED intuitive et accessible pour les débutants"
+        }
+      />
+      <p>
+        Vous commencez doucement, à votre rythme, avec des outils puissants mais
+        faciles à prendre en main.
+      </p>
 
-</div>
+      <div className="SliderSection">
+        <h2>Comment fonctionne Zeendoc en pratique ?</h2>
+        <p> Découvrez les étapes simples pour gérer vos documents.</p>
+        <CardSlider items={items} />
+      </div>
+
+      <TextImageRight
+        title="Les bénéfices immédiats, même pour les débutants"
+        text="Découvrez tous les avantages concrets de la GED dès la première utilisation."
+        list={[
+          "Fini les pertes de documents",
+          "Moins de papier, moins de stress",
+          "Gain de temps administratif",
+          "Collaboration facilitée",
+          "Conformité assurée",
+        ]}
+        imageSrc={Image3}
+        imageAlt={"Bénéfices de la GED pour les débutants"}
+      />
+      <p>
+        Et surtout : vous gardez le contrôle total sur vos documents sans être
+        un expert en informatique.
+      </p>
+      <div className="buttonSection">
+        <ButtonContactHeader
+          text={"Contactez-nous pour débuter"}
+          href={"/contact"}
+        />
+        <Button text={"Plus de question ? "} href={"/faq"} />
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white p-6 rounded-2xl justify-items-center">
+        <UseCaseCard
+          title={"Une formation personnalisée "}
+          description={"Adaptée à votre métier et à vos besoins"}
+          buttonText={"Découvrir la formation"}
+          href={"/formation"}
+        />
+        <UseCaseCard
+          title={"Un support technique en France"}
+          description={
+            "disponible pour vous guider pas à pas dans la prise en main de Zeendoc"
+          }
+          buttonText={"Contacter maintenant"}
+          href={"/contact"}
+        />
+        <UseCaseCard
+          title={"Des parcours d'intégration simplifiés"}
+          description={
+            "Prendre en main les fonctionnalités essentielles de Zeendoc en quelques minutes"
+          }
+          buttonText={"Commencer mon intégration"}
+          href={"/intégration"}
+        />
+      </div>
+
+      <div className="sectionAvis">
+        <h2>
+          Ils ont débuté comme vous, ils ne reviendraient en arrière pour rien
+          au monde
+        </h2>
+
+        <div className="avis-wrapper">
+          <div className="displayGridAvis1">
+            <p>
+              "Je pensais que la GED, c’était uniquement pour les grosses
+              structures. Zeendoc m’a prouvé le contraire. En une semaine,
+              j’avais tout centralisé !"
+            </p>
+            <p>— Lucie, gérante d’une TPE de 4 salariés</p>
+          </div>
+
+          <div className="displayGridAvis2">
+            <p>
+              "Enfin une solution simple à prendre en main, qui me fait vraiment
+              gagner du temps au quotidien, même sans être expert en
+              informatique."
+            </p>
+            <p>– Michel, responsable administratif </p>
+          </div>
+        </div>
+      </div>
+      <div className="buttonSection">
+        <ButtonContactHeader
+          text={"Contactez-nous pour débuter"}
+          href={"/contact"}
+        />
+        <Button text={"Plus de question ? "} href={"/faq"} />
+      </div>
+      <div className="featureCardsStartGed">
+        <FeatureCard
+          icon={"GrCloudComputer"}
+          title={"Démo gratuite et sans engagement"}
+        />
+        <FeatureCard
+          icon={"FaFolderOpen"}
+          title={"Formation personnalisée pour débutants"}
+        />
+        <FeatureCard
+          icon={"FaUsers"}
+          title={"Conseiller dédié pour vous accompagner"}
+        />
+      </div>
       <div className="sectionFaq">
         <h2>Questions fréquentes sur la GED pour les débutants</h2>
-        <FaqComponents 
-          question={"Je n’ai jamais utilisé de logiciel de GED, est-ce compliqué ?"}
-          answer={"Non. Zeendoc a été conçu pour les débutants. Vous n’avez pas besoin de compétences techniques, l’interface est intuitive."}
+        <FaqComponents
+          question={
+            "Je n’ai jamais utilisé de logiciel de GED, est-ce compliqué ?"
+          }
+          answer={
+            "Non. Zeendoc a été conçu pour les débutants. Vous n’avez pas besoin de compétences techniques, l’interface est intuitive."
+          }
         />
-        <FaqComponents 
+        <FaqComponents
           question={"Et mes documents, sont-ils en sécurité ?"}
-          answer={"Oui. Zeendoc est hébergé en France, dans des datacenters certifiés HDS et ISO 27001, et respecte le RGPD."}
+          answer={
+            "Oui. Zeendoc est hébergé en France, dans des datacenters certifiés HDS et ISO 27001, et respecte le RGPD."
+          }
         />
-        <FaqComponents 
+        <FaqComponents
           question={"Puis-je former mes collaborateurs ?"}
-          answer={"Bien sûr. Nous proposons des formations pour les utilisateurs, en présentiel ou à distance."}
+          answer={
+            "Bien sûr. Nous proposons des formations pour les utilisateurs, en présentiel ou à distance."
+          }
         />
-         <FaqComponents 
+        <FaqComponents
           question={"Combien de temps faut-il pour se lancer ?"}
-          answer={"Quelques minutes suffisent pour démarrer. L’interface est prête à l’emploi et l’accompagnement est inclus."}
+          answer={
+            "Quelques minutes suffisent pour démarrer. L’interface est prête à l’emploi et l’accompagnement est inclus."
+          }
         />
-        </div>
+      </div>
 
-          <div className="buttonSection">
-<ButtonContactHeader text={"Contactez-nous pour débuter"} href={"/contact"} />
-<Button text={"Plus de question ? "} href={"/faq"}/> 
-</div>
-        <Footer />
+      <div className="buttonSection">
+        <ButtonContactHeader
+          text={"Contactez-nous pour débuter"}
+          href={"/contact"}
+        />
+        <Button text={"Plus de question ? "} href={"/faq"} />
+      </div>
+      <Footer />
     </div>
   );
 }

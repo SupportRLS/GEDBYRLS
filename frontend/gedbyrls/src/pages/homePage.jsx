@@ -40,10 +40,12 @@ function HomePage() {
   return (
     <>
       <Header />
-      <div className="SectionOnePage">
-        <div className="textBlock">
-          <h1>La solution GED qui simplifie votre quotidien</h1>
-          <p>
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center justify-items-center px-6 ">
+        <div className="text-center lg:text-left">
+          <h1 className="text-center sm:text-5xl font-bold mb-6">
+            La solution GED qui simplifie votre quotidien
+          </h1>
+          <p className=" text-center sm:text-lg leading-relaxed">
             Simplifiez la gestion de vos documents et boostez votre productivité
             grâce à notre solution de GED intuitive et sécurisée. Centralisez
             l'ensemble de vos fichiers, accédez-y en quelques clics, automatisez
@@ -53,7 +55,7 @@ function HomePage() {
             maintenant comment transformer votre gestion documentaire en
             véritable levier de performance.
           </p>
-          <div className="buttonSection">
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-center items-center gap-4 mt-8">
             <ButtonContactHeader />
             <Button text="Télécharger le livre blanc" />
           </div>
@@ -61,10 +63,12 @@ function HomePage() {
 
         <FormHomePage />
       </div>
-      <div className="SectionTwoPage">
-        <h2 className=" font-bold">Pourquoi choisir notre solution GED ?</h2>
+      <div className="px-6 py-12 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-10">
+          Pourquoi choisir notre solution GED ?
+        </h2>
 
-        <div className="featureCards">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard
             icon={<FaCloudUploadAlt />}
             title="Centralisation des documents"
@@ -81,7 +85,7 @@ function HomePage() {
         </div>
       </div>
       <div className="sectionThreePage">
-        <h2 className=" font-bold">
+        <h2 className=" font-bold pb-4">
           Optimisez votre efficacité et réduisez vos coûts opérationnels
         </h2>
         <p>
@@ -93,6 +97,7 @@ function HomePage() {
         </p>
       </div>
       <TextImageLeft
+        title={"Une solution GED adaptée à vos besoins"}
         list={avantagesListe}
         imageSrc="https://www.zeendoc.com/wp-content/uploads/2022/10/edition-en-ligne-office-ged.jpg"
         imageAlt={"Image de la solution GED"}
@@ -100,7 +105,7 @@ function HomePage() {
 
       <div className="SectionThreePage">
         <h2 className=" font-bold">Cas d'utilisation</h2>
-        <div className="useCaseCards">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white p-6 rounded-2xl justify-items-center">
           <UseCaseCard
             logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
             title="Gestion des factures"
