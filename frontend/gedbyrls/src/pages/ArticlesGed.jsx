@@ -1,28 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getArticles } from "../api/articles";
-
-const ArticleList = ({ articles }) => (
-  <div className="p-6 space-y-8">
-    {articles.map((article) => (
-      <div key={article.id} className="border p-4 rounded-xl shadow-sm">
-        <h2 className="text-2xl font-bold mb-2">{article.title}</h2>
-        <p className="text-gray-700 mb-2">{article.description}</p>
-
-        {article.cover?.url && (
-          <img
-            src={`http://localhost:1337${article.cover.url}`}
-            alt={article.title}
-            className="w-full max-w-md mb-4 rounded-lg"
-          />
-        )}
-
-        <p className="text-sm text-gray-500">
-          Catégorie : {article.category?.name || "Non catégorisé"}
-        </p>
-      </div>
-    ))}
-  </div>
-);
+import { Link } from "react-router-dom";
+import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
 
 const ArticlesGed = () => {
   const [articles, setArticles] = useState([]);
@@ -40,14 +20,43 @@ const ArticlesGed = () => {
       });
   }, []);
 
+  if (loading) return <p>Chargement des articles...</p>;
+
   return (
-    <div className="max-w-4xl mx-auto mt-10">
-      <h1 className="text-3xl font-bold mb-6">Articles GED</h1>
-      {loading ? (
-        <p>Chargement des articles...</p>
-      ) : (
-        <ArticleList articles={articles} />
-      )}
+    <div>
+      <Header />
+
+      <div className="max-w-6xl mx-auto px-4 py-10">
+        <h1 className="text-4xl font-bold mb-10 text-center">Articles GED</h1>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {articles.map((article) => {
+            const imageUrl = article.cover?.url
+              ? `http://localhost:1337${article.cover.url}`
+              : null;
+
+            return (
+              <div key={article.id} className="bg-white rounded-xl shadow p-4">
+                {imageUrl && (
+                  <img
+                    src={imageUrl}
+                    alt={article.title}
+                    className="w-full h-48 object-cover rounded-md mb-4"
+                  />
+                )}
+                <h2 className="text-xl font-semibold mb-2">{article.title}</h2>
+                <p className="text-gray-600 mb-4">{article.description}</p>
+                <Link
+                  to={`/solution/articles/${article.slug}`}
+                  className="text-red-600 font-medium hover:underline"
+                >
+                  Lire l’article →
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

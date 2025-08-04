@@ -11,6 +11,7 @@ import PaperToDigital from "./pages/PaperToDigital.jsx";
 import ElectronicSign from "./pages/ElectronicSign.jsx";
 import IntegrationLogicielsPage from "./pages/IntegrationLogiciels.jsx";
 import ArticlesGed from "./pages/ArticlesGed.jsx";
+import ArticleDetail from "./pages/ArticleDetail.jsx";
 import SecurityPage from "./pages/SecurityPage.jsx";
 import "./App.css";
 import "./index.css";
@@ -49,6 +50,7 @@ function App() {
         element={<SecurityPage />}
       />
       <Route path="solution/Articles" element={<ArticlesGed />} />
+      <Route path="solution/articles/:slug" element={<ArticleDetail />} />
     </Routes>
   );
 }
