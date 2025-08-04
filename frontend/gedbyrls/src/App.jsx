@@ -10,6 +10,7 @@ import GaleriePhoto from "./pages/Galerie.jsx";
 import PaperToDigital from "./pages/PaperToDigital.jsx";
 import ElectronicSign from "./pages/ElectronicSign.jsx";
 import IntegrationLogicielsPage from "./pages/IntegrationLogiciels.jsx";
+import ArticlesGed from "./pages/ArticlesGed.jsx";
 import SecurityPage from "./pages/SecurityPage.jsx";
 import "./App.css";
 import "./index.css";
@@ -47,6 +48,7 @@ function App() {
         path="solution/securisation-rgpd-tracabilite"
         element={<SecurityPage />}
       />
+      <Route path="solution/Articles" element={<ArticlesGed />} />
     </Routes>
   );
 }
