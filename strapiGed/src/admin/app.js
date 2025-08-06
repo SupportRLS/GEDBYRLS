@@ -1,7 +1,7 @@
 const config = {
   locales: [
     // 'ar',
-    // 'fr',
+    "fr",
     // 'cs',
     // 'de',
     // 'dk',
@@ -34,6 +34,8 @@ const bootstrap = (app) => {
 };
 
 export default {
-  config,
-  bootstrap,
+  config: {
+    locales: ["fr"],
+  },
+  bootstrap() {},
 };

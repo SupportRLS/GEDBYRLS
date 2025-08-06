@@ -8,7 +8,6 @@ import FeatureCard from "../components/FeatureCard";
 import ButtonContactHeader from "../components/ButtonContactHeader";
 import ButtonComponents from "../components/ButtonComponents";
 import FormHomePage from "../components/formHomePage";
-
 import {
   ArrowRightIcon,
   FileTextIcon,
@@ -422,24 +421,23 @@ const cardVariants = {
     y: 0,
     transition: {
       duration: 0.5,
-      delay: i * 0.1, // décalage progressif
+      delay: i * 0.1,
     },
   }),
 };
 
 const BenefitSection = () => {
   const benefits = [
-    "Accessibilité améliorée",
-    "Sécurité renforcée",
-    "Collaboration facilitée",
-    "Gain d'espace physique",
-    "Conformité réglementaire",
+    { title: "Accessibilité améliorée", icon: "iconeCloud" },
+    { title: "Sécurité renforcée", icon: "iconeCadenas" },
+    { title: "Collaboration facilitée", icon: "iconeFreelance" },
+    { title: "Gain d'espace physique", icon: "iconeFichierArchive" },
+    { title: "Conformité réglementaire", icon: "iconeUtilisateurVerifie" },
   ];
-
   return (
     <section className="px-4 py-16 bg-white">
       <div className="flex flex-wrap justify-center gap-6">
-        {benefits.map((title, index) => (
+        {benefits.map((benefit, index) => (
           <motion.div
             key={index}
             custom={index}
@@ -449,7 +447,7 @@ const BenefitSection = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="w-full sm:w-[48%] lg:w-[30%]"
           >
-            <FeatureCard title={title} icon={<FileTextIcon />} />
+            <FeatureCard title={benefit.title} icon={benefit.icon} />
           </motion.div>
         ))}
       </div>

@@ -12,50 +12,50 @@ import phone from "../assets/phone.svg";
 import { iconMap } from "./iconMap";
 
 const metiers = [
-  { path: "/secteur/avocat", label: "Avocats", iconKey: "GiHammerDrop" },
+  { path: "/secteur/avocat", label: "Avocats", iconKey: "iconeAvocat" },
   {
     path: "/secteur/expert-comptable",
     label: "Expert-comptable",
-    iconKey: "FaCalculator",
+    iconKey: "iconeComptable",
   },
   {
     path: "/secteur/association",
     label: "Association",
-    iconKey: "LuHeartHandshake",
+    iconKey: "iconeAssociation",
   },
-  { path: "/secteur/tpe-pme", label: "TPE-PME", iconKey: "BiSolidBusiness" },
+  { path: "/secteur/tpe-pme", label: "TPE-PME", iconKey: "iconePMETPE" },
   {
     path: "/secteur/grands-groupes",
     label: "Grands-Groupes",
-    iconKey: "IoBusiness",
+    iconKey: "iconeGrandGroupe",
   },
-  { path: "/secteur/sante", label: "Santé", iconKey: "FaHandHoldingMedical" },
+  { path: "/secteur/sante", label: "Santé", iconKey: "iconeSante" },
   {
     path: "/secteur/architectes",
     label: "Architectes",
-    iconKey: "FaHouseChimneyWindow",
+    iconKey: "iconeArchitecte",
   },
-  { path: "/secteur/btp", label: "BTP", iconKey: "FaHelmetSafety" },
+  { path: "/secteur/btp", label: "BTP", iconKey: "iconeBTP" },
   {
     path: "/secteur/secteur-public",
     label: "Secteur public",
-    iconKey: "MdOutlineMuseum",
+    iconKey: "iconeSecteurPublic",
   },
-  { path: "/secteur/finance", label: "Finance", iconKey: "GrMoney" },
+  { path: "/secteur/finance", label: "Finance", iconKey: "iconeFinance" },
   {
     path: "/secteur/commercial",
     label: "Commercial",
-    iconKey: "MdOutlineSell",
+    iconKey: "iconeCommercial",
   },
   {
     path: "/secteur/freelance-independant",
     label: "Freelance-Indépendant",
-    iconKey: "MdWork",
+    iconKey: "iconeFreelance",
   },
   {
     path: "/secteur/medico-social-associatif",
     label: "Médico-social-associatif",
-    iconKey: "FaHouseMedicalFlag",
+    iconKey: "iconeMedicoSocial",
   },
 ];
 
@@ -63,39 +63,39 @@ const solutions = [
   {
     path: "/solution/je-debute-dans-la-ged",
     label: "Je Débute dans la GED",
-    iconKey: "GiCloudDownload",
+    iconKey: "iconeDebutGED",
   },
   {
     path: "/solution/la-signature-electronique",
     label: "La Signature Électronique",
-    iconKey: "FaSignature",
+    iconKey: "iconeSignatureCheck",
   },
-  { path: "/solution/faq", label: "FAQ", iconKey: "FaFileCircleQuestion" },
+  { path: "/solution/faq", label: "FAQ", iconKey: "iconeFAQ" },
   {
     path: "/solution/integration-des-logiciels-compatibles",
     label: "Intégration des logiciels",
-    iconKey: "MdOutlineWeb",
+    iconKey: "iconeLogicielCompatible",
   },
   {
     path: "/solution/De-larchivage-papier-à-larchivage-numerique",
     label: "Du papier au numérique",
-    iconKey: "IoNewspaperOutline",
+    iconKey: "iconePapierVersGED",
   },
   {
     path: "/solution/securisation-rgpd-tracabilite",
     label: "Sécurisation | RGPD | Traçabilité",
-    iconKey: "MdSecurity",
+    iconKey: "iconeRGPD",
   },
-  { path: "/solution/Articles", label: "Articles", iconKey: "PiArticleThin" },
+  { path: "/solution/Articles", label: "Articles", iconKey: "iconeArticles" },
   {
     path: "/solution/fonctionnalites",
     label: "Fonctionnalités",
-    iconKey: "RiFunctionLine",
+    iconKey: "iconeFonctionnalites",
   },
   {
     path: "/solution/galerie",
     label: "Galerie",
-    iconKey: "MdOutlineAddAPhoto",
+    iconKey: "iconeGalerie",
   },
 ];
 

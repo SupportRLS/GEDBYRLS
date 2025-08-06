@@ -22,31 +22,31 @@ function JeDebuteDansLaGed() {
       title: "1. Vous déposez vos documents",
       description:
         "Par glisser-déposer, Par scanner connecté, Par e-mail ou synchronisation automatique",
-      icon: "HiOutlineUpload",
+      icon: "iconeUpload",
     },
     {
       title: "2. Zeendoc les classe pour vous",
       description:
         "La plateforme reconnaît le type de document (facture, bulletin de paie, contrat...), en extrait les informations importantes (date, montant, client...) et le range dans le bon dossier.",
-      icon: "MdAutoAwesome",
+      icon: "iconeMagie",
     },
     {
       title: "3. Vous retrouvez tout en un clic",
       description:
         "Besoin de retrouver une facture EDF de janvier 2023 ? Tapez 'EDF janvier 2023' et Zeendoc la retrouve instantanément, même si c’est un PDF scanné.",
-      icon: "FiSearch",
+      icon: "FiSiconeRechercheearch",
     },
     {
       title: "4. Vous partagez ou signez en toute sécurité",
       description:
         "Partagez un contrat avec un collaborateur ou un client, faites-le signer électroniquement, tout en gardant une traçabilité complète.",
-      icon: "FaSignature",
+      icon: "iconeRecherche",
     },
     {
       title: "5. Vos documents sont archivés légalement",
       description:
         "Zeendoc garantit l’intégrité et la conservation de vos documents selon les normes en vigueur (NF Z42-013, RGPD...).",
-      icon: "AiOutlineLock",
+      icon: "iconeCadenas",
     },
   ];
   const startGed = [
@@ -97,17 +97,17 @@ function JeDebuteDansLaGed() {
       <div className="feature-cards">
         <div className="lineOne">
           <FeatureCard
-            icon={"GrCloudComputer"}
+            icon={"iconeCloud"}
             title={
               "Centraliser tous vos documents (factures, contrats, bulletins de paie, courriers, etc.)"
             }
           />
           <FeatureCard
-            icon={"FaFolderOpen"}
+            icon={"iconeDossier"}
             title={"Classer automatiquement selon des règles intelligentes"}
           />
           <FeatureCard
-            icon={"FaSearch"}
+            icon={"iconeRechercheAlt"}
             title={
               "Rechercher en quelques secondes n’importe quel document ou information"
             }
@@ -115,13 +115,13 @@ function JeDebuteDansLaGed() {
         </div>
         <div className="lineTwo">
           <FeatureCard
-            icon={"FaFileArchive"}
+            icon={"iconeFichierArchive"}
             title={
               "Partager de façon sécurisée avec vos équipes, clients ou partenaires"
             }
           />
           <FeatureCard
-            icon={"MdVerifiedUser"}
+            icon={"iconeUtilisateurVerifie"}
             title={
               "Archiver en respectant les obligations légales (URSSAF, CNIL, CNCC, etc.)"
             }
@@ -253,15 +253,15 @@ function JeDebuteDansLaGed() {
       </div>
       <div className="featureCardsStartGed">
         <FeatureCard
-          icon={"GrCloudComputer"}
+          icon={"iconeCloud"}
           title={"Démo gratuite et sans engagement"}
         />
         <FeatureCard
-          icon={"FaFolderOpen"}
+          icon={"iconeDossier"}
           title={"Formation personnalisée pour débutants"}
         />
         <FeatureCard
-          icon={"FaUsers"}
+          icon={"iconeUtilisateur"}
           title={"Conseiller dédié pour vous accompagner"}
         />
       </div>

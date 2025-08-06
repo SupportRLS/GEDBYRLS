@@ -2,7 +2,7 @@ import React from "react";
 import "../components/style/faqComponents.css";
 import { iconMap } from "../components/iconMap";
 
-const { FaAngleDown } = iconMap;
+const { iconeFlecheBas: IconeFlecheBas } = iconMap;
 
 function FaqComponents({ question, answer }) {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,7 +11,7 @@ function FaqComponents({ question, answer }) {
     <div className="faq-component py-2 m-auto mt-1">
       <h3 className="faq-question" onClick={() => setIsOpen(!isOpen)}>
         <span>{question}</span>
-        <FaAngleDown className={`faq-icon ${isOpen ? "open" : ""}`} />
+        <IconeFlecheBas className={`faq-icon ${isOpen ? "open" : ""}`} />
       </h3>
       <div
         className={`faq-answer-wrapper ${isOpen ? "open" : ""}`}

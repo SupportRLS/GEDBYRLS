@@ -20,7 +20,7 @@ const ArticlesGed = () => {
       });
   }, []);
 
-  if (loading) return <p>Chargement des articles...</p>;
+  if (loading) return <div className="loader"></div>;
 
   return (
     <div>
@@ -62,3 +62,4 @@ const ArticlesGed = () => {
 };
 
 export default ArticlesGed;
+/* HTML:  */
