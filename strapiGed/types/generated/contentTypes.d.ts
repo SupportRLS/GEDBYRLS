@@ -447,6 +447,64 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCasClientCasClient extends Struct.CollectionTypeSchema {
+  collectionName: 'cas_clients';
+  info: {
+    displayName: 'cas-clients';
+    pluralName: 'cas-clients';
+    singularName: 'cas-client';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    lead_cas_clients: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::lead-cas-client.lead-cas-client'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cas-client.cas-client'
+    > &
+      Schema.Attribute.Private;
+    PDF: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
+    Secteur: Schema.Attribute.Enumeration<
+      [
+        'avocat',
+        'notaire',
+        'industrie',
+        'comptable',
+        'association',
+        'tpe-pme',
+        'grands-groupes',
+        'sant\u00E9',
+        'architecte',
+        'btp',
+        'secteur public',
+        'finance',
+        'commercial',
+        'freelance',
+        'm\u00E9dical',
+        'distribution',
+        'immobilier',
+        'portuaire',
+        'reglementation',
+        'logistique',
+      ]
+    >;
+    slug: Schema.Attribute.UID;
+    Titre: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   collectionName: 'categories';
   info: {
@@ -505,6 +563,46 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiLeadCasClientLeadCasClient
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'lead_cas_clients';
+  info: {
+    displayName: 'lead-cas-client';
+    pluralName: 'lead-cas-clients';
+    singularName: 'lead-cas-client';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    cas_clients: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::cas-client.cas-client'
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date_demande: Schema.Attribute.DateTime;
+    email: Schema.Attribute.Email;
+    entreprise: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::lead-cas-client.lead-cas-client'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    nom: Schema.Attribute.String;
+    prenom: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    telephone: Schema.Attribute.String;
+    traitement_demande: Schema.Attribute.Boolean;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1022,8 +1120,10 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
       'api::article.article': ApiArticleArticle;
+      'api::cas-client.cas-client': ApiCasClientCasClient;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::lead-cas-client.lead-cas-client': ApiLeadCasClientLeadCasClient;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

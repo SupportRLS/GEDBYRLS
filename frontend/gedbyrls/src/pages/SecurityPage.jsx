@@ -67,7 +67,7 @@ const SecurityPage = () => {
 
       {/* Section 1 */}
       <motion.div
-        style={{ backgroundColor: "#EBE2D4" }}
+        style={{ backgroundColor: "#fff5e9 " }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
@@ -117,7 +117,7 @@ Zeendoc respecte ainsi les principes fondamentaux du RGPD, tels que la minimisat
 
       {/* Section traçabilité */}
       <motion.div
-        style={{ backgroundColor: "#EBE2D4" }}
+        style={{ backgroundColor: "#fff5e9" }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

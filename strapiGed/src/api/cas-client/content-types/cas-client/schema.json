@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cas_clients",
+  "info": {
+    "singularName": "cas-client",
+    "pluralName": "cas-clients",
+    "displayName": "cas-clients"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Secteur": {
+      "type": "enumeration",
+      "enum": [
+        "avocat",
+        "notaire",
+        "industrie",
+        "comptable",
+        "association",
+        "tpe-pme",
+        "grands-groupes",
+        "santé",
+        "architecte",
+        "btp",
+        "secteur public",
+        "finance",
+        "commercial",
+        "freelance",
+        "médical",
+        "distribution",
+        "immobilier",
+        "portuaire",
+        "reglementation",
+        "logistique"
+      ]
+    },
+    "PDF": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "lead_cas_clients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lead-cas-client.lead-cas-client",
+      "mappedBy": "cas_clients"
+    }
+  }
+}

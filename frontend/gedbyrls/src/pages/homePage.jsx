@@ -28,6 +28,7 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import LogoRLS from "../assets/logoRLS.webp";
+import ImageAccueil from "../assets/infographieFonctionnalités.png";
 
 function HomePage() {
   const avantagesListe = [
@@ -99,36 +100,38 @@ function HomePage() {
       <TextImageLeft
         title={"Une solution GED adaptée à vos besoins"}
         list={avantagesListe}
-        imageSrc="https://www.zeendoc.com/wp-content/uploads/2022/10/edition-en-ligne-office-ged.jpg"
+        imageSrc={ImageAccueil}
         imageAlt={"Image de la solution GED"}
       />
 
-      <div className="SectionThreePage">
+      <div className="bg-white w-full py-16 mt-15">
         <h2 className=" font-bold">Cas d'utilisation</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-white p-6 rounded-2xl justify-items-center">
-          <UseCaseCard
-            logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
-            title="Gestion des factures"
-            description="Centralisez et automatisez le traitement de vos factures fournisseurs."
-            buttonText="Solution Comptable"
-            href="/secteur/expert-comptable"
-          />
+        <div className="max-w-[1440px] mt-5 mx-auto px-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+            <UseCaseCard
+              logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
+              title="Gestion des factures"
+              description="Centralisez et automatisez le traitement de vos factures fournisseurs."
+              buttonText="Solution Comptable"
+              href="/secteur/expert-comptable"
+            />
 
-          <UseCaseCard
-            className="useCaseCardMiddle"
-            logo={<img src={LogoRLS} alt="Logo Use Case 2" />}
-            title="Archivage des contrats"
-            description="Assurez la conformité et la traçabilité de vos contrats en un clic."
-            buttonText="Solution PME"
-            href="/secteur/tpe-pme"
-          />
-          <UseCaseCard
-            logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
-            title="Gestion des ressources humaines"
-            description="Simplifiez la gestion des dossiers du personnel et des documents RH."
-            buttonText="Solution RH"
-            href="/secteur/grands-groupes"
-          />
+            <UseCaseCard
+              className="useCaseCardMiddle"
+              logo={<img src={LogoRLS} alt="Logo Use Case 2" />}
+              title="Archivage des contrats"
+              description="Assurez la conformité et la traçabilité de vos contrats en un clic."
+              buttonText="Solution PME"
+              href="/secteur/tpe-pme"
+            />
+            <UseCaseCard
+              logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
+              title="Gestion des ressources humaines"
+              description="Simplifiez la gestion des dossiers du personnel et des documents RH."
+              buttonText="Solution RH"
+              href="/secteur/grands-groupes"
+            />
+          </div>
         </div>
       </div>
       <div className="SectionFourPage">

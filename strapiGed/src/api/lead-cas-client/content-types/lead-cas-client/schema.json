@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lead_cas_clients",
+  "info": {
+    "singularName": "lead-cas-client",
+    "pluralName": "lead-cas-clients",
+    "displayName": "lead-cas-client"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prenom": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "entreprise": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "cas_clients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cas-client.cas-client",
+      "inversedBy": "lead_cas_clients"
+    },
+    "date_demande": {
+      "type": "datetime",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": ""
+            },
+            ""
+          ]
+        }
+      }
+    },
+    "traitement_demande": {
+      "type": "boolean"
+    }
+  }
+}
