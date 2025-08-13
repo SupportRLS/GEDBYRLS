@@ -220,6 +220,7 @@ function Header() {
 
             <NavLink to="/formation">Formation</NavLink>
             <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/ressources">Ressources </NavLink>
           </div>
         </div>
 

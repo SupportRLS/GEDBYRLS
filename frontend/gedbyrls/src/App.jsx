@@ -13,6 +13,11 @@ import IntegrationLogicielsPage from "./pages/IntegrationLogiciels.jsx";
 import ArticlesGed from "./pages/ArticlesGed.jsx";
 import ArticleDetail from "./pages/ArticleDetail.jsx";
 import SecurityPage from "./pages/SecurityPage.jsx";
+
+//ressources
+import PageRessources from "./pages/PageRessources.jsx";
+import FormCasClient from "./pages/FormCasClient.jsx";
+
 import "./App.css";
 import "./index.css";
 
@@ -51,6 +56,10 @@ function App() {
       />
       <Route path="solution/Articles" element={<ArticlesGed />} />
       <Route path="solution/articles/:slug" element={<ArticleDetail />} />
+
+      {/* Ressources  */}
+      <Route path="/ressources" element={<PageRessources />} />
+      <Route path="/ressources/form-cas-client" element={<FormCasClient />} />
     </Routes>
   );
 }
