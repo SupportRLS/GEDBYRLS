@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = ({ strapi }) => ({
-  async sendInternalNotification(data, documents = []) {
+  async sendInternalNotification(data, documents = [], leadId = null) {
     try {
       if (!process.env.SUPPORT_EMAIL) {
         strapi.log.warn(
@@ -19,6 +19,7 @@ module.exports = ({ strapi }) => ({
       const text = `
 Nouvelle demande de cas client.
 
+ID Lead : ${leadId || "Non défini"}
 Nom : ${data.fullName || `${data.prenom || ""} ${data.nom || ""}`}
 Email : ${data.email || "Non renseigné"}
 Entreprise : ${data.entreprise || "Non renseignée"}
@@ -29,6 +30,8 @@ Message : ${data.message || "Aucun message"}
 
 Documents demandés :
 ${docsText}
+
+Date de demande : ${new Date().toLocaleString("fr-FR")}
       `;
 
       await strapi
@@ -37,14 +40,14 @@ ${docsText}
         .send({
           to: process.env.SUPPORT_EMAIL,
           from: process.env.SMTP_DEFAULT_FROM,
-          subject: `📩 Nouvelle demande de cas client — ${data.fullName || data.email}`,
+          subject: `📩 Nouvelle demande de cas client — ${data.fullName || data.email} (ID: ${leadId})`,
           text,
         });
 
-      strapi.log.info("Notification interne envoyée.");
+      strapi.log.info("✅ Notification interne envoyée.");
       return true;
     } catch (err) {
-      strapi.log.error("Erreur sendInternalNotification:", err);
+      strapi.log.error("❌ Erreur sendInternalNotification:", err);
       throw err;
     }
   },
@@ -122,10 +125,10 @@ ${docsText}
         attachments,
       });
 
-      strapi.log.info(`Email client envoyé à ${data.email}`);
+      strapi.log.info(`✅ Email client envoyé à ${data.email}`);
       return true;
     } catch (err) {
-      strapi.log.error("Erreur sendClientWithDocuments:", err);
+      strapi.log.error("❌ Erreur sendClientWithDocuments:", err);
       throw err;
     }
   },

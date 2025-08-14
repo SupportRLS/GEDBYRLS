@@ -8,13 +8,28 @@ function FormCasClient() {
   const [casClients, setCasClients] = useState([]);
   const [loadingClients, setLoadingClients] = useState(true);
   const [captchaToken, setCaptchaToken] = useState(null);
+  const [notification, setNotification] = useState({
+    show: false,
+    type: "",
+    message: "",
+  });
   const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
   const apiUrl = import.meta.env.VITE_API_URL;
+
+  // Fonction pour afficher les notifications
+  const showNotification = (type, message) => {
+    setNotification({ show: true, type, message });
+    setTimeout(() => {
+      setNotification({ show: false, type: "", message: "" });
+    }, 5000);
+  };
 
   useEffect(() => {
     const fetchCasClients = async () => {
       try {
-        const response = await fetch(`${apiUrl}/api/cas-clients`);
+        const response = await fetch(
+          `${apiUrl}/api/cas-clients?pagination[pageSize]=1000`
+        );
         const json = await response.json();
         setCasClients(json.data || []);
       } catch (error) {
@@ -30,7 +45,7 @@ function FormCasClient() {
     e.preventDefault();
 
     if (!captchaToken) {
-      alert("Merci de valider le captcha.");
+      showNotification("error", "Merci de valider le captcha.");
       return;
     }
 
@@ -45,19 +60,19 @@ function FormCasClient() {
     const documentKey = e.target.documentKey.value;
 
     if (!prenom) {
-      alert("Veuillez saisir votre prénom.");
+      showNotification("error", "Veuillez saisir votre prénom.");
       return;
     }
     if (!nom) {
-      alert("Veuillez saisir votre nom.");
+      showNotification("error", "Veuillez saisir votre nom.");
       return;
     }
     if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      alert("Veuillez saisir un email valide.");
+      showNotification("error", "Veuillez saisir un email valide.");
       return;
     }
     if (!documentKey) {
-      alert("Veuillez sélectionner un cas client.");
+      showNotification("error", "Veuillez sélectionner un cas client.");
       return;
     }
 
@@ -91,12 +106,18 @@ function FormCasClient() {
       }
 
       const data = await response.json();
-      alert(data.message || "✅ Votre demande a été envoyée avec succès !");
+      showNotification(
+        "success",
+        data.message || "✅ Votre demande a été envoyée avec succès !"
+      );
       e.target.reset();
       setCaptchaToken(null);
     } catch (error) {
       console.error("Erreur lors de l'envoi:", error);
-      alert(`❌ Une erreur est survenue : ${error.message}`);
+      showNotification(
+        "error",
+        `❌ Une erreur est survenue : ${error.message}`
+      );
     } finally {
       setLoading(false);
     }
@@ -106,9 +127,67 @@ function FormCasClient() {
     <div className="PageFormCasClient">
       <Header />
 
+      {/* Notification stylisée */}
+      {notification.show && (
+        <div
+          className={`fixed top-4 right-4 z-50 max-w-md p-4 rounded-lg shadow-lg transition-all duration-300 ${
+            notification.type === "success"
+              ? "bg-green-600 text-white"
+              : "bg-red-600 text-white"
+          }`}
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              {notification.type === "success" ? (
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="w-5 h-5 mr-2"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              )}
+              <span className="text-sm font-medium">
+                {notification.message}
+              </span>
+            </div>
+            <button
+              onClick={() =>
+                setNotification({ show: false, type: "", message: "" })
+              }
+              className="ml-2 text-white hover:text-gray-200"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+
       <form
         onSubmit={handleSubmit}
-        className="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6  mt-10 mb-10 space-y-4"
+        className="max-w-lg mx-auto bg-white shadow-md rounded-lg p-6 mt-20 space-y-4"
       >
         <h2 className="text-2xl font-semibold text-gray-800">
           Demande de cas client

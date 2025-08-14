@@ -15,7 +15,7 @@ import ArticleDetail from "./pages/ArticleDetail.jsx";
 import SecurityPage from "./pages/SecurityPage.jsx";
 
 //ressources
-import PageRessources from "./pages/PageRessources.jsx";
+import PageRessources from "./pages/Ressources.jsx";
 import FormCasClient from "./pages/FormCasClient.jsx";
 
 import "./App.css";

@@ -52,6 +52,16 @@
     "slug": {
       "type": "uid"
     },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "lead_cas_clients": {
       "type": "relation",
       "relation": "manyToMany",

@@ -47,16 +47,39 @@ module.exports = {
         },
       ];
 
+      // Sauvegarde du lead dans la collection lead-cas-client
+      const leadData = {
+        prenom: formData.prenom,
+        nom: formData.nom,
+        email: formData.email,
+        entreprise: formData.entreprise,
+        telephone: formData.telephone,
+        message: formData.message,
+        cas_clients: [formData.documentKey], // Relation avec le cas client demandé
+        date_demande: new Date(),
+        traitement_demande: false,
+      };
+
+      const savedLead = await strapi.entityService.create(
+        "api::lead-cas-client.lead-cas-client",
+        {
+          data: leadData,
+          populate: ["cas_clients"],
+        }
+      );
+
+      strapi.log.info(`✅ Lead sauvegardé avec l'ID: ${savedLead.id}`);
+
       // Utilisation du service email-service pour l'envoi client
       await strapi
         .service("api::email-service.email-service")
         .sendClientWithDocuments(formData, documents);
 
-      // Envoi de la notification interne
+      // Envoi de la notification interne (optionnel)
       try {
         await strapi
           .service("api::email-service.email-service")
-          .sendInternalNotification(formData, documents);
+          .sendInternalNotification(formData, documents, savedLead.id);
       } catch (notificationError) {
         strapi.log.warn(
           "Échec de l'envoi de la notification interne:",
@@ -68,7 +91,8 @@ module.exports = {
       return ctx.send({
         success: true,
         message:
-          "Votre demande a été envoyée avec succès ! Vous allez recevoir le document par email.",
+          "✅ Votre demande a été envoyée avec succès ! Vous allez recevoir le document par email.",
+        leadId: savedLead.id,
       });
     } catch (err) {
       strapi.log.error("Erreur dans email-service.create:", err);

@@ -461,6 +461,7 @@ export interface ApiCasClientCasClient extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     lead_cas_clients: Schema.Attribute.Relation<
       'manyToMany',
       'api::lead-cas-client.lead-cas-client'
