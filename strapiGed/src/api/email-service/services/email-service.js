@@ -3,7 +3,12 @@ const fs = require("fs");
 const path = require("path");
 
 module.exports = ({ strapi }) => ({
-  async sendInternalNotification(data, documents = [], leadId = null) {
+  async sendInternalNotification(
+    data,
+    documents = [],
+    leadId = null,
+    documentType = "cas-client"
+  ) {
     try {
       if (!process.env.SUPPORT_EMAIL) {
         strapi.log.warn(
@@ -16,8 +21,11 @@ module.exports = ({ strapi }) => ({
         ? documents.map((d, i) => `${i + 1}. ${d.titre} — ${d.url}`).join("\n")
         : "Aucun document trouvé";
 
+      const documentTypeName =
+        documentType === "cas-client" ? "cas client" : "livre blanc";
+
       const text = `
-Nouvelle demande de cas client.
+Nouvelle demande de ${documentTypeName}.
 
 ID Lead : ${leadId || "Non défini"}
 Nom : ${data.fullName || `${data.prenom || ""} ${data.nom || ""}`}
@@ -40,7 +48,7 @@ Date de demande : ${new Date().toLocaleString("fr-FR")}
         .send({
           to: process.env.SUPPORT_EMAIL,
           from: process.env.SMTP_DEFAULT_FROM,
-          subject: `📩 Nouvelle demande de cas client — ${data.fullName || data.email} (ID: ${leadId})`,
+          subject: `📩 Nouvelle demande de ${documentTypeName} — ${data.fullName || data.email} (ID: ${leadId})`,
           text,
         });
 
@@ -52,12 +60,21 @@ Date de demande : ${new Date().toLocaleString("fr-FR")}
     }
   },
 
-  async sendClientWithDocuments(data, documents = []) {
+  async sendClientWithDocuments(
+    data,
+    documents = [],
+    documentType = "cas-client"
+  ) {
     try {
       if (!data.email) {
         strapi.log.warn("Aucun email client fourni, envoi ignoré.");
         return false;
       }
+
+      const documentTypeName =
+        documentType === "cas-client" ? "cas client" : "livre blanc";
+      const documentTypeNamePlural =
+        documentType === "cas-client" ? "cas clients" : "livres blancs";
 
       const docsHtml = documents.length
         ? `<ul>${documents
@@ -105,17 +122,29 @@ Date de demande : ${new Date().toLocaleString("fr-FR")}
         })
         .filter(Boolean);
 
+      // Contenu de l'email adapté selon le type de document
+      let greeting, content;
+      if (documentType === "livre-blanc") {
+        greeting = `Bonjour ${escapeHtml(data.prenom || data.nom || data.fullName || "")},`;
+        content = `<p>Merci pour votre intérêt pour nos livres blancs. Voici le document que vous avez demandé :</p>`;
+      } else {
+        greeting = `Bonjour ${escapeHtml(data.prenom || data.nom || data.fullName || "")},`;
+        content = `<p>Merci pour votre demande. Voici les documents demandés :</p>`;
+      }
+
       const html = `
-        <p>Bonjour ${escapeHtml(data.prenom || data.nom || data.fullName || "")},</p>
-        <p>Merci pour votre demande. Voici les documents demandés :</p>
+        ${greeting}
+        ${content}
         ${docsHtml}
-        <p>Bonne lecture,<br>L'équipe ReproLanguedoc</p>
+        <p>Bonne lecture,<br>L'équipe Repro Languedoc Solutions</p>
       `;
 
       const subject =
         documents.length === 1
-          ? `Votre cas client : ${documents[0].titre}`
-          : `Vos cas clients demandés`;
+          ? documentType === "livre-blanc"
+            ? `Votre livre blanc : ${documents[0].titre}`
+            : `Votre cas client : ${documents[0].titre}`
+          : `Vos ${documentTypeNamePlural} demandés`;
 
       await strapi.plugin("email").service("email").send({
         to: data.email,
@@ -125,7 +154,9 @@ Date de demande : ${new Date().toLocaleString("fr-FR")}
         attachments,
       });
 
-      strapi.log.info(`✅ Email client envoyé à ${data.email}`);
+      strapi.log.info(
+        `✅ Email client envoyé à ${data.email} pour ${documentTypeName}`
+      );
       return true;
     } catch (err) {
       strapi.log.error("❌ Erreur sendClientWithDocuments:", err);

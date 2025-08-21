@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "livre_blancs",
+  "info": {
+    "singularName": "livre-blanc",
+    "pluralName": "livre-blancs",
+    "displayName": "livre-blanc"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Titre"
+    },
+    "PDF": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "lead_livre_blancs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lead-livre-blanc.lead-livre-blanc",
+      "mappedBy": "livre_blancs"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lead_livre_blancs",
+  "info": {
+    "singularName": "lead-livre-blanc",
+    "pluralName": "lead-livre-blancs",
+    "displayName": "lead-livre-blanc"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prenom": {
+      "type": "string"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "entreprise": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "date_demande": {
+      "type": "datetime"
+    },
+    "traitement_demande": {
+      "type": "boolean"
+    },
+    "livre_blancs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::livre-blanc.livre-blanc",
+      "inversedBy": "lead_livre_blancs"
+    }
+  }
+}

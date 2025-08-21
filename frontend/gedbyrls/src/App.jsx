@@ -15,8 +15,10 @@ import ArticleDetail from "./pages/ArticleDetail.jsx";
 import SecurityPage from "./pages/SecurityPage.jsx";
 
 //ressources
-import PageRessources from "./pages/Ressources.jsx";
+import PageCasClient from "./pages/PageCasClient.jsx";
 import FormCasClient from "./pages/FormCasClient.jsx";
+import PageLivreBlanc from "./pages/PageLivreBlanc.jsx";
+import FormLivreBlanc from "./pages/FormLivreBlanc.jsx";
 
 import "./App.css";
 import "./index.css";
@@ -30,13 +32,12 @@ function App() {
 
       {/* Dynamic route for secteur pages */}
       <Route path="/secteur/:slug" element={<SecteurPage />} />
-      {/* <Route path="//solution/Articles" element={< />} /> */}
+      {/* <Route path="/solution/Articles" element={< />} /> */}
       {/* <Route path="/solution/integration-des-logiciels-compatibles" element={< />} /> */}
       <Route
         path="/solution/je-debute-dans-la-ged"
         element={<JeDebuteDansLaGed />}
       />
-      <Route path="/solution/faq" element={<Faq />} />
       <Route path="/solution/galerie" element={<GaleriePhoto />} />
       <Route
         path="/solution/la-signature-electronique"
@@ -58,8 +59,11 @@ function App() {
       <Route path="solution/articles/:slug" element={<ArticleDetail />} />
 
       {/* Ressources  */}
-      <Route path="/ressources" element={<PageRessources />} />
+      <Route path="/ressources/faq" element={<Faq />} />
+      <Route path="/ressources/cas-client" element={<PageCasClient />} />
       <Route path="/ressources/form-cas-client" element={<FormCasClient />} />
+      <Route path="/ressources/livre-blanc" element={<PageLivreBlanc />} />
+      <Route path="/ressources/form-livre-blanc" element={<FormLivreBlanc />} />
     </Routes>
   );
 }

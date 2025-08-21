@@ -610,6 +610,82 @@ export interface ApiLeadCasClientLeadCasClient
   };
 }
 
+export interface ApiLeadLivreBlancLeadLivreBlanc
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'lead_livre_blancs';
+  info: {
+    displayName: 'lead-livre-blanc';
+    pluralName: 'lead-livre-blancs';
+    singularName: 'lead-livre-blanc';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date_demande: Schema.Attribute.DateTime;
+    email: Schema.Attribute.Email;
+    entreprise: Schema.Attribute.String;
+    livre_blancs: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::livre-blanc.livre-blanc'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::lead-livre-blanc.lead-livre-blanc'
+    > &
+      Schema.Attribute.Private;
+    message: Schema.Attribute.Text;
+    nom: Schema.Attribute.String;
+    prenom: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    telephone: Schema.Attribute.String;
+    traitement_demande: Schema.Attribute.Boolean;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiLivreBlancLivreBlanc extends Struct.CollectionTypeSchema {
+  collectionName: 'livre_blancs';
+  info: {
+    displayName: 'livre-blanc';
+    pluralName: 'livre-blancs';
+    singularName: 'livre-blanc';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    lead_livre_blancs: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::lead-livre-blanc.lead-livre-blanc'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::livre-blanc.livre-blanc'
+    > &
+      Schema.Attribute.Private;
+    PDF: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'Titre'>;
+    Titre: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1125,6 +1201,8 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
       'api::lead-cas-client.lead-cas-client': ApiLeadCasClientLeadCasClient;
+      'api::lead-livre-blanc.lead-livre-blanc': ApiLeadLivreBlancLeadLivreBlanc;
+      'api::livre-blanc.livre-blanc': ApiLivreBlancLivreBlanc;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

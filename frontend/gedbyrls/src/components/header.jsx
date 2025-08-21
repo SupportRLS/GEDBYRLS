@@ -70,7 +70,7 @@ const solutions = [
     label: "La Signature Électronique",
     iconKey: "iconeSignatureCheck",
   },
-  { path: "/solution/faq", label: "FAQ", iconKey: "iconeFAQ" },
+
   {
     path: "/solution/integration-des-logiciels-compatibles",
     label: "Intégration des logiciels",
@@ -98,6 +98,19 @@ const solutions = [
     iconKey: "iconeGalerie",
   },
 ];
+const ressources = [
+  {
+    path: "/ressources/cas-client",
+    label: "Cas client",
+    icone: "iconeFonctionnalites",
+  },
+  {
+    path: "/ressources/livre-blanc",
+    label: "Livre Blanc",
+    icone: "iconeFonctionnalites",
+  },
+  { path: "/ressources/faq", label: "FAQ", iconKey: "iconeFAQ" },
+];
 
 function Header() {
   const [openSolutions, setOpenSolutions] = useState(false);
@@ -106,10 +119,14 @@ function Header() {
   const [openMetiers, setOpenMetiers] = useState(false);
   const [isActiveMetiers, setIsActiveMetiers] = useState(false);
 
+  const [openRessources, setOpenRessources] = useState(false);
+  const [isActiveRessources, setIsActiveRessources] = useState(false);
+
   const [isBurgerOpen, setBurgerOpen] = useState(false);
   // Refs pour détecter les clics hors menu
   const solutionsRef = useRef(null);
   const metiersRef = useRef(null);
+  const ressourcesRef = useRef(null);
 
   const toggleBurger = () => {
     setBurgerOpen(!isBurgerOpen);
@@ -123,7 +140,10 @@ function Header() {
     setOpenMetiers((prev) => !prev);
     setIsActiveMetiers((prev) => !prev);
   };
-
+  const toggleRessources = () => {
+    setOpenRessources((prev) => !prev);
+    setIsActiveRessources((prev) => !prev);
+  };
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -136,6 +156,13 @@ function Header() {
       if (metiersRef.current && !metiersRef.current.contains(event.target)) {
         setOpenMetiers(false);
         setIsActiveMetiers(false);
+      }
+      if (
+        ressourcesRef.current &&
+        !ressourcesRef.current.contains(event.target)
+      ) {
+        setOpenRessources(false);
+        setIsActiveRessources(false);
       }
     };
 
@@ -217,10 +244,34 @@ function Header() {
                 </ul>
               )}
             </div>
+            {/* Dropdown Ressources */}
+            <div className="Dropdown" ref={ressourcesRef}>
+              <div onClick={toggleRessources}>
+                Ressources
+                <img
+                  src={arrow}
+                  className={`Arrow rotate180 ${
+                    isActiveRessources ? "active" : ""
+                  }`}
+                  alt="arrow"
+                />
+              </div>
+              {openRessources && (
+                <ul className="Menu">
+                  {ressources.map(({ path, label, icone }) => {
+                    const Icon = iconMap[icone];
+                    return (
+                      <NavLink to={path} key={path}>
+                        {Icon && <Icon />} {label}
+                      </NavLink>
+                    );
+                  })}
+                </ul>
+              )}
+            </div>
 
             <NavLink to="/formation">Formation</NavLink>
             <NavLink to="/contact">Contact</NavLink>
-            <NavLink to="/ressources">Ressources </NavLink>
           </div>
         </div>
 

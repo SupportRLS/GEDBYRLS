@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import logo from "../assets/logoRLS.webp";
 
 function Footer() {
@@ -23,14 +24,32 @@ function Footer() {
               RLS
             </h4>
             <ul className="space-y-2 text-center md:text-left">
-              <li className="hover:text-red-400 cursor-pointer">
-                La GED c’est quoi ?
+              <li>
+                <Link
+                  to="/solution/je-debute-dans-la-ged"
+                  className="hover:text-red-400"
+                >
+                  La GED c’est quoi ?
+                </Link>
               </li>
-              <li className="hover:text-red-400 cursor-pointer">
-                La GED par métier
+              <li>
+                <Link
+                  to="/solution/la-signature-electronique"
+                  className="hover:text-red-400"
+                >
+                  La Signature Électronique
+                </Link>
               </li>
-              <li className="hover:text-red-400 cursor-pointer">FAQ</li>
-              <li className="hover:text-red-400 cursor-pointer">Articles</li>
+              <li>
+                <Link to="/ressources/faq" className="hover:text-red-400">
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/solution/Articles" className="hover:text-red-400">
+                  Articles
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -40,13 +59,28 @@ function Footer() {
               Informations
             </h4>
             <ul className="space-y-2 text-center md:text-left">
-              <li className="hover:text-red-400 cursor-pointer">
-                Conditions générales de vente
+              <li>
+                <Link to="/cgv" className="hover:text-red-400">
+                  Conditions générales de vente
+                </Link>
               </li>
-              <li className="hover:text-red-400 cursor-pointer">Recrutement</li>
-              <li className="hover:text-red-400 cursor-pointer">Contact</li>
-              <li className="hover:text-red-400 cursor-pointer">
-                Mentions légales
+              <li>
+                <Link
+                  to="http://localhost:1337/admin/auth/login"
+                  className="hover:text-red-400"
+                >
+                  Administration
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-red-400">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/mentions-legales" className="hover:text-red-400">
+                  Mentions légales
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,15 +93,29 @@ function Footer() {
             <ul className="space-y-2 text-center md:text-left">
               <li className="flex items-start gap-3">
                 <FaPhoneAlt className="text-red-400 mt-1 flex-shrink-0" />
-                04.67.22.14.14
+                <a href="tel:0467221414" className="hover:text-red-400">
+                  04.67.22.14.14
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <FaEnvelope className="text-red-400 mt-1 flex-shrink-0" />
-                contact@reprolanguedoc.fr
+                <a
+                  href="mailto:contact@reprolanguedoc.fr"
+                  className="hover:text-red-400"
+                >
+                  contact@reprolanguedoc.fr
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-red-400 mt-1 flex-shrink-0" />
-                <div>149 Rue Charles Lindbergh, 34130 Mauguio</div>
+                <a
+                  href="https://www.google.com/maps?q=149+Rue+Charles+Lindbergh,+34130+Mauguio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-red-400"
+                >
+                  149 Rue Charles Lindbergh, 34130 Mauguio
+                </a>
               </li>
             </ul>
           </div>
@@ -75,7 +123,7 @@ function Footer() {
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-6">
-        © 2025 Repro Languedoc. Tous droits réservés | Lucas Plébani
+        © 2025 Repro Languedoc Solutions | Tous droits réservés
       </div>
     </footer>
   );
