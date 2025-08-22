@@ -538,6 +538,32 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCguCgu extends Struct.SingleTypeSchema {
+  collectionName: 'cgus';
+  info: {
+    displayName: 'CGU';
+    pluralName: 'cgus';
+    singularName: 'cgu';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::cgu.cgu'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    texte: Schema.Attribute.RichText;
+    titre: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -680,6 +706,35 @@ export interface ApiLivreBlancLivreBlanc extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'Titre'>;
     Titre: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiMentionLegaleMentionLegale extends Struct.SingleTypeSchema {
+  collectionName: 'mention_legales';
+  info: {
+    displayName: 'Mentions L\u00E9gales';
+    pluralName: 'mention-legales';
+    singularName: 'mention-legale';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mention-legale.mention-legale'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    texte: Schema.Attribute.RichText;
+    titre: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1199,10 +1254,12 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::cas-client.cas-client': ApiCasClientCasClient;
       'api::category.category': ApiCategoryCategory;
+      'api::cgu.cgu': ApiCguCgu;
       'api::global.global': ApiGlobalGlobal;
       'api::lead-cas-client.lead-cas-client': ApiLeadCasClientLeadCasClient;
       'api::lead-livre-blanc.lead-livre-blanc': ApiLeadLivreBlancLeadLivreBlanc;
       'api::livre-blanc.livre-blanc': ApiLivreBlancLivreBlanc;
+      'api::mention-legale.mention-legale': ApiMentionLegaleMentionLegale;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

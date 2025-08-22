@@ -13,12 +13,16 @@ import IntegrationLogicielsPage from "./pages/IntegrationLogiciels.jsx";
 import ArticlesGed from "./pages/ArticlesGed.jsx";
 import ArticleDetail from "./pages/ArticleDetail.jsx";
 import SecurityPage from "./pages/SecurityPage.jsx";
-
+import ErrorPage from "./pages/ErrorPage.jsx";
 //ressources
 import PageCasClient from "./pages/PageCasClient.jsx";
 import FormCasClient from "./pages/FormCasClient.jsx";
 import PageLivreBlanc from "./pages/PageLivreBlanc.jsx";
 import FormLivreBlanc from "./pages/FormLivreBlanc.jsx";
+
+// mentions légales | cgu
+import MentionsLegalesPage from "./pages/MentionsLegales.jsx";
+import CGUPage from "./pages/cgu.jsx";
 
 import "./App.css";
 import "./index.css";
@@ -64,6 +68,13 @@ function App() {
       <Route path="/ressources/form-cas-client" element={<FormCasClient />} />
       <Route path="/ressources/livre-blanc" element={<PageLivreBlanc />} />
       <Route path="/ressources/form-livre-blanc" element={<FormLivreBlanc />} />
+
+      {/* Catch routes */}
+      <Route path="*" element={<ErrorPage />} />
+
+      {/* Mentions légales */}
+      <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
+      <Route path="/cgu" element={<CGUPage />} />
     </Routes>
   );
 }

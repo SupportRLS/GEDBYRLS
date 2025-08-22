@@ -60,8 +60,8 @@ function Footer() {
             </h4>
             <ul className="space-y-2 text-center md:text-left">
               <li>
-                <Link to="/cgv" className="hover:text-red-400">
-                  Conditions générales de vente
+                <Link to="/cgu" className="hover:text-red-400">
+                  Conditions générales d'utilisation
                 </Link>
               </li>
               <li>
