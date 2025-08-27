@@ -11,54 +11,10 @@ import phone from "../assets/phone.svg";
 
 import { iconMap } from "./iconMap";
 
-const metiers = [
-  { path: "/secteur/avocat", label: "Avocats", iconKey: "iconeAvocat" },
-  {
-    path: "/secteur/expert-comptable",
-    label: "Expert-comptable",
-    iconKey: "iconeComptable",
-  },
-  {
-    path: "/secteur/association",
-    label: "Association",
-    iconKey: "iconeAssociation",
-  },
-  { path: "/secteur/tpe-pme", label: "TPE-PME", iconKey: "iconePMETPE" },
-  {
-    path: "/secteur/grands-groupes",
-    label: "Grands-Groupes",
-    iconKey: "iconeGrandGroupe",
-  },
-  { path: "/secteur/sante", label: "Santé", iconKey: "iconeSante" },
-  {
-    path: "/secteur/architectes",
-    label: "Architectes",
-    iconKey: "iconeArchitecte",
-  },
-  { path: "/secteur/btp", label: "BTP", iconKey: "iconeBTP" },
-  {
-    path: "/secteur/secteur-public",
-    label: "Secteur public",
-    iconKey: "iconeSecteurPublic",
-  },
-  { path: "/secteur/finance", label: "Finance", iconKey: "iconeFinance" },
-  {
-    path: "/secteur/commercial",
-    label: "Commercial",
-    iconKey: "iconeCommercial",
-  },
-  {
-    path: "/secteur/freelance-independant",
-    label: "Freelance-Indépendant",
-    iconKey: "iconeFreelance",
-  },
-  {
-    path: "/secteur/medico-social-associatif",
-    label: "Médico-social-associatif",
-    iconKey: "iconeMedicoSocial",
-  },
-];
+const STRAPI_URL = import.meta.env.VITE_STRAPI_URL || "http://localhost:1337";
+console.log("STRAPI_URL:", STRAPI_URL);
 
+// Solutions statiques
 const solutions = [
   {
     path: "/solution/je-debute-dans-la-ged",
@@ -70,7 +26,6 @@ const solutions = [
     label: "La Signature Électronique",
     iconKey: "iconeSignatureCheck",
   },
-
   {
     path: "/solution/integration-des-logiciels-compatibles",
     label: "Intégration des logiciels",
@@ -92,22 +47,20 @@ const solutions = [
     label: "Fonctionnalités",
     iconKey: "iconeFonctionnalites",
   },
-  {
-    path: "/solution/galerie",
-    label: "Galerie",
-    iconKey: "iconeGalerie",
-  },
+  { path: "/solution/galerie", label: "Galerie", iconKey: "iconeGalerie" },
 ];
+
+// Ressources statiques
 const ressources = [
   {
     path: "/ressources/cas-client",
     label: "Cas client",
-    icone: "iconeFonctionnalites",
+    iconKey: "iconeFonctionnalites",
   },
   {
     path: "/ressources/livre-blanc",
     label: "Livre Blanc",
-    icone: "iconeFonctionnalites",
+    iconKey: "iconeFonctionnalites",
   },
   { path: "/ressources/faq", label: "FAQ", iconKey: "iconeFAQ" },
 ];
@@ -115,27 +68,56 @@ const ressources = [
 function Header() {
   const [openSolutions, setOpenSolutions] = useState(false);
   const [isActiveSolutions, setIsActiveSolutions] = useState(false);
-
   const [openMetiers, setOpenMetiers] = useState(false);
   const [isActiveMetiers, setIsActiveMetiers] = useState(false);
-
   const [openRessources, setOpenRessources] = useState(false);
   const [isActiveRessources, setIsActiveRessources] = useState(false);
-
   const [isBurgerOpen, setBurgerOpen] = useState(false);
-  // Refs pour détecter les clics hors menu
+
+  // État pour les métiers dynamiques
+  const [metiers, setMetiers] = useState([]);
+  const [metiersLoading, setMetiersLoading] = useState(true);
+
   const solutionsRef = useRef(null);
   const metiersRef = useRef(null);
   const ressourcesRef = useRef(null);
 
-  const toggleBurger = () => {
-    setBurgerOpen(!isBurgerOpen);
-  };
+  // Fetch des métiers depuis Strapi
+  useEffect(() => {
+    const fetchMetiers = async () => {
+      try {
+        const res = await fetch(
+          `${STRAPI_URL}/api/secteurs?filters[afficherDansMenu][$eq]=true&sort=ordreMenu:asc&fields[0]=slug&fields[1]=titre&fields[2]=iconeMenu&fields[3]=ordreMenu`
+        );
+
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+
+        const json = await res.json();
+        console.log("Secteurs reçus :", json);
+
+        const metiersFromStrapi = (json.data || []).map((secteur) => ({
+          path: `/secteur/${secteur.slug}`,
+          label: secteur.slug,
+          iconKey: secteur.iconeMenu || "iconeDefault",
+        }));
+
+        setMetiers(metiersFromStrapi);
+      } catch (err) {
+        console.error("Erreur de connexion à Strapi:", err);
+        setMetiers([]);
+      } finally {
+        setMetiersLoading(false);
+      }
+    };
+
+    fetchMetiers();
+  }, []);
+
+  const toggleBurger = () => setBurgerOpen(!isBurgerOpen);
   const toggleSolutions = () => {
     setOpenSolutions((prev) => !prev);
     setIsActiveSolutions((prev) => !prev);
   };
-
   const toggleMetiers = () => {
     setOpenMetiers((prev) => !prev);
     setIsActiveMetiers((prev) => !prev);
@@ -144,6 +126,7 @@ function Header() {
     setOpenRessources((prev) => !prev);
     setIsActiveRessources((prev) => !prev);
   };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -165,124 +148,123 @@ function Header() {
         setIsActiveRessources(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
-    <>
-      <nav className="HeaderNav poppins-medium">
-        <div className="LogoNav">
-          <img src={logo} alt="logo" className="Logo" />
-          {/* Le bouton burger hors NavMenu */}
-          <button
-            className="BurgerButton"
-            onClick={toggleBurger}
-            aria-label="Toggle menu"
-          >
-            {isBurgerOpen ? (
-              <IoMdClose size={28} color="#2e1d21" />
-            ) : (
-              <GiHamburgerMenu size={28} color="#2e1d21" />
+    <nav className="HeaderNav poppins-medium">
+      <div className="LogoNav">
+        <img src={logo} alt="logo" className="Logo" />
+
+        <button
+          className="BurgerButton"
+          onClick={toggleBurger}
+          aria-label="Toggle menu"
+        >
+          {isBurgerOpen ? (
+            <IoMdClose size={28} color="#2e1d21" />
+          ) : (
+            <GiHamburgerMenu size={28} color="#2e1d21" />
+          )}
+        </button>
+
+        <div className={`NavMenu ${isBurgerOpen ? "open" : ""}`}>
+          <NavLink to="/">Accueil</NavLink>
+
+          {/* Dropdown Solutions */}
+          <div className="Dropdown" ref={solutionsRef}>
+            <div onClick={toggleSolutions}>
+              Solutions
+              <img
+                src={arrow}
+                className={`Arrow rotate180 ${
+                  isActiveSolutions ? "active" : ""
+                }`}
+                alt="arrow"
+              />
+            </div>
+            {openSolutions && (
+              <ul className="Menu">
+                {solutions.map(({ path, label, iconKey }) => {
+                  const Icon = iconMap[iconKey];
+                  return (
+                    <NavLink to={path} key={path}>
+                      {Icon && <Icon />} {label}
+                    </NavLink>
+                  );
+                })}
+              </ul>
             )}
-          </button>
-
-          <div className={`NavMenu ${isBurgerOpen ? "open" : ""}`}>
-            <NavLink to="/">Accueil</NavLink>
-
-            {/* Dropdown Solutions */}
-            <div className="Dropdown" ref={solutionsRef}>
-              <div onClick={toggleSolutions}>
-                Solutions
-                <img
-                  src={arrow}
-                  className={`Arrow rotate180 ${
-                    isActiveSolutions ? "active" : ""
-                  }`}
-                  alt="arrow"
-                />
-              </div>
-              {openSolutions && (
-                <ul className="Menu">
-                  {solutions.map(({ path, label, iconKey }) => {
-                    const Icon = iconMap[iconKey];
-                    return (
-                      <NavLink to={path} key={path}>
-                        {Icon && <Icon />} {label}
-                      </NavLink>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
-
-            {/* Dropdown Métiers */}
-            <div className="Dropdown" ref={metiersRef}>
-              <div onClick={toggleMetiers}>
-                Métiers
-                <img
-                  src={arrow}
-                  className={`Arrow rotate180 ${
-                    isActiveMetiers ? "active" : ""
-                  }`}
-                  alt="arrow"
-                />
-              </div>
-              {openMetiers && (
-                <ul className="Menu">
-                  {metiers.map(({ path, label, iconKey }) => {
-                    const Icon = iconMap[iconKey];
-                    return (
-                      <NavLink to={path} key={path}>
-                        {Icon && <Icon />} {label}
-                      </NavLink>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
-            {/* Dropdown Ressources */}
-            <div className="Dropdown" ref={ressourcesRef}>
-              <div onClick={toggleRessources}>
-                Ressources
-                <img
-                  src={arrow}
-                  className={`Arrow rotate180 ${
-                    isActiveRessources ? "active" : ""
-                  }`}
-                  alt="arrow"
-                />
-              </div>
-              {openRessources && (
-                <ul className="Menu">
-                  {ressources.map(({ path, label, icone }) => {
-                    const Icon = iconMap[icone];
-                    return (
-                      <NavLink to={path} key={path}>
-                        {Icon && <Icon />} {label}
-                      </NavLink>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
-
-            <NavLink to="/formation">Formation</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
           </div>
-        </div>
 
-        <div className="ContactHeader">
-          <img src={letter} alt="" />
-          |
-          <img src={phone} alt="" />
-          <ButtonContactHeader />
+          {/* Dropdown Métiers dynamiques */}
+          <div className="Dropdown" ref={metiersRef}>
+            <div onClick={toggleMetiers}>
+              Métiers
+              <img
+                src={arrow}
+                className={`Arrow rotate180 ${isActiveMetiers ? "active" : ""}`}
+                alt="arrow"
+              />
+            </div>
+            {openMetiers && (
+              <ul className="Menu">
+                {metiersLoading ? (
+                  <li>Chargement...</li>
+                ) : metiers.length > 0 ? (
+                  metiers.map(({ path, label, iconKey }) => {
+                    const Icon = iconMap[iconKey];
+                    return (
+                      <NavLink to={path} key={path}>
+                        {Icon && <Icon />} {label}
+                      </NavLink>
+                    );
+                  })
+                ) : (
+                  <li>Aucun métier disponible</li>
+                )}
+              </ul>
+            )}
+          </div>
+
+          {/* Dropdown Ressources */}
+          <div className="Dropdown" ref={ressourcesRef}>
+            <div onClick={toggleRessources}>
+              Ressources
+              <img
+                src={arrow}
+                className={`Arrow rotate180 ${
+                  isActiveRessources ? "active" : ""
+                }`}
+                alt="arrow"
+              />
+            </div>
+            {openRessources && (
+              <ul className="Menu">
+                {ressources.map(({ path, label, iconKey }) => {
+                  const Icon = iconMap[iconKey];
+                  return (
+                    <NavLink to={path} key={path}>
+                      {Icon && <Icon />} {label}
+                    </NavLink>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+
+          <NavLink to="/formation">Formation</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
-      </nav>
-    </>
+      </div>
+
+      <div className="ContactHeader">
+        <img src={letter} alt="" /> |
+        <img src={phone} alt="" />
+        <ButtonContactHeader />
+      </div>
+    </nav>
   );
 }
 

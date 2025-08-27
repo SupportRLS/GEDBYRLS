@@ -741,6 +741,65 @@ export interface ApiMentionLegaleMentionLegale extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSecteurSecteur extends Struct.CollectionTypeSchema {
+  collectionName: 'secteurs';
+  info: {
+    description: "Secteurs d'activit\u00E9 avec leurs contenus";
+    displayName: 'Secteur';
+    pluralName: 'secteurs';
+    singularName: 'secteur';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accroche: Schema.Attribute.Text & Schema.Attribute.Required;
+    afficherDansMenu: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    benefices: Schema.Attribute.Text & Schema.Attribute.Required;
+    conformite: Schema.Attribute.Component<'conformite.conformite', false>;
+    contenu: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    descriptionEnjeux: Schema.Attribute.Text & Schema.Attribute.Required;
+    enjeux: Schema.Attribute.Component<'enjeux.enjeu', true>;
+    fonctionnalites: Schema.Attribute.Component<
+      'fonctionnalites.fonctionnalite',
+      true
+    >;
+    formation: Schema.Attribute.Component<'formation.formation', false>;
+    header: Schema.Attribute.String;
+    iconeMenu: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    imagebenefices: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::secteur.secteur'
+    > &
+      Schema.Attribute.Private;
+    ordreMenu: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    paragrapheEnjeux: Schema.Attribute.Text & Schema.Attribute.Required;
+    prise_en_main: Schema.Attribute.Component<
+      'prise-en-main.prise-en-main',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'titre'> & Schema.Attribute.Required;
+    titre: Schema.Attribute.String & Schema.Attribute.Required;
+    titrebenefices: Schema.Attribute.String & Schema.Attribute.Required;
+    titreEnjeux: Schema.Attribute.String & Schema.Attribute.Required;
+    titreEnjeux2: Schema.Attribute.String & Schema.Attribute.Required;
+    titreFonctionnalite: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1260,6 +1319,7 @@ declare module '@strapi/strapi' {
       'api::lead-livre-blanc.lead-livre-blanc': ApiLeadLivreBlancLeadLivreBlanc;
       'api::livre-blanc.livre-blanc': ApiLivreBlancLivreBlanc;
       'api::mention-legale.mention-legale': ApiMentionLegaleMentionLegale;
+      'api::secteur.secteur': ApiSecteurSecteur;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

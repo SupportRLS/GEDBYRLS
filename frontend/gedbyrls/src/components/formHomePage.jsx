@@ -1,9 +1,10 @@
 import React from "react";
 import "./style/formHomePage.css";
 function FormHomePage() {
-  const formspreeURL = "https://formspree.io/f/xldbgawj";
+  const URL = "https://formspree.io/f/xldbgawj";
   return (
     <div className="formHomePage">
+      formspree
       <h2>Contacter nos experts GED</h2>
       <form action="http://localhost:3000/forms" method="POST">
         <input type="text" id="name" name="name" placeholder="Nom" required />

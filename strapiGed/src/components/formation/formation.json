@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_formation_formations",
+  "info": {
+    "displayName": "Formation",
+    "description": "Section formation avec modules"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "formation.module"
+    }
+  }
+}

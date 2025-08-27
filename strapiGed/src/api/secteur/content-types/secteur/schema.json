@@ -1,0 +1,125 @@
+{
+  "kind": "collectionType",
+  "collectionName": "secteurs",
+  "info": {
+    "singularName": "secteur",
+    "pluralName": "secteurs",
+    "displayName": "Secteur",
+    "description": "Secteurs d'activité avec leurs contenus"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titre",
+      "required": true
+    },
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "accroche": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "titreEnjeux": {
+      "type": "string",
+      "required": true
+    },
+    "descriptionEnjeux": {
+      "type": "text",
+      "required": true
+    },
+    "titreEnjeux2": {
+      "type": "string",
+      "required": true
+    },
+    "enjeux": {
+      "type": "component",
+      "component": "enjeux.enjeu",
+      "repeatable": true
+    },
+    "paragrapheEnjeux": {
+      "type": "text",
+      "required": true
+    },
+    "titreFonctionnalite": {
+      "type": "string",
+      "required": true
+    },
+    "fonctionnalites": {
+      "type": "component",
+      "component": "fonctionnalites.fonctionnalite",
+      "repeatable": true
+    },
+    "conformite": {
+      "type": "component",
+      "component": "conformite.conformite",
+      "repeatable": false
+    },
+    "titrebenefices": {
+      "type": "string",
+      "required": true
+    },
+    "imagebenefices": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "benefices": {
+      "type": "text",
+      "required": true
+    },
+    "prise_en_main": {
+      "type": "component",
+      "component": "prise-en-main.prise-en-main",
+      "repeatable": false
+    },
+    "formation": {
+      "type": "component",
+      "component": "formation.formation",
+      "repeatable": false
+    },
+    "cta": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "text",
+      "required": true
+    },
+    "afficherDansMenu": {
+      "type": "boolean",
+      "default": true
+    },
+    "ordreMenu": {
+      "type": "integer",
+      "default": 0
+    },
+    "iconeMenu": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

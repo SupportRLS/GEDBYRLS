@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_formation_modules",
+  "info": {
+    "displayName": "Module de formation",
+    "description": "Un module de formation"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

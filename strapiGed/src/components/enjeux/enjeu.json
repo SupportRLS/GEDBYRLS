@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_enjeux_enjeux",
+  "info": {
+    "displayName": "Enjeu",
+    "description": "Un enjeu avec titre et icône"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icone": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

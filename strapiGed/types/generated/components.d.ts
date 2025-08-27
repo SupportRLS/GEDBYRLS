@@ -1,5 +1,78 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ConformiteConformite extends Struct.ComponentSchema {
+  collectionName: 'components_conformite_conformites';
+  info: {
+    description: 'Section conformit\u00E9';
+    displayName: 'Conformit\u00E9';
+  };
+  attributes: {
+    contenu: Schema.Attribute.Text & Schema.Attribute.Required;
+    titre: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface EnjeuxEnjeu extends Struct.ComponentSchema {
+  collectionName: 'components_enjeux_enjeux';
+  info: {
+    description: 'Un enjeu avec titre et ic\u00F4ne';
+    displayName: 'Enjeu';
+  };
+  attributes: {
+    icone: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface FonctionnalitesFonctionnalite extends Struct.ComponentSchema {
+  collectionName: 'components_fonctionnalites_fonctionnalites';
+  info: {
+    description: 'Une fonctionnalit\u00E9 avec titre et contenu';
+    displayName: 'Fonctionnalit\u00E9';
+  };
+  attributes: {
+    contenu: Schema.Attribute.Text & Schema.Attribute.Required;
+    titre: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface FormationFormation extends Struct.ComponentSchema {
+  collectionName: 'components_formation_formations';
+  info: {
+    description: 'Section formation avec modules';
+    displayName: 'Formation';
+  };
+  attributes: {
+    contenu: Schema.Attribute.Component<'formation.module', true>;
+    titre: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface FormationModule extends Struct.ComponentSchema {
+  collectionName: 'components_formation_modules';
+  info: {
+    description: 'Un module de formation';
+    displayName: 'Module de formation';
+  };
+  attributes: {
+    icone: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface PriseEnMainPriseEnMain extends Struct.ComponentSchema {
+  collectionName: 'components_prise_en_main_prise_en_mains';
+  info: {
+    description: 'Section prise en main';
+    displayName: 'Prise en main';
+  };
+  attributes: {
+    contenu: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    titre: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedFeatureCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_feature_cards';
   info: {
@@ -108,6 +181,12 @@ export interface SharedTexteAvecImageAGauche extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'conformite.conformite': ConformiteConformite;
+      'enjeux.enjeu': EnjeuxEnjeu;
+      'fonctionnalites.fonctionnalite': FonctionnalitesFonctionnalite;
+      'formation.formation': FormationFormation;
+      'formation.module': FormationModule;
+      'prise-en-main.prise-en-main': PriseEnMainPriseEnMain;
       'shared.feature-card': SharedFeatureCard;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;

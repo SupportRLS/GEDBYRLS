@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_prise_en_main_prise_en_mains",
+  "info": {
+    "displayName": "Prise en main",
+    "description": "Section prise en main"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

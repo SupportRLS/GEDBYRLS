@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_conformite_conformites",
+  "info": {
+    "displayName": "Conformité",
+    "description": "Section conformité"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": true
+    },
+    "contenu": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
