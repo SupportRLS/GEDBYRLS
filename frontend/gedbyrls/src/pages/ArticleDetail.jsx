@@ -12,7 +12,7 @@ const ArticleDetail = () => {
 
   useEffect(() => {
     fetch(
-      `${STRAPI_API_URL}/articles?filters[slug][$eq]=${slug}&populate[components][populate]=*`
+      `${STRAPI_API_URL}/articles?filters[slug][$eq]=${slug}&populate[components][on][sections.text-image-left]=true&populate[components][on][ui.button-duo]=true`
     )
       .then((res) => res.json())
       .then((data) => {

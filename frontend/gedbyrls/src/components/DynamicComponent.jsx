@@ -1,9 +1,10 @@
 import React from "react";
 import ButtonDuo from "./ButtonDuo";
-
+import TextImageLeft from "./TextImageLeft";
 // Composants spéciaux avec logique personnalisée
 const SpecialComponents = {
   "ui.button-duo": ButtonDuo,
+  "sections.text-image-left": TextImageLeft,
   // Ajoutez ici d'autres composants spéciaux si nécessaire
   // "ui.hero-banner": HeroBanner,
   // "ui.contact-form": ContactForm,

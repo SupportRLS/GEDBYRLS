@@ -434,6 +434,9 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.UID<'title'>;
     texte1: Schema.Attribute.Text;
     texte2: Schema.Attribute.RichText;
+    TexteImageGauche: Schema.Attribute.DynamicZone<
+      ['sections.text-image-left']
+    >;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

@@ -39,6 +39,12 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
+    "TexteImageGauche": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.text-image-left"
+      ]
+    },
     "texte1": {
       "type": "text"
     },
