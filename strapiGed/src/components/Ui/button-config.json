@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_ui_button_configs",
+  "info": {
+    "displayName": "ui.Button-Config",
+    "description": "Configuration d'un bouton"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "maxLength": 100,
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "required": true
+    },
+    "target": {
+      "type": "enumeration",
+      "default": "_self",
+      "enum": ["_self", "_blank"]
+    }
+  }
+}

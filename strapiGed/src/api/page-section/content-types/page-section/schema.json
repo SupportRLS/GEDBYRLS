@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_sections",
+  "info": {
+    "singularName": "page-section",
+    "pluralName": "page-sections",
+    "displayName": "Page Section",
+    "description": "Sections de contenu pour les pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nom"
+    },
+    "contenu": {
+      "type": "dynamiczone",
+      "components": ["sections.text-image-left", "sections.text-image-right"]
+    },
+    "page": {
+      "type": "string",
+      "required": true
+    },
+    "ordre": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

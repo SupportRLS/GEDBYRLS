@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_sections_text_image_lefts",
+  "info": {
+    "displayName": "Text Image Left",
+    "description": "Section avec texte et image à gauche"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext",
+      "required": true
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.list-item"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

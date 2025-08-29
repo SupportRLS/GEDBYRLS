@@ -12,6 +12,16 @@ export interface ConformiteConformite extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsListItem extends Struct.ComponentSchema {
+  collectionName: 'components_elements_list_items';
+  info: {
+    displayName: 'List Item';
+  };
+  attributes: {
+    text: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface EnjeuxEnjeu extends Struct.ComponentSchema {
   collectionName: 'components_enjeux_enjeux';
   info: {
@@ -70,6 +80,36 @@ export interface PriseEnMainPriseEnMain extends Struct.ComponentSchema {
     contenu: Schema.Attribute.Text & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'>;
     titre: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SectionsTextImageLeft extends Struct.ComponentSchema {
+  collectionName: 'components_sections_text_image_lefts';
+  info: {
+    description: 'Section avec texte et image \u00E0 gauche';
+    displayName: 'Text Image Left';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    imageAlt: Schema.Attribute.String & Schema.Attribute.Required;
+    list: Schema.Attribute.Component<'elements.list-item', true>;
+    text: Schema.Attribute.RichText & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface SectionsTextImageRight extends Struct.ComponentSchema {
+  collectionName: 'components_sections_text_image_rights';
+  info: {
+    description: 'Section avec texte et image \u00E0 droite';
+    displayName: 'Text Image Right';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    imageAlt: Schema.Attribute.String & Schema.Attribute.Required;
+    list: Schema.Attribute.Component<'elements.list-item', true>;
+    text: Schema.Attribute.RichText & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -152,29 +192,34 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
-export interface SharedTexteAvecImageADroite extends Struct.ComponentSchema {
-  collectionName: 'components_shared_texte_avec_image_a_droites';
+export interface UiButtonConfig extends Struct.ComponentSchema {
+  collectionName: 'components_ui_button_configs';
   info: {
-    displayName: 'Texte avec image \u00E0 droite';
+    description: "Configuration d'un bouton";
+    displayName: 'ui.Button-Config';
   };
   attributes: {
-    Contenu: Schema.Attribute.Text;
-    Image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Seo: Schema.Attribute.Component<'shared.seo', true>;
-    Titre: Schema.Attribute.String;
+    href: Schema.Attribute.String & Schema.Attribute.Required;
+    target: Schema.Attribute.Enumeration<['_self', '_blank']> &
+      Schema.Attribute.DefaultTo<'_self'>;
+    text: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 100;
+      }>;
   };
 }
 
-export interface SharedTexteAvecImageAGauche extends Struct.ComponentSchema {
-  collectionName: 'components_shared_texte_avec_image_a_gauches';
+export interface UiButtonDuo extends Struct.ComponentSchema {
+  collectionName: 'components_ui_button_duos';
   info: {
-    displayName: 'Texte avec image \u00E0 gauche';
+    description: 'Groupe de deux boutons (rouge et dor\u00E9e)';
+    displayName: 'ui.Button-Duo';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Seo: Schema.Attribute.Component<'shared.seo', true>;
-    Texte: Schema.Attribute.Text;
-    Titre: Schema.Attribute.String;
+    isEnabled: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    orangeButton: Schema.Attribute.Component<'ui.button-config', false>;
+    redButton: Schema.Attribute.Component<'ui.button-config', false>;
   };
 }
 
@@ -182,19 +227,22 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'conformite.conformite': ConformiteConformite;
+      'elements.list-item': ElementsListItem;
       'enjeux.enjeu': EnjeuxEnjeu;
       'fonctionnalites.fonctionnalite': FonctionnalitesFonctionnalite;
       'formation.formation': FormationFormation;
       'formation.module': FormationModule;
       'prise-en-main.prise-en-main': PriseEnMainPriseEnMain;
+      'sections.text-image-left': SectionsTextImageLeft;
+      'sections.text-image-right': SectionsTextImageRight;
       'shared.feature-card': SharedFeatureCard;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
-      'shared.texte-avec-image-a-droite': SharedTexteAvecImageADroite;
-      'shared.texte-avec-image-a-gauche': SharedTexteAvecImageAGauche;
+      'ui.button-config': UiButtonConfig;
+      'ui.button-duo': UiButtonDuo;
     }
   }
 }

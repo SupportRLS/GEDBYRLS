@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_ui_button_duos",
+  "info": {
+    "displayName": "ui.Button-Duo",
+    "description": "Groupe de deux boutons (rouge et dorée)"
+  },
+  "options": {},
+  "attributes": {
+    "redButton": {
+      "type": "component",
+      "component": "ui.button-config",
+      "repeatable": false
+    },
+    "orangeButton": {
+      "type": "component",
+      "component": "ui.button-config",
+      "repeatable": false
+    },
+    "isEnabled": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

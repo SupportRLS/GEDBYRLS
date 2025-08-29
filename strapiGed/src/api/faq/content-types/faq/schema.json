@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "faq"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "text"
+    },
+    "faq_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::faq-categorie.faq-categorie",
+      "inversedBy": "faqs"
+    }
+  }
+}

@@ -33,21 +33,23 @@
         "videos"
       ]
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": [
-        "shared.media",
-        "shared.quote",
-        "shared.rich-text",
-        "shared.slider",
-        "shared.seo"
-      ]
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "articles"
+    },
+    "texte1": {
+      "type": "text"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "ui.button-duo"
+      ]
+    },
+    "texte2": {
+      "type": "richtext"
     }
   }
 }

@@ -1,0 +1,1287 @@
+[
+  {
+    "slug": "avocat",
+    "titre": "La gestion électronique des documents pour les cabinets d'avocats",
+    "accroche": "Simplifiez la gestion de vos dossiers clients, sécurisez vos échanges confidentiels et accélérez votre productivité grâce à Zeendoc, la solution GED conçue pour les professions juridiques.",
+    "image": "/secteurs/avocat/avocat_1.webp",
+    "description": "Avocat ou collaborateur en cabinet, vous jonglez chaque jour avec des volumes importants de pièces juridiques, de courriers et d’échanges confidentiels. La gestion électronique des documents (GED) avec Zeendoc vous permet de centraliser, classer et retrouver en un clic tout document utile, tout en respectant les normes de sécurité et de confidentialité propres à votre profession.",
+    "titreEnjeux": "Quels sont les enjeux de la GED pour un avocat ?",
+    "descriptionEnjeux": "La gestion électronique des documents pour un avocat ne se limite pas à l’archivage numérique. Elle optimise la rigueur de la gestion des pièces juridiques, améliore les délais de traitement des dossiers et assure une traçabilité conforme aux exigences du CNB et du RGPD.",
+    "titreEnjeux2": "Sécurité, réactivité, conformité : vos priorités",
+    "enjeux": [
+      {
+        "title": "Sécuriser les données sensibles",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Retrouver les documents instantanément",
+        "icone": "iconeRechercheAlt"
+      },
+      {
+        "title": "Conserver vos pièces pendant 30 ans",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Collaborer entre associés et clercs",
+        "icone": "iconeUtilisateur"
+      },
+      {
+        "title": "Automatiser les tâches chronophages",
+        "icone": "iconeTemps"
+      }
+    ],
+    "paragrapheEnjeux": "La profession d’avocat exige une gestion documentaire irréprochable. Chaque pièce justificative, contrat, ou correspondance doit pouvoir être retrouvée dans un délai immédiat, tout en respectant les règles de conservation légales. Avec la GED Zeendoc, vous facilitez la transmission d'information au sein du cabinet, tout en garantissant la confidentialité des données sensibles, souvent soumises au secret professionnel.",
+    "titreFonctionnalité": "Quelles fonctionnalités GED sont utiles aux avocats ?",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des pièces de procédure",
+        "contenu": "Zeendoc analyse vos documents et les classe automatiquement par client, affaire, ou juridiction. Un gain de temps précieux dans la gestion électronique des documents au quotidien."
+      },
+      {
+        "titre": "Recherche intelligente par mot-clé ou critère",
+        "contenu": "Retrouvez un acte de procédure ou un jugement en saisissant un mot, une date, ou le nom du client. La recherche full text vous évite de parcourir des centaines de dossiers papier."
+      },
+      {
+        "titre": "Horodatage et traçabilité juridique",
+        "contenu": "Chaque ajout, modification ou consultation de document est tracé. Un gage de transparence et de conformité avec les exigences de la profession d’avocat."
+      },
+      {
+        "titre": "Partage sécurisé avec vos clients",
+        "contenu": "Transmettez des pièces via un lien sécurisé ou un espace client personnalisé, en toute conformité avec les standards CNIL et RGPD."
+      },
+      {
+        "titre": "Archivage à valeur probante",
+        "contenu": "Bénéficiez d’un archivage numérique certifié conforme à la norme NF Z42-013, garantissant la valeur juridique des documents stockés."
+      },
+      {
+        "titre": "Intégration aux logiciels métier",
+        "contenu": "Connectez Zeendoc à vos outils existants comme SECIB ou Kleos pour une gestion fluide de vos flux documentaires."
+      }
+    ],
+    "conformite": {
+      "titre": "Comment Zeendoc garantit la conformité légale ?",
+      "contenu": "Zeendoc respecte les normes strictes de la gestion électronique des documents : RGPD, CNIL, norme NF Z42-013 pour l’archivage à valeur probante, et recommandations du Conseil National des Barreaux. Vos documents sensibles sont hébergés sur des serveurs certifiés ISO 27001, situés en France. La plateforme applique le chiffrement AES-256, l’authentification forte, et la traçabilité complète des accès."
+    },
+    "titrebenefices": "Quels bénéfices concrets pour votre cabinet d’avocat ?",
+    "imagebenefices": "/secteurs/avocat/avocat_8.webp",
+    "benefices": "Avec la gestion électronique des documents, les avocats gagnent du temps (jusqu’à 30 % selon les études internes Zeendoc), réduisent les risques de perte de données, et optimisent la gestion des contentieux. Vous traitez davantage de dossiers, sans alourdir vos journées, tout en respectant les exigences juridiques et déontologiques. Vous gagnez également en image auprès de vos clients, qui apprécient des échanges fluides et un suivi rigoureux.",
+    "prise_en_main": {
+      "titre": "Est-ce simple à prendre en main au sein d’un cabinet ?",
+      "contenu": "Oui. L’interface Zeendoc est pensée pour les professionnels non technophiles. En quelques clics, vous pouvez créer vos classeurs clients, numériser des pièces et les classer automatiquement. L’environnement est ergonomique, sans surcharge visuelle, pour permettre une appropriation rapide par tous les membres du cabinet.",
+      "image": "/secteurs/avocat/avocat_9.webp"
+    },
+    "formation": {
+      "titre": "Quelles formations pour les avocats et leurs équipes ?",
+      "contenu": [
+        {
+          "title": "Organisation de la GED par client et affaire",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Gestion des accès et confidentialité des données",
+          "icone": "iconeCadenas"
+        },
+        {
+          "title": "Signature électronique conforme au droit français",
+          "icone": "iconeSignatureCheck"
+        },
+        {
+          "title": "Archivage légal et valeur probante",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Numérisation des flux entrants (papier et e-mails)",
+          "icone": "iconeEchange"
+        }
+      ]
+    },
+    "cta": "Découvrez comment Zeendoc peut transformer votre gestion documentaire et sécuriser votre activité d’avocat.",
+    "contenu": "La gestion électronique des documents transforme le quotidien des cabinets d’avocats. Elle garantit un meilleur suivi, plus de sécurité, et une accessibilité totale aux dossiers clients. Zeendoc vous offre une solution professionnelle, conforme et adaptée à votre métier, pour maîtriser le présent et anticiper l’avenir."
+  },
+  {
+    "slug": "expert-comptable",
+    "titre": "GED pour experts-comptables : dématérialisez et sécurisez votre pratique",
+    "accroche": "Optimisez la gestion documentaire de votre cabinet comptable avec une solution GED dédiée aux professionnels du chiffre. Performance, conformité et sécurité au service de votre expertise.",
+    "image": "/secteurs/comptable/comptable1.webp",
+    "description": "La gestion électronique de documents (GED) transforme radicalement l'organisation des cabinets d'expertise comptable en proposant une solution intégrée pour numériser, classer et sécuriser l'ensemble des pièces comptables. Avec 92% des experts-comptables confrontés à une augmentation significative de leur charge documentaire, une GED performante devient indispensable pour maintenir qualité de service et rentabilité.",
+    "titreEnjeux": "Comment la GED révolutionne-t-elle l'expertise comptable ?",
+    "descriptionEnjeux": "Les cabinets comptables doivent gérer des volumes documentaires considérables tout en respectant des échéances strictes et des obligations réglementaires complexes. Une solution GED spécialisée automatise ces processus, réduit les erreurs humaines et garantit la conformité fiscale et sociale.",
+    "titreEnjeux2": "Les 5 défis majeurs d'une GED comptable",
+    "enjeux": [
+      {
+        "title": "Sécurité et confidentialité des données financières",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Archivage légal et traçabilité",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Automatisation des traitements récurrents",
+        "icone": "iconeMagie"
+      },
+      {
+        "title": "Réduction de la charge administrative",
+        "icone": "iconeTemps"
+      },
+      {
+        "title": "Conformité aux obligations fiscales et sociales",
+        "icone": "iconeJustice"
+      }
+    ],
+    "paragrapheEnjeux": "Ces cinq défis structurent les besoins spécifiques des cabinets comptables en matière de GED. La protection des données financières sensibles, l'automatisation des flux documentaires et le respect des obligations légales constituent les fondements d'une solution efficace qui libère les experts-comptables des contraintes administratives.",
+    "titreFonctionnalité": "Quelles fonctionnalités optimisent votre activité comptable ?",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique et intelligent",
+        "contenu": "La GED identifie automatiquement les types de documents comptables (factures, fiches de paie, justificatifs) et les classe selon des règles métier prédéfinies, avec extraction des données clés comme les dates, montants et références clients."
+      },
+      {
+        "titre": "Recherche instantanée multicritères",
+        "contenu": "Grâce à la reconnaissance optique de caractères (OCR) avancée, accédez immédiatement à n'importe quel document ou champ de données, même dans des fichiers numérisés, par client, période ou nature comptable."
+      },
+      {
+        "titre": "Dossiers clients structurés",
+        "contenu": "Organisez vos dossiers clients selon votre plan comptable personnalisé avec des accès sécurisés différenciés. Centralisez toutes les pièces justificatives dans un environnement unifié et ergonomique."
+      },
+      {
+        "titre": "Collaboration sécurisée cabinet-client",
+        "contenu": "Partagez des documents avec vos collaborateurs et clients en toute sécurité grâce à des espaces dédiés. Traçabilité complète des actions et notifications automatiques pour optimiser les échanges."
+      },
+      {
+        "titre": "Signature électronique certifiée",
+        "contenu": "Solution de signature électronique conforme eIDAS intégrée pour faire signer bilans, rapports de gestion et mandats directement depuis la plateforme, sans rupture de processus."
+      },
+      {
+        "titre": "Archivage légal à valeur probante",
+        "contenu": "Conservez vos documents selon les exigences fiscales et sociales avec respect des normes NF Z42-013. Garantie d'intégrité et de non-répudiation pour tous vos archivages comptables."
+      }
+    ],
+    "conformite": {
+      "titre": "Comment garantir la conformité réglementaire ?",
+      "contenu": "La GED respecte intégralement les obligations des experts-comptables en matière de conservation documentaire et de protection des données. Hébergement souverain en France, conformité RGPD native et respect des normes comptables garantissent la sécurité juridique de votre pratique professionnelle."
+    },
+    "titrebenefices": "Quels gains concrets pour votre cabinet ?",
+    "imagebenefices": "/secteurs/comptable/comptable2.webp",
+    "benefices": "L'adoption d'une GED spécialisée génère des bénéfices immédiats pour votre cabinet : réduction de 65% du temps de traitement administratif, diminution drastique des erreurs de saisie, amélioration de la réactivité face aux échéances fiscales et sociales. Les experts-comptables équipés constatent une productivité accrue de leurs collaborateurs, une meilleure satisfaction client grâce à des échanges fluidifiés et une réduction significative des coûts de stockage et d'impression. La dématérialisation renforce également l'image moderne du cabinet et facilite le travail à distance.",
+    "prise_en_main": {
+      "titre": "Comment réussir votre transition numérique ?",
+      "contenu": "La GED est conçue pour une prise en main rapide sans installation technique complexe. Notre équipe d'experts métier vous accompagne dans la migration de vos archives existantes et la formation de vos équipes selon les spécificités comptables. L'interface 100% web permet une utilisation immédiate depuis tout poste de travail.",
+      "image": "/secteurs/comptable/comptable3.webp"
+    },
+    "formation": {
+      "titre": "Quelles formations pour maîtriser votre GED ?",
+      "contenu": [
+        {
+          "title": "Mise en place du plan de classement comptable",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Gestion des flux entrants et sortants",
+          "icone": "iconeEchange"
+        },
+        {
+          "title": "Archivage légal selon les contraintes fiscales",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Bonnes pratiques de collaboration cabinet/client",
+          "icone": "iconeUtilisateur"
+        },
+        {
+          "title": "Automatisation des relances et justificatifs",
+          "icone": "iconeSignatureCheck"
+        }
+      ]
+    },
+    "cta": "Découvrez comment une GED spécialisée peut transformer votre cabinet comptable. Contactez-nous pour une démonstration personnalisée et un audit gratuit de vos processus documentaires.",
+    "contenu": "La gestion électronique de documents constitue aujourd'hui un levier essentiel pour moderniser et optimiser l'activité des cabinets d'expertise comptable. En adoptant une solution GED adaptée, vous automatisez vos processus, renforcez la sécurité de vos données et améliorez significativement votre productivité. L'investissement dans une GED performante représente un choix stratégique qui accompagne durablement la croissance de votre cabinet tout en répondant aux exigences croissantes de vos clients en matière de digitalisation des échanges comptables."
+  },
+  {
+    "slug": "association",
+    "titre": "GED pour associations : modernisez votre gestion documentaire",
+    "accroche": "Simplifiez l'organisation de votre association avec une solution GED intuitive et conforme. Transparence, collaboration et efficacité pour tous vos projets associatifs.",
+    "image": "/secteurs/association/association1.webp",
+    "description": "La gestion électronique de documents (GED) révolutionne le fonctionnement des associations en offrant une solution complète pour centraliser, sécuriser et partager tous les documents administratifs, financiers et réglementaires. Avec 78% des associations françaises confrontées à des difficultés de gestion documentaire, une GED adaptée devient essentielle pour optimiser l'organisation et respecter les obligations légales.",
+    "titreEnjeux": "Pourquoi la GED transforme-t-elle la vie associative ?",
+    "descriptionEnjeux": "Les associations doivent jongler entre une grande diversité de documents : statuts, comptes rendus, listes d'adhérents, justificatifs de subvention, documents RH et bilans comptables. Une solution GED spécialisée organise ces flux documentaires complexes tout en facilitant la collaboration entre bénévoles, élus et partenaires.",
+    "titreEnjeux2": "Les 5 enjeux documentaires des associations",
+    "enjeux": [
+      {
+        "title": "Respect des exigences réglementaires et légales",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Suivi transparent et sécurisé des activités",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Centralisation des informations pour tous les membres",
+        "icone": "iconeUtilisateur"
+      },
+      {
+        "title": "Gain de temps administratif",
+        "icone": "iconeTemps"
+      },
+      {
+        "title": "Accès à distance en mode collaboratif",
+        "icone": "iconeEchange"
+      }
+    ],
+    "paragrapheEnjeux": "Ces cinq enjeux structurent les besoins spécifiques des associations en matière de GED. La conformité réglementaire, la transparence des activités et la facilitation du travail collaboratif constituent les piliers d'une solution efficace qui libère du temps pour les actions de terrain.",
+    "titreFonctionnalité": "Quelles fonctionnalités facilitent votre gestion associative ?",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique et intelligent",
+        "contenu": "La GED trie automatiquement les statuts, bilans, dossiers de subventions, comptes rendus et documents RH selon vos règles personnalisées. Reconnaissance intelligente des types de documents associatifs pour un classement optimal."
+      },
+      {
+        "titre": "Recherche instantanée multicritères",
+        "contenu": "Trouvez un justificatif, un courrier ou une pièce comptable en quelques secondes grâce à la recherche OCR avancée, même dans des fichiers scannés. Filtrage par date, type de document ou projet spécifique."
+      },
+      {
+        "titre": "Dossiers structurés par activité ou projet",
+        "contenu": "Organisez vos documents par antenne locale, projet thématique ou année d'exercice. Chaque collaborateur, bénévole ou élu accède uniquement aux informations qui le concernent selon ses droits d'accès."
+      },
+      {
+        "titre": "Travail collaboratif et historique des actions",
+        "contenu": "Les membres du bureau, bénévoles et partenaires peuvent consulter ou enrichir les dossiers selon les droits définis. Historique complet des modifications avec traçabilité des actions pour une transparence maximale."
+      },
+      {
+        "titre": "Signature électronique conforme",
+        "contenu": "Faites signer à distance les procès-verbaux, contrats de partenariat ou engagements associatifs avec une signature électronique certifiée conforme eIDAS, sans rupture de processus."
+      },
+      {
+        "titre": "Archivage légal à valeur probante",
+        "contenu": "Garantie d'archivage sécurisé et conforme des documents en respectant les normes NF Z42-013 et RGPD. Conservation des pièces justificatives selon les délais réglementaires requis."
+      }
+    ],
+    "conformite": {
+      "titre": "Comment assurer la conformité de votre association ?",
+      "contenu": "La GED respecte intégralement les obligations réglementaires des associations en matière de conservation documentaire et de protection des données. Hébergement souverain en France, conformité RGPD native et respect des normes d'archivage garantissent la sécurité juridique de votre structure associative."
+    },
+    "titrebenefices": "Quels avantages concrets pour votre association ?",
+    "imagebenefices": "/secteurs/association/association2.webp",
+    "benefices": "L'adoption d'une GED spécialisée transforme le quotidien des associations : réduction de 60% du temps consacré aux tâches administratives, diminution drastique des erreurs et des pertes de documents, accès simplifié pour les bénévoles et élus dispersés géographiquement. Les structures associatives équipées constatent une meilleure réactivité face aux demandes de subventions, une transparence renforcée vis-à-vis des partenaires et une diminution significative des coûts de fonctionnement. La dématérialisation facilite également le travail à distance et renforce la professionnalisation de l'association.",
+    "prise_en_main": {
+      "titre": "Comment démarrer facilement avec votre GED ?",
+      "contenu": "La GED est conçue pour une prise en main intuitive sans installation technique complexe. L'interface accessible en ligne s'adapte parfaitement aux profils variés des utilisateurs associatifs. Un accompagnement personnalisé est prévu dès le démarrage avec des formations adaptées aux spécificités de votre structure.",
+      "image": "/secteurs/association/association3.webp"
+    },
+    "formation": {
+      "titre": "Quelles formations pour votre équipe associative ?",
+      "contenu": [
+        {
+          "title": "Organisation des documents administratifs et financiers",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Structuration de l'archivage par thématiques",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Collaboration sécurisée avec membres et partenaires",
+          "icone": "iconeUtilisateur"
+        },
+        {
+          "title": "Respect des obligations réglementaires",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Gestion documentaire pour structures sans équipe IT",
+          "icone": "iconeSignatureCheck"
+        }
+      ]
+    },
+    "cta": "Découvrez comment une GED adaptée peut transformer votre association. Contactez-nous pour une démonstration gratuite et testez notre solution en version d'essai.",
+    "contenu": "La gestion électronique de documents représente aujourd'hui un levier essentiel pour moderniser et professionnaliser le fonctionnement des associations. En adoptant une solution GED adaptée, vous optimisez votre organisation, renforcez votre transparence et libérez du temps précieux pour vos actions de terrain. L'investissement dans une GED performante constitue un choix stratégique qui accompagne durablement le développement de votre association tout en répondant aux attentes croissantes de vos membres, partenaires et financeurs en matière de digitalisation des processus associatifs."
+  },
+  {
+    "slug": "tpe-pme",
+    "titre": "Pourquoi la gestion électronique des documents est essentielle pour les TPE-PME ?",
+    "accroche": "Optimisez la gestion électronique des documents pour sécuriser, organiser et valoriser les données de votre entreprise.",
+    "image": "/secteurs/tpe-pme/tpe1.webp",
+    "description": "La gestion électronique des documents (GED) s'impose comme un levier stratégique pour les TPE-PME. Elle facilite l'accès, la conservation et la sécurisation des documents essentiels comme les factures, contrats et dossiers clients. Avec Zendoc, la GED devient un outil simple et puissant au service de la performance et de la conformité.",
+    "titreEnjeux": "Quels sont les enjeux majeurs de la GED pour les TPE-PME ?",
+    "descriptionEnjeux": "La gestion électronique des documents répond à des besoins précis : gagner du temps, assurer la sécurité juridique et améliorer la collaboration interne. Ces enjeux sont cruciaux pour la survie et le développement des petites et moyennes entreprises.",
+    "titreEnjeux2": "Quels défis les TPE-PME doivent-elles relever avec la GED ?",
+    "enjeux": [
+      {
+        "title": "La GED simplifie l’organisation en automatisant le classement et l’accès rapide aux documents.",
+        "icone": "iconeDossier"
+      },
+      {
+        "title": "Elle facilite l’indexation et la recherche instantanée des fichiers numériques.",
+        "icone": "iconeTemps"
+      },
+      {
+        "title": "La GED fait gagner jusqu’à 30 % de temps sur la gestion documentaire en TPE-PME.",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Elle garantit conformité, traçabilité et conservation sécurisée des documents.",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "La GED favorise le partage sécurisé et la collaboration à distance.",
+        "icone": "iconeUtilisateur"
+      }
+    ],
+    "paragrapheEnjeux": "Adopter une solution GED comme Zendoc, c’est répondre efficacement aux contraintes de gestion documentaire des TPE-PME. Cela se traduit par des processus optimisés, une réduction des erreurs humaines et une conformité renforcée avec la réglementation en vigueur.",
+    "titreFonctionnalité": "Quelles fonctionnalités Zendoc optimisent la GED pour les TPE-PME ?",
+    "fonctionnalites": [
+      {
+        "titre": "Archivage automatisé et indexation intelligente",
+        "contenu": "Zendoc classe automatiquement vos documents selon des critères personnalisés, facilitant une recherche rapide et précise."
+      },
+      {
+        "titre": "Gestion des accès et droits utilisateurs",
+        "contenu": "Contrôlez qui peut consulter, modifier ou supprimer les documents, pour garantir une sécurité optimale des données."
+      },
+      {
+        "titre": "Flux de validation et signatures électroniques",
+        "contenu": "Automatisez les circuits de validation et sécurisez les approbations grâce à la signature numérique intégrée."
+      },
+      {
+        "titre": "Intégration avec les outils comptables et CRM",
+        "contenu": "Synchronisez Zendoc avec vos logiciels métier pour une gestion fluide et sans double saisie."
+      },
+      {
+        "titre": "Sauvegarde et restauration sécurisées",
+        "contenu": "Protégez vos documents grâce à des sauvegardes régulières et un plan de reprise d’activité."
+      },
+      {
+        "titre": "Alertes et rappels personnalisables",
+        "contenu": "Recevez des notifications pour le suivi des échéances, renouvellements de contrats ou archivages."
+      }
+    ],
+    "conformite": {
+      "titre": "Comment Zendoc garantit-il la conformité réglementaire ?",
+      "contenu": "Zendoc répond aux normes françaises et européennes (RGPD, archivage électronique légal) en assurant l’intégrité, la traçabilité et la confidentialité des documents. La solution propose des horodatages, des contrôles d’accès rigoureux et un archivage probant indispensable pour répondre aux audits et contrôles."
+    },
+    "titrebenefices": "Quels bénéfices concrets la GED apporte-t-elle aux TPE-PME ?",
+    "imagebenefices": "/secteurs/tpe-pme/tpe2.webp",
+    "benefices": "La gestion électronique des documents augmente la productivité des TPE-PME, réduit les coûts liés au papier et aux erreurs administratives, et améliore la réactivité face aux clients et partenaires. Selon une étude récente, 68 % des petites entreprises équipées d’une GED constatent une amélioration notable de leur organisation interne.",
+    "prise_en_main": {
+      "titre": "Comment prendre rapidement en main Zendoc pour votre entreprise ?",
+      "contenu": "L’interface intuitive de Zendoc permet une prise en main rapide, même sans compétences techniques poussées. L’accompagnement personnalisé facilite la mise en place et la formation des équipes pour une adoption efficace au quotidien.",
+      "image": "/secteurs/tpe-pme/tpe_3.webp"
+    },
+    "formation": {
+      "titre": "Quelles formations pour maîtriser la GED avec Zendoc ?",
+      "contenu": [
+        {
+          "title": "Formation à l’indexation documentaire",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Atelier gain de temps et automatisation",
+          "icone": "iconeTemps"
+        },
+        {
+          "title": "Sessions collaboratives et travail en équipe",
+          "icone": "iconeUtilisateur"
+        },
+        {
+          "title": "Conformité et sécurité des données",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Signature électronique et validation",
+          "icone": "iconeSignatureCheck"
+        }
+      ]
+    },
+    "cta": "Découvrez comment Zendoc peut transformer la gestion électronique des documents dans votre TPE-PME dès aujourd’hui.",
+    "contenu": "La gestion électronique des documents est un levier incontournable pour la modernisation des TPE-PME. Elle assure non seulement la sécurité et la conformité des documents, mais elle booste également l’efficacité opérationnelle. Adopter Zendoc, c’est choisir une solution robuste, adaptée aux besoins spécifiques des petites structures, avec des outils puissants pour gérer, sécuriser et valoriser vos informations d’entreprise."
+  },
+
+  {
+    "slug": "grands-groupes",
+    "titre": "Pourquoi la GED est indispensable aux grands groupes ?",
+    "accroche": "Une solution de GED puissante, sécurisée et évolutive, conçue pour accompagner les grands groupes, les entreprises multisites et les organisations complexes dans la gestion, la traçabilité et la valorisation de leurs documents stratégiques, quels que soient leur volume, leur structure ou leur secteur.",
+    "image": "/secteurs/grand-groupe/grand-groupe1.webp",
+    "description": "La gestion électronique des documents (GED) représente bien plus qu’un outil de stockage pour les grands groupes. Elle constitue aujourd’hui un pilier stratégique pour organiser, sécuriser et exploiter la masse documentaire générée par les services d’une entreprise à grande échelle. Zeendoc s’impose comme une solution GED robuste, pensée pour l’interopérabilité, la conformité et la productivité en environnement multisite et multi-utilisateur.",
+    "titreEnjeux": "Quels sont les enjeux documentaires dans un grand groupe ?",
+    "descriptionEnjeux": "La gestion électronique des documents devient un enjeu critique pour les structures de grande taille. Entre la volumétrie croissante, les exigences réglementaires et la complexité organisationnelle, une solution GED permet de structurer, centraliser et automatiser les processus documentaires.",
+    "titreEnjeux2": "Les enjeux principaux sont :",
+    "enjeux": [
+      {
+        "title": "Centralisation des données sur l’ensemble des sites et services",
+        "icone": "iconeDossier"
+      },
+      {
+        "title": "Automatisation des processus métier",
+        "icone": "iconeTemps"
+      },
+      {
+        "title": "Sécurité et conformité (RGPD, normes ISO, archivage légal)",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Traçabilité et gouvernance documentaire",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Collaboration fluide entre services ou filiales à l’international",
+        "icone": "iconeUtilisateur"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc répond à ces besoins grâce à une architecture modulaire et évolutive, permettant de traiter de gros volumes, de suivre des flux de validation complexes et d’appliquer des politiques documentaires homogènes à l’échelle d’un groupe international.",
+    "titreFonctionnalité": "Comment Zeendoc facilite la gestion documentaire complexe ?",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatisé multisource",
+        "contenu": "ZeenDoc centralise et classe automatiquement les documents, quels que soient leur origine (email, ERP, scanner, outils métiers). Il extrait les métadonnées et les classe selon les règles internes de chaque service ou direction."
+      },
+      {
+        "titre": "Recherche intelligente et sécurisée",
+        "contenu": "Grâce à son moteur OCR et à des filtres avancés, les collaborateurs retrouvent instantanément les bons documents, même dans une base volumineuse, tout en respectant les droits d’accès."
+      },
+      {
+        "titre": "Espaces documentaires personnalisables",
+        "contenu": "Chaque service ou entité peut disposer de son propre espace documentaire, tout en intégrant un socle commun à l’entreprise. Les documents peuvent être partagés transversalement selon des règles précises."
+      },
+      {
+        "titre": "Signature électronique avancée et validation de workflow",
+        "contenu": "ZeenDoc intègre des solutions de signature électronique qualifiée, avec possibilité de circuits de validation interne, notification, annotation et suivi d’état."
+      },
+      {
+        "titre": "Archivage légal et conformité réglementaire",
+        "contenu": "ZeenDoc assure un archivage conforme aux normes françaises et européennes (NF Z42-013, RGPD, eIDAS, ISO 14641), avec horodatage, traçabilité et intégrité garanties."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution conforme, interopérable et hébergée en France",
+      "contenu": "ZeenDoc est interopérable avec les ERP, CRM et outils métiers via API. Elle est hébergée en France dans des datacenters certifiés ISO 27001, HDS et RGPD. La solution garantit la souveraineté et la sécurité des données stratégiques de l’entreprise."
+    },
+    "titrebenefices": "Quels bénéfices concrets pour un grand groupe ?",
+    "imagebenefices": "/secteurs/grand-groupe/grand-groupe2.webp",
+    "benefices": "La gestion électronique des documents dans un grand groupe offre un levier direct de performance. Elle permet de rationaliser les processus documentaires internes, d'automatiser les tâches répétitives et de gagner en fluidité dans les échanges entre services et sites distants. Zeendoc contribue à réduire les coûts liés au traitement manuel des documents, améliore la qualité de service interne et renforce la gouvernance documentaire. Selon une étude Xerfi, une GED bien intégrée peut générer jusqu’à 25 % d’économies sur les coûts opérationnels liés aux flux d’informations. Enfin, elle prépare les grandes organisations à répondre efficacement aux audits, aux contrôles internes et aux exigences croissantes en matière de conformité réglementaire.",
+    "prise_en_main": {
+      "titre": "Déploiement rapide, accompagné et adaptable à l’échelle",
+      "contenu": "ZeenDoc est pensé pour un déploiement progressif ou global, avec une architecture modulaire. Les équipes projet bénéficient d’un accompagnement personnalisé, de formations sur mesure et d’un support technique expert à chaque étape.",
+      "image": "/secteurs/grand-groupe/grand-groupe3.webp"
+    },
+    "formation": {
+      "titre": "Formation dédiée aux grands groupes",
+      "contenu": [
+        {
+          "title": "Déploiement multi-services et inter-sites",
+          "icone": "iconeEchange"
+        },
+        {
+          "title": "Gestion des habilitations avancées et de la traçabilité",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Mise en place de processus de validation et de circuit documentaire",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Conformité aux politiques internes et réglementations sectorielles",
+          "icone": "iconeUtilisateurVerifie"
+        },
+        {
+          "title": "Formation en silo ou par filière pour une appropriation progressive",
+          "icone": "iconeProgression"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et faites évoluer votre gestion documentaire à l’échelle de votre organisation.",
+    "contenu": "Demandez une démonstration personnalisée. Découvrez comment ZeenDoc peut accompagner la transformation digitale de votre entreprise, améliorer votre gouvernance documentaire et renforcer votre compétitivité grâce à une gestion électronique des documents fiable, conforme et scalable."
+  },
+
+  {
+    "slug": "sante",
+    "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les établissements de santé",
+    "accroche": "Une solution de GED puissante, sécurisée et évolutive, conçue pour accompagner les établissements de santé dans la gestion de leurs documents sensibles tout en garantissant conformité et performance.",
+    "image": "/secteurs/sante/sante1.jpg",
+    "description": "ZeenDoc est une solution française de Gestion Électronique de Documents (GED) qui répond aux exigences strictes du secteur de la santé. Dossiers patients, ordonnances, rapports médicaux, courriers, formulaires administratifs : tout est centralisé, sécurisé et accessible instantanément. La solution garantit le respect des normes en vigueur (HDS, RGPD, eIDAS), tout en optimisant la productivité des équipes soignantes et administratives. Grâce à sa flexibilité et son moteur intelligent de classement et de recherche, ZeenDoc simplifie la gestion documentaire des hôpitaux, cliniques, laboratoires et pharmacies.",
+    "titreEnjeux": "Les enjeux documentaires des établissements de santé",
+    "descriptionEnjeux": "La gestion documentaire en santé est soumise à des règles strictes, à la fois médicales, administratives et juridiques. Les flux de documents sont nombreux, confidentiels et nécessitent un accès rapide tout en respectant la confidentialité et la traçabilité.",
+    "titreEnjeux2": "Parmi les enjeux principaux :",
+    "enjeux": [
+      {
+        "title": "Protéger la confidentialité des données médicales sensibles",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Assurer la conformité aux normes HDS, RGPD et DMP",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Garantir la traçabilité complète des accès et actions",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Permettre un accès rapide aux documents en toute sécurité",
+        "icone": "iconeUtilisateur"
+      },
+      {
+        "title": "Réduire la charge administrative pour le personnel",
+        "icone": "iconeTemps"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc répond à ces enjeux en intégrant des fonctions avancées de sécurisation, de classement automatisé et de contrôle d'accès. Résultat : un gain de temps significatif et une conformité assurée, même dans les environnements médicaux les plus complexes.",
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour les professionnels de santé",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des dossiers médicaux",
+        "contenu": "ZeenDoc analyse les documents importés, reconnaît leur nature (prescriptions, examens, admissions...) et les classe dans les bons dossiers patients ou services, sans action manuelle."
+      },
+      {
+        "titre": "Recherche OCR instantanée et sécurisée",
+        "contenu": "Grâce à l’OCR, les professionnels retrouvent en quelques secondes n’importe quel document, même scanné, tout en respectant les droits d’accès par profil métier."
+      },
+      {
+        "titre": "Reconstitution de l’historique patient",
+        "contenu": "Tous les documents liés à un patient sont organisés dans un dossier unique, mis à jour automatiquement, accessible uniquement par les personnes autorisées."
+      },
+      {
+        "titre": "Signature électronique certifiée",
+        "contenu": "Les circuits de validation et signature s’intègrent au quotidien médical. La signature est conforme eIDAS, avec journalisation des étapes pour un suivi complet."
+      },
+      {
+        "titre": "Archivage légal certifié HDS",
+        "contenu": "Les documents sont conservés dans des conditions répondant aux normes HDS et NF Z42-013, avec garanties d’intégrité, de pérennité et de valeur probante."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution hébergée en France et certifiée HDS",
+      "contenu": "ZeenDoc est hébergée sur des infrastructures situées en France et certifiées HDS, ISO 27001 et ISO 9001. Cela garantit une protection maximale des données médicales, en conformité avec les exigences européennes (RGPD) et les recommandations de la CNIL."
+    },
+    "titrebenefices": "ZeenDoc, un atout stratégique pour les établissements de santé",
+    "benefices": "Dans un environnement médical où chaque minute compte, la GED ZeenDoc apporte une réponse concrète aux enjeux de performance, de conformité et de sécurité. En réduisant significativement la charge administrative, elle libère du temps pour les soins aux patients. Les documents sont centralisés, sécurisés et accessibles instantanément, même à distance, par les professionnels habilités. ZeenDoc permet également une meilleure traçabilité des échanges et une préparation sereine aux audits et contrôles réglementaires. Grâce à son interopérabilité avec les logiciels métier du secteur santé, la solution s’intègre naturellement dans l’écosystème existant. Elle devient ainsi un levier essentiel d’optimisation, aussi bien pour les hôpitaux que pour les cliniques, laboratoires, maisons de retraite ou pharmacies.",
+    "imagebenefices": "/secteurs/sante/sante2.webp",
+
+    "prise_en_main": {
+      "titre": "Un déploiement simple et un accompagnement spécifique au secteur médical",
+      "image": "/secteurs/sante/sante3.webp",
+      "contenu": "L’intégration de ZeenDoc est rapide, même dans un environnement hétérogène. Nos équipes accompagnent chaque établissement avec des formations ciblées selon les profils (secrétariat médical, direction, personnel soignant). Résultat : une adoption fluide et une montée en compétences immédiate."
+    },
+    "formation": {
+      "titre": "Formation dédiée aux acteurs de la santé (hôpitaux, cliniques, pharmacies)",
+      "contenu": [
+        {
+          "title": "Archivage et sécurisation des données de santé (conformité HDS)",
+          "icone": "iconeSecuriteBouclier"
+        },
+        {
+          "title": "Organisation des dossiers patients, prescriptions, commandes",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Optimisation des flux internes (laboratoires, facturation, gestion des stocks)",
+          "icone": "iconeEchange"
+        },
+        {
+          "title": "Respect des exigences CNIL et RGPD",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Prise en main rapide même pour les équipes non techniques",
+          "icone": "iconeTemps"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et transformez la gestion documentaire de votre établissement.",
+    "contenu": "Demandez une démonstration ou un essai adapté à votre structure (pharmacie, clinique, centre de santé…). Découvrez comment ZeenDoc améliore la sécurité, la conformité et la fluidité de vos flux documentaires. En moyenne, l’automatisation des processus documentaires réduit de 40% le temps passé sur l’administratif."
+  },
+
+  {
+    "slug": "architectes",
+    "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les architectes",
+    "accroche": "Une solution de GED pour architectes pensée pour optimiser le classement, la recherche et le partage de documents techniques, administratifs ou contractuels. Conçue pour s’adapter aux flux de travail spécifiques des cabinets d’architecture, ZeenDoc offre une gestion fluide, sécurisée et conforme à chaque étape du projet, de la conception au dépôt du dossier final.",
+    "image": "/secteurs/architecte/architect1.webp",
+    "description": "ZeenDoc est une solution française de GED pour architectes, conçue pour répondre aux enjeux spécifiques des professionnels de la construction et du design. Elle permet de gérer, classer, partager et sécuriser tous les documents d’un cabinet, des plans aux permis de construire, en passant par les devis, les contrats et les appels d’offres. Grâce à son ergonomie, sa puissance et sa conformité, ZeenDoc transforme la gestion documentaire en un véritable levier d'efficacité.",
+    "titreEnjeux": "Pourquoi une GED est-elle essentielle pour les architectes ?",
+    "descriptionEnjeux": "Une GED pour architectes ne se limite pas à stocker des fichiers. Elle centralise les données critiques, assure la traçabilité des versions et sécurise les échanges, dans un environnement où chaque document a une valeur légale, technique ou commerciale.",
+    "titreEnjeux2": "Les principaux enjeux du secteur :",
+    "enjeux": [
+      {
+        "title": "Gestion des plans, croquis, maquettes et photos",
+        "icone": "iconeDossier"
+      },
+      {
+        "title": "Suivi des versions et archivage des modifications",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Partage sécurisé des documents avec les clients, BET, entreprises, collectivités",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Respect des obligations légales (DCE, permis, assurances, etc.)",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Accès à distance aux dossiers sur chantier ou en déplacement",
+        "icone": "iconeUtilisateur"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc répond parfaitement à ces problématiques métiers grâce à une GED pour architectes adaptée aux réalités du terrain et aux exigences normatives.",
+    "titreFonctionnalité": "Quelles sont les fonctionnalités clés pour les architectes ?",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des documents de projet",
+        "contenu": "ZeenDoc reconnaît automatiquement les fichiers (plans, devis, permis...) et les associe aux bons projets en extrayant les métadonnées utiles (type de document, phase, client, date…)."
+      },
+      {
+        "titre": "Recherche intelligente et filtrée par projet",
+        "contenu": "Trouvez rapidement la bonne version d’un plan ou d’un contrat grâce au moteur de recherche OCR intégré, couplé à des filtres multicritères précis (chantier, phase, date, intervenant)."
+      },
+      {
+        "titre": "Suivi des versions et historique des modifications",
+        "contenu": "Visualisez l'évolution des documents avec un système de versioning complet, essentiel pour justifier chaque modification auprès des parties prenantes."
+      },
+      {
+        "titre": "Partage collaboratif sécurisé",
+        "contenu": "Envoyez des fichiers en toute sécurité à vos clients, BET ou maîtres d’ouvrage via des liens protégés, tout en définissant les droits d’accès et en suivant les actions effectuées."
+      },
+      {
+        "titre": "Archivage réglementaire et valeur probante",
+        "contenu": "ZeenDoc garantit un archivage conforme (NF Z42-013, RGPD, eIDAS) assurant l’intégrité et la pérennité des documents tout au long du cycle de vie des projets."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution souveraine, conforme et hébergée en France",
+      "contenu": "ZeenDoc est hébergée dans des datacenters français certifiés ISO 27001. Elle respecte les normes de sécurité et les réglementations RGPD, assurant la confidentialité de vos données sensibles."
+    },
+    "titrebenefices": "ZeenDoc, au service de la performance et de la créativité des architectes",
+    "imagebenefices": "/secteurs/architecte/architect2.webp",
+    "benefices": "En tant que solution de GED pour architectes, ZeenDoc permet un véritable gain de temps au quotidien. Grâce à l’automatisation du classement, les équipes passent moins de temps à chercher, trier ou archiver les documents. Ce temps gagné peut être réinvesti dans la conception et le suivi de projets. La traçabilité complète de chaque modification, couplée à un système d’alertes et d’historique, réduit considérablement les erreurs de version et les litiges contractuels. ZeenDoc améliore également la collaboration entre les différents acteurs du chantier en centralisant tous les échanges documentaires sur une seule plateforme. Selon une étude de SERDA (2024), un professionnel de l’architecture passe en moyenne 4h par semaine à rechercher des documents. Une GED bien configurée permet de réduire ce chiffre de 60 %. ZeenDoc devient donc un levier stratégique pour toute agence souhaitant gagner en efficacité, sécuriser ses documents et rester compétitive dans un environnement toujours plus digitalisé.",
+    "prise_en_main": {
+      "titre": "Une prise en main intuitive et un accompagnement sur mesure",
+      "image": "/secteurs/architecte/architect3.webp",
+      "contenu": "ZeenDoc s’utilise directement depuis un navigateur, sans logiciel lourd à installer. Nos équipes vous accompagnent pour configurer l’outil selon votre façon de travailler et vos projets types, avec une formation rapide et ciblée."
+    },
+    "formation": {
+      "titre": "Formation dédiée aux architectes",
+      "contenu": [
+        {
+          "title": "Structuration des dossiers par projet et par phase (PC, plans, DOE, etc.)",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Organisation des échanges avec les partenaires (MOA, MOE, bureaux d’études…)",
+          "icone": "iconeEchange"
+        },
+        {
+          "title": "Archivage de maquettes, schémas et visuels de grandes tailles",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Utilisation des tags et filtres pour gérer les typologies de documents",
+          "icone": "iconeRechercheAlt"
+        },
+        {
+          "title": "Formation pour une adoption rapide dans des environnements dynamiques",
+          "icone": "iconeTemps"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et libérez votre temps pour vous concentrer sur la création",
+    "contenu": "Demandez une démonstration personnalisée pour votre cabinet. Découvrez comment ZeenDoc peut simplifier votre gestion documentaire, fluidifier vos projets et renforcer la collaboration avec vos partenaires."
+  },
+  {
+    "slug": "btp",
+    "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour les entreprises du BTP",
+    "accroche": "Une solution de GED conçue pour les professionnels du BTP souhaitant centraliser, sécuriser et accéder rapidement à leurs documents, sur chantier comme au bureau.",
+    "image": "/secteurs/btp/btp1.webp",
+    "description": "Dans le secteur du bâtiment et des travaux publics, chaque projet implique une quantité importante de documents à gérer : devis, plans, attestations, contrats ou factures. ZeenDoc, solution française de Gestion Électronique de Documents (GED), accompagne les entreprises du BTP dans leur transformation digitale en automatisant le classement, en facilitant la recherche documentaire, et en garantissant la traçabilité et la sécurité des données. Accessible partout, la GED s'adapte aux contraintes de terrain et simplifie la vie des conducteurs de travaux, des chargés d’affaires et du personnel administratif.",
+    "titreEnjeux": "Les enjeux documentaires des entreprises du BTP",
+    "descriptionEnjeux": "Dans le secteur du BTP, la gestion documentaire est critique : chaque chantier génère une quantité importante de documents, souvent répartis entre plusieurs intervenants. Ces documents doivent être accessibles, à jour, sécurisés et archivés.",
+    "titreEnjeux2": "Les principaux enjeux :",
+    "enjeux": [
+      {
+        "title": "Centralisation des documents par chantier ou client",
+        "icone": "iconeDossier"
+      },
+      {
+        "title": "Suivi des devis, plans, DCE, factures, appels d’offres…",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Mobilité : accès aux documents sur le terrain",
+        "icone": "iconeUtilisateur"
+      },
+      {
+        "title": "Conformité légale (signature, archivage, traçabilité)",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Réduction du temps passé sur les tâches administratives",
+        "icone": "iconeTemps"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc permet de répondre à ces défis avec une solution GED agile, simple à déployer et taillée pour vos équipes.",
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour le BTP",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des documents de chantier",
+        "contenu": "ZeenDoc détecte les types de documents (plans, rapports, devis, factures, etc.) et les organise automatiquement selon vos règles : par chantier, client, type de prestation ou lot."
+      },
+      {
+        "titre": "Recherche rapide et efficace, même sur le terrain",
+        "contenu": "Grâce à son moteur de recherche OCR puissant, vous retrouvez instantanément un plan, une facture ou une attestation, même depuis une tablette ou un smartphone sur chantier."
+      },
+      {
+        "titre": "Suivi des versions et accès sécurisé aux documents",
+        "contenu": "Gérez les différentes versions des plans ou documents techniques. Accédez à l’historique complet et partagez les bons fichiers avec les bons interlocuteurs, au bon moment."
+      },
+      {
+        "titre": "Signature électronique conforme et traçabilité des actions",
+        "contenu": "Faites signer à distance vos devis, contrats ou comptes rendus via la plateforme, avec une valeur légale reconnue. Chaque action est enregistrée dans un journal sécurisé."
+      },
+      {
+        "titre": "Archivage à valeur probante",
+        "contenu": "ZeenDoc assure l’archivage sécurisé de vos documents, conformément aux normes (NF Z42-013, RGPD, eIDAS). Plus de risque de perte de données ni de non-conformité."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution conforme, hébergée en France, pensée pour le BTP",
+      "contenu": "ZeenDoc est hébergée dans des datacenters français certifiés ISO 27001. Elle garantit la sécurité de vos documents sensibles tout en vous assurant la conformité réglementaire."
+    },
+    "titrebenefices": "ZeenDoc, au service de la performance et de la réactivité terrain",
+    "imagebenefices": "/secteurs/btp/btp2.webp",
+    "benefices": "La GED ZeenDoc transforme la gestion quotidienne des documents dans le secteur du BTP. Elle centralise les dossiers, réduit les manipulations papier, et évite les pertes d’informations critiques. Les professionnels gagnent un temps précieux sur la recherche documentaire et la diffusion des bonnes versions aux équipes terrain. Une étude menée en 2023 révèle que les entreprises du BTP utilisant une GED bien paramétrée réduisent jusqu’à 40 % leur temps de traitement administratif. ZeenDoc favorise aussi une meilleure collaboration entre les bureaux d’études, les sous-traitants et les clients, en fluidifiant les échanges. En adoptant une GED adaptée, les entreprises du bâtiment renforcent leur productivité, leur conformité et leur réactivité.",
+    "prise_en_main": {
+      "titre": "Un déploiement rapide, une prise en main facile",
+      "image": "/secteurs/btp/btp3.webp",
+      "contenu": "ZeenDoc ne nécessite aucune installation lourde. L’interface intuitive permet une adoption rapide par vos équipes de terrain comme au bureau. Un accompagnement est assuré lors de la mise en œuvre, avec des formations ciblées."
+    },
+    "formation": {
+      "titre": "Formation dédiée au BTP",
+      "contenu": [
+        {
+          "title": "Organisation documentaire par chantier, lot, entreprise ou phase",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Suivi et archivage des documents contractuels (marchés, devis, bons de commande…)",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Gestion des documents terrain (rapports, photos, plans annotés…)",
+          "icone": "iconeRechercheAlt"
+        },
+        {
+          "title": "Sensibilisation des équipes de terrain à l’usage mobile de la GED",
+          "icone": "iconeUtilisateur"
+        },
+        {
+          "title": "Conformité des archives selon les exigences des marchés publics/privés",
+          "icone": "iconeJustice"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et transformez la gestion de vos chantiers",
+    "contenu": "Prenez contact pour une démonstration sur-mesure. Découvrez comment ZeenDoc peut simplifier votre quotidien, sécuriser vos documents et fluidifier vos projets dans le bâtiment."
+  },
+
+  {
+    "slug": "secteur-public",
+    "titre": "ZeenDoc : La solution de Gestion Électronique de Documents pensée pour le secteur public",
+    "accroche": "Une GED souveraine et conforme pour moderniser la gestion documentaire des collectivités et améliorer la performance des services publics",
+    "image": "/secteurs/secteur-public/secteur-public1.webp",
+
+    "description": "La Gestion Électronique de Documents (GED) devient incontournable pour le secteur public, confronté à des exigences croissantes en matière de transparence, d’efficacité et de sécurité. ZeenDoc, en tant que solution française dédiée à la GED, offre une réponse adaptée aux collectivités, mairies, départements, établissements publics ou services déconcentrés. Grâce à ses fonctionnalités intuitives, la plateforme fluidifie les processus documentaires, simplifie les démarches administratives et garantit une conformité totale aux réglementations. Accessible et performante, ZeenDoc s’impose comme un levier stratégique pour moderniser la gestion des documents dans l’ensemble du service public.",
+
+    "titreEnjeux": "Les enjeux documentaires du secteur public",
+    "descriptionEnjeux": "Le service public traite quotidiennement des milliers de documents soumis à des règles strictes. Qu’il s’agisse de factures, délibérations, arrêtés, marchés publics ou dossiers RH, ces documents doivent être archivés, sécurisés et accessibles tout en garantissant leur valeur légale. La GED s’impose alors comme un outil structurant pour répondre à ces enjeux.",
+    "titreEnjeux2": "Les enjeux majeurs sont :",
+    "enjeux": [
+      {
+        "title": "Centralisation et organisation des documents administratifs",
+        "icone": "iconeDossier"
+      },
+      {
+        "title": "Accès rapide et maîtrisé à l’information",
+        "icone": "iconeRechercheAlt"
+      },
+      {
+        "title": "Archivage légal et durable",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Transparence et traçabilité des actions",
+        "icone": "iconeTransparence"
+      },
+      {
+        "title": "Optimisation des processus et réduction de la charge administrative",
+        "icone": "iconeTemps"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc répond à ces besoins avec une solution GED simple, performante et conçue pour les exigences du service public.",
+
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour les collectivités",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique par service ou type de document",
+        "contenu": "Dès l'importation, ZeenDoc identifie le document (délibération, arrêté, facture, courrier, etc.) et le classe automatiquement selon l’organisation de la collectivité ou du service concerné."
+      },
+      {
+        "titre": "Moteur de recherche OCR multi-critères",
+        "contenu": "Retrouvez rapidement un document ou une information dans des milliers d’archives grâce à la reconnaissance de texte même sur des documents scannés ou anciens."
+      },
+      {
+        "titre": "Gestion des droits et partage interservices",
+        "contenu": "ZeenDoc permet de paramétrer des accès selon les rôles : secrétariat, direction générale, services techniques, finances… Tout en garantissant la confidentialité des données."
+      },
+      {
+        "titre": "Archivage conforme aux normes en vigueur",
+        "contenu": "Respect des exigences archivistiques (NF Z42-013), de la RGPD, et des obligations légales du Code des collectivités. ZeenDoc garantit la valeur probante des documents archivés."
+      },
+      {
+        "titre": "Historique des actions et traçabilité complète",
+        "contenu": "Chaque action effectuée sur un document (consultation, annotation, signature, téléchargement…) est enregistrée, ce qui renforce la transparence et la sécurité."
+      },
+      {
+        "titre": "Signature électronique et dématérialisation des processus",
+        "contenu": "ZeenDoc facilite la signature de documents internes ou à transmettre à d’autres institutions, avec une valeur légale reconnue et des flux simplifiés."
+      }
+    ],
+
+    "conformite": {
+      "titre": "Une solution conforme, souveraine, hébergée en France",
+      "contenu": "ZeenDoc est 100 % française, hébergée sur des serveurs certifiés HDS et ISO 27001. Elle assure la souveraineté et la protection des données publiques sensibles."
+    },
+
+    "titrebenefices": "ZeenDoc, au service de l’administration moderne",
+    "imagebenefices": "/secteurs/secteur-public/secteur-public2.webp",
+    "benefices": "ZeenDoc permet aux collectivités de franchir un cap dans leur transformation numérique. En automatisant les flux de travail documentaires, la GED réduit significativement le temps consacré aux tâches répétitives. Une étude menée en 2024 par Archimag montre que plus de 60 % des agents gagnent en efficacité grâce à une GED bien implémentée. La centralisation des données offre un accès rapide et sécurisé, limitant les risques d’erreurs ou de pertes de documents. En favorisant la traçabilité et le partage transversal, ZeenDoc fluidifie les échanges entre services, tout en assurant une conformité complète aux normes du secteur public. Elle devient ainsi un levier stratégique pour les administrations modernes qui veulent concilier performance et obligations réglementaires.",
+
+    "prise_en_main": {
+      "titre": "Une prise en main rapide avec accompagnement dédié",
+      "image": "/secteurs/secteur-public/secteur-public3.webp",
+      "contenu": "L’interface web de ZeenDoc est simple d’utilisation, même pour les agents non familiers avec les outils numériques. Des formations sont proposées pour chaque service concerné, ainsi qu’un accompagnement à la mise en œuvre de la dématérialisation."
+    },
+
+    "formation": {
+      "titre": "Formation dédiée au secteur public (mairies, collectivités, établissements publics)",
+      "contenu": [
+        {
+          "title": "Organisation par service et type de document (urbanisme, RH, finances…)",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Respect des exigences d’archivage public (instruction, conservation, traçabilité)",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Gestion des circuits de validation interne",
+          "icone": "iconeCircuit"
+        },
+        {
+          "title": "Conformité RGPD et souveraineté des données",
+          "icone": "iconeSecuriteBouclier"
+        },
+        {
+          "title": "Sensibilisation à la dématérialisation dans le cadre des politiques publiques",
+          "icone": "iconeUtilisateur"
+        }
+      ]
+    },
+
+    "cta": "Adoptez ZeenDoc pour une gestion documentaire moderne et conforme",
+    "contenu": "Demandez une démonstration personnalisée. Découvrez comment ZeenDoc peut vous aider à améliorer la gestion documentaire au sein de votre collectivité, tout en assurant sécurité, conformité et efficacité."
+  },
+  {
+    "slug": "finance",
+    "titre": "Pourquoi choisir ZeenDoc pour une GED conforme et sécurisée dans la finance ?",
+    "accroche": "Une solution de GED taillée pour les métiers de la finance, alliant conformité réglementaire, sécurité des données et performance opérationnelle.",
+    "image": "/secteurs/finance/finance1.webp",
+    "description": "Dans un environnement soumis à des exigences strictes en matière de conformité, la GED devient un outil stratégique pour les acteurs de la finance. ZeenDoc permet de gérer efficacement les documents sensibles tout en assurant traçabilité, rapidité d’accès, sécurité et respect des obligations réglementaires.",
+    "titreEnjeux": "Les enjeux documentaires du secteur de la finance",
+    "descriptionEnjeux": "Banques, compagnies d’assurance, cabinets comptables et sociétés de gestion manipulent chaque jour un volume important de documents critiques. La gestion électronique de documents (GED) permet à ces organisations de garantir la sécurité des données, la conformité réglementaire et l'efficacité des processus internes.",
+    "titreEnjeux2": "Les enjeux clés :",
+    "enjeux": [
+      {
+        "title": "Sécurisation des données confidentielles et financières",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Conformité réglementaire (RGPD, eIDAS, normes d’archivage)",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Traçabilité des échanges et des actions",
+        "icone": "iconeEchange"
+      },
+      {
+        "title": "Accès rapide à l’information",
+        "icone": "iconeRechercheAlt"
+      },
+      {
+        "title": "Fluidité des échanges internes et avec les clients",
+        "icone": "iconeUtilisateur"
+      }
+    ],
+    "paragrapheEnjeux": "Grâce à ZeenDoc, chaque document est automatiquement indexé, classé et sécurisé. Cette solution de GED assure une traçabilité complète tout en simplifiant les échanges entre services, agences et partenaires.",
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour les professionnels de la finance",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des documents par client, produit ou dossier",
+        "contenu": "ZeenDoc identifie et classe automatiquement les pièces (KYC, contrats, justificatifs, déclarations, etc.) selon votre arborescence métier. Plus besoin de trier manuellement."
+      },
+      {
+        "titre": "Recherche avancée et OCR intelligent",
+        "contenu": "Grâce à son moteur de recherche performant, accédez instantanément à un document ou à une information dans un corpus volumineux, même si le document est scanné ou mal structuré."
+      },
+      {
+        "titre": "Traçabilité complète et auditabilité",
+        "contenu": "Toutes les actions sont enregistrées : qui a consulté, modifié, annoté ou partagé un document ? ZeenDoc conserve une piste d’audit complète, essentielle pour les contrôles internes ou externes."
+      },
+      {
+        "titre": "Signature électronique intégrée (conforme eIDAS)",
+        "contenu": "Faites signer à distance des documents à valeur légale (contrats, accords, mandats) tout en suivant l’état des signatures depuis la plateforme."
+      },
+      {
+        "titre": "Archivage à valeur probante",
+        "contenu": "Conservez vos documents sensibles en toute conformité avec les normes (NF Z42-013, RGPD, ISO, etc.) et bénéficiez d’un archivage longue durée sécurisé."
+      },
+      {
+        "titre": "Gestion des habilitations et confidentialité",
+        "contenu": "Définissez précisément les droits d’accès selon les rôles (back-office, compliance, direction, auditeurs…) pour garantir la confidentialité des données financières."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution souveraine, conforme et hébergée en France",
+      "contenu": "ZeenDoc est hébergée sur des infrastructures françaises certifiées ISO 27001 et HDS. Elle garantit souveraineté, intégrité et conformité de vos données critiques."
+    },
+    "titrebenefices": "ZeenDoc, un levier de performance pour le secteur financier",
+    "imagebenefices": "/secteurs/finance/finance2.webp",
+    "benefices": "En intégrant une GED comme ZeenDoc, les entreprises du secteur financier réduisent drastiquement les risques de non-conformité et d’erreur humaine. En moyenne, la gestion documentaire automatisée permet de gagner jusqu’à 40 % de temps dans le traitement administratif. ZeenDoc assure un archivage conforme, une accessibilité immédiate à l’information et une transparence des actions pour répondre aux exigences des audits et des régulateurs. C’est aussi un moyen efficace d’optimiser les processus métiers comme l’onboarding client ou la gestion des pièces KYC. La GED devient ainsi un véritable pilier de la performance et de la relation client. La solution ZeenDoc accompagne cette transformation en garantissant une gestion documentaire fluide, rapide et certifiée.",
+    "prise_en_main": {
+      "titre": "Une solution pensée pour vos équipes métiers",
+      "image": "/secteurs/finance/finance3.webp",
+      "contenu": "Simple à déployer, ZeenDoc s’adapte à votre organisation (multi-sites, multi-activités, niveaux d’habilitation) avec une interface intuitive, accessible depuis tout terminal sécurisé. L’accompagnement à la mise en œuvre inclut des formations sur mesure pour vos équipes."
+    },
+    "formation": {
+      "titre": "Formation dédiée à la finance, banque, assurance",
+      "contenu": [
+        {
+          "title": "Classification des documents sensibles (KYC, contrats, justificatifs…)",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Conformité avec les exigences de l’ACPR, RGPD et normes de sécurité",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Traçabilité et auditabilité des accès et modifications",
+          "icone": "iconeEchange"
+        },
+        {
+          "title": "Optimisation des flux internes entre agences, clients et partenaires",
+          "icone": "iconeUtilisateur"
+        },
+        {
+          "title": "Formation des équipes en conformité, gestion de risques et back-office",
+          "icone": "iconeCloud"
+        }
+      ]
+    },
+    "cta": "Demandez une démonstration personnalisée de ZeenDoc",
+    "contenu": "ZeenDoc vous aide à transformer votre gestion documentaire en un processus fluide, sécurisé et conforme. Contactez-nous pour une démonstration dédiée au secteur financier ou pour démarrer votre essai."
+  },
+  {
+    "slug": "commercial",
+    "titre": "ZeenDoc : la GED idéale pour booster la performance commerciale",
+    "accroche": "Une solution de GED pensée pour les équipes commerciales, capable de centraliser les échanges documentaires et fluidifier les opérations entre terrain, back-office et direction.",
+    "image": "/secteurs/commercial/commercial1.webp",
+    "description": "ZeenDoc, solution française de GED, s’impose comme un outil stratégique pour les entreprises commerciales. Conçue pour répondre aux enjeux de réactivité, de mobilité et de sécurité, elle facilite la gestion des documents commerciaux : devis, contrats, bons de livraison ou encore factures. Grâce à sa puissance de traitement et à ses options de classement intelligent, ZeenDoc permet de structurer efficacement l’information au sein de réseaux de distribution, franchises ou enseignes multi-sites.",
+    "titreEnjeux": "Les enjeux documentaires du secteur commercial",
+    "descriptionEnjeux": "Dans le secteur du commerce, la gestion documentaire est une activité quotidienne critique. Les documents circulent en grand volume, entre services, entrepôts, clients et fournisseurs. Ces échanges doivent rester fluides, traçables et conformes aux exigences réglementaires.",
+    "titreEnjeux2": "Les enjeux principaux :",
+    "enjeux": [
+      {
+        "title": "Accès rapide et mobile aux documents clients ou fournisseurs",
+        "icone": "iconeRechercheAlt"
+      },
+      {
+        "title": "Sécurisation des informations commerciales sensibles",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Réduction des erreurs et doublons dans les échanges",
+        "icone": "iconeEchange"
+      },
+      {
+        "title": "Archivage réglementaire des documents de vente",
+        "icone": "iconeFichierArchive"
+      },
+      {
+        "title": "Coordination fluide entre terrain, back-office et direction",
+        "icone": "iconeUtilisateur"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc simplifie cette gestion documentaire en offrant un environnement unifié, sécurisé et adapté aux rythmes des entreprises commerciales.",
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour les entreprises commerciales",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique par client, produit ou canal de vente",
+        "contenu": "ZeenDoc extrait les données des documents entrants et les classe automatiquement selon des critères personnalisés (client, date, référence produit, secteur…). Ce tri intelligent limite les erreurs humaines et accélère la recherche d’informations."
+      },
+      {
+        "titre": "Accès mobile et sécurisé",
+        "contenu": "Les équipes commerciales peuvent consulter ou transmettre un document depuis le terrain. L’interface mobile de ZeenDoc permet une consultation fluide, tout en assurant la protection des données sensibles grâce au chiffrement et à la gestion des accès."
+      },
+      {
+        "titre": "Recherche ultra-rapide sur l’ensemble des documents",
+        "contenu": "Avec la technologie OCR embarquée, la GED ZeenDoc identifie instantanément les contenus de vos devis, contrats ou catalogues. Un simple mot-clé suffit à retrouver un fichier parmi des milliers."
+      },
+      {
+        "titre": "Partage et collaboration interservices",
+        "contenu": "La GED ZeenDoc assure la bonne circulation de l’information entre le service client, la logistique et la direction. Chaque utilisateur a un accès ciblé, évitant les doublons et optimisant la réactivité."
+      },
+      {
+        "titre": "Signature électronique intégrée",
+        "contenu": "Faites signer un bon de commande ou un contrat à distance avec une valeur juridique reconnue. Ce module accélère les cycles de vente et réduit les délais d’engagement."
+      },
+      {
+        "titre": "Archivage sécurisé des documents de vente",
+        "contenu": "La GED ZeenDoc assure la conservation probante des pièces commerciales pendant 10 ans ou plus, conformément aux exigences légales. Les documents sont datés, scellés et protégés contre les altérations."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution souveraine et conforme RGPD",
+      "contenu": "ZeenDoc garantit une gestion documentaire conforme aux normes européennes. Les serveurs d’hébergement sont situés en France, certifiés ISO 27001, et les procédures internes respectent les exigences du RGPD pour la protection des données personnelles."
+    },
+    "titrebenefices": "ZeenDoc, un levier de compétitivité commerciale",
+    "imagebenefices": "/secteurs/commercial/commercial2.webp",
+    "benefices": "La GED ZeenDoc permet de réduire jusqu’à 40 % du temps passé à la gestion documentaire dans les services commerciaux. Ce gain de temps profite directement à l’activité : les commerciaux passent plus de temps sur le terrain, la facturation est accélérée et les litiges documentaires sont réduits. En digitalisant les échanges contractuels et en sécurisant les archives, ZeenDoc améliore la relation client, renforce la réactivité et réduit les coûts liés aux erreurs de saisie ou à la perte de documents. La GED devient ainsi un outil stratégique pour toute organisation commerciale soucieuse de sa performance.",
+    "prise_en_main": {
+      "titre": "Une solution simple à déployer, avec un accompagnement sur mesure",
+      "image": "/secteurs/commercial/commercial3.webp",
+      "contenu": "ZeenDoc est facilement intégrable dans votre système d’information existant. Les équipes bénéficient d’un accompagnement personnalisé, de la configuration initiale jusqu’à la formation continue. Résultat : un déploiement rapide, des utilisateurs autonomes, et une GED pleinement opérationnelle."
+    },
+    "formation": {
+      "titre": "Formation dédiée au commerce et à la distribution",
+      "contenu": [
+        {
+          "title": "Organisation des documents clients, fournisseurs, logistique",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Centralisation des documents liés aux points de vente",
+          "icone": "iconeCommercial"
+        },
+        {
+          "title": "Suivi documentaire des contrats, bons de livraison, garanties…",
+          "icone": "iconeSignatureCheck"
+        },
+        {
+          "title": "Automatisation des relances, des réclamations et SAV",
+          "icone": "iconeTemps"
+        },
+        {
+          "title": "Formation axée sur la rapidité de traitement et la coordination multisite",
+          "icone": "iconeUtilisateur"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et dynamisez votre gestion commerciale",
+    "contenu": "Contactez-nous pour une démonstration personnalisée. Découvrez comment ZeenDoc peut booster votre efficacité commerciale en simplifiant et sécurisant la gestion documentaire."
+  },
+  {
+    "slug": "freelance-independant",
+    "titre": "Indépendants : simplifiez votre gestion avec la GED ZeenDoc",
+    "accroche": "La GED devient un véritable assistant numérique pour les freelances, en simplifiant la gestion documentaire et en allégeant les tâches administratives du quotidien.",
+    "image": "/secteurs/freelance/freelance1.webp",
+    "description": "ZeenDoc accompagne les travailleurs indépendants, freelances et auto-entrepreneurs dans la maîtrise de leur gestion documentaire. Grâce à une GED intelligente et intuitive, vous centralisez, sécurisez et retrouvez en quelques clics tous vos fichiers essentiels : devis, factures, contrats, pièces comptables, ou justificatifs clients.",
+    "titreEnjeux": "Les enjeux documentaires des indépendants et freelances",
+    "descriptionEnjeux": "Gérer son activité en solo implique une autonomie totale, y compris dans l’organisation des documents. Entre les obligations fiscales, les relations clients et les tâches quotidiennes, l’absence d’un outil adapté peut vite faire perdre un temps précieux et générer des erreurs critiques.",
+    "titreEnjeux2": "Les besoins essentiels :",
+    "enjeux": [
+      {
+        "title": "Tous vos documents réunis en un seul espace sécurisé",
+        "icone": "iconeDossier"
+      },
+      {
+        "title": "Moins de paperasse, plus de temps pour vos clients",
+        "icone": "iconeTemps"
+      },
+      {
+        "title": "Une comptabilité mieux structurée au quotidien",
+        "icone": "iconeEchange"
+      },
+      {
+        "title": "Trouvez vos informations en quelques secondes",
+        "icone": "iconeRechercheAlt"
+      },
+      {
+        "title": "Protégez vos données et restez conforme au RGPD",
+        "icone": "iconeJustice"
+      }
+    ],
+    "paragrapheEnjeux": "Avec ZeenDoc, les freelances retrouvent du temps et de la sérénité. Plus besoin de fouiller dans des dossiers éparpillés ou de multiplier les outils : tout est centralisé, accessible, sécurisé.",
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour les freelances",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des documents par client ou projet",
+        "contenu": "ZeenDoc trie les documents dès l’importation, grâce à une reconnaissance intelligente des données. Vous gagnez du temps et limitez les erreurs de classement."
+      },
+      {
+        "titre": "Recherche rapide de fichiers et contenus",
+        "contenu": "Grâce à un moteur OCR intégré, même les documents scannés ou les fichiers PDF sont consultables. Vous accédez à n’importe quelle information instantanément."
+      },
+      {
+        "titre": "Archivage à valeur probante",
+        "contenu": "ZeenDoc garantit un archivage conforme aux exigences légales, pour conserver vos factures, contrats ou justificatifs en toute sécurité, sans risque de perte."
+      },
+      {
+        "titre": "Accès depuis tous vos appareils",
+        "contenu": "Que vous soyez chez un client ou en déplacement, votre GED vous suit partout. L’interface responsive est pensée pour une mobilité totale."
+      },
+      {
+        "titre": "Partage sécurisé des documents avec les clients ou l’expert-comptable",
+        "contenu": "Envoyez des fichiers sensibles ou des justificatifs sans sortir de votre interface GED. La traçabilité est assurée, et la confidentialité respectée."
+      },
+      {
+        "titre": "Signature électronique intégrée",
+        "contenu": "Faites signer vos contrats à distance depuis la plateforme, de façon légale et simple. Une fonctionnalité essentielle pour les professionnels mobiles."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution conforme, française et simple à prendre en main",
+      "contenu": "ZeenDoc est hébergée en France, 100 % conforme RGPD, et conçue pour tous les professionnels, même sans compétence technique. Elle fonctionne dans le navigateur et ne nécessite aucune installation."
+    },
+    "titrebenefices": "ZeenDoc, votre assistant numérique au quotidien",
+    "imagebenefices": "/secteurs/freelance/freelance2.webp",
+    "benefices": "Adopter une solution de GED comme ZeenDoc, c’est investir dans un assistant virtuel dédié à votre efficacité. Chaque document est accessible en quelques secondes, même depuis votre mobile. Vous structurez votre activité, gagnez en sérénité lors des déclarations fiscales et limitez les risques d’erreur. En moyenne, les indépendants utilisant une GED réduisent de 35 % leur temps de gestion administrative. La centralisation et l’automatisation deviennent de véritables alliées au quotidien.",
+    "prise_en_main": {
+      "titre": "Formations et accompagnement adaptés aux indépendants",
+      "image": "/secteurs/freelance/freelance3.webp",
+      "contenu": "ZeenDoc propose une prise en main rapide, accompagnée de tutoriels et de formations sur mesure pour les freelances, quel que soit le domaine d’activité (consultant, coach, développeur, artisan…)."
+    },
+    "formation": {
+      "titre": "Formation dédiée aux freelances et indépendants",
+      "contenu": [
+        {
+          "title": "Organisation personnelle des documents clients, devis, factures",
+          "icone": "iconeDossier"
+        },
+        {
+          "title": "Automatisation des tâches répétitives et gestion simplifiée des flux",
+          "icone": "iconeEchange"
+        },
+        {
+          "title": "Archivage légal des pièces comptables et justificatives",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Accès mobile pour gérer sa documentation où que l’on soit",
+          "icone": "iconeRechercheAlt"
+        },
+        {
+          "title": "Formation personnalisée sur les cas d’usage spécifiques",
+          "icone": "iconeSignatureCheck"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et simplifiez votre quotidien professionnel",
+    "contenu": "Demandez une démo personnalisée ou testez gratuitement ZeenDoc. Gagnez en efficacité et en sérénité dans votre gestion documentaire."
+  },
+
+  {
+    "slug": "medico-social-associatif",
+    "titre": "GED ZeenDoc : la solution documentaire idéale pour le médico-social et l’associatif",
+    "image": "/secteurs/medico-social/medico1.webp",
+    "accroche": "La GED s’impose comme un outil clé pour les structures médico-sociales, conciliant exigences réglementaires strictes et besoins pratiques du terrain.",
+    "description": "Dans le secteur médico-social, la gestion électronique de documents (GED) devient un levier incontournable pour simplifier l’organisation, assurer la conformité légale et gagner du temps. ZeenDoc offre une GED intuitive et performante pour les établissements de soins, les associations sociales, les foyers d’hébergement ou encore les centres d’accueil. Elle répond aux besoins de centralisation documentaire, de traçabilité, de sécurité et de partage, même dans les contextes multisites.",
+    "titreEnjeux": "Les enjeux documentaires dans le secteur médico-social et associatif",
+    "descriptionEnjeux": "Les structures médico-sociales doivent gérer de nombreux types de documents sensibles : dossiers des résidents ou bénéficiaires, conventions, documents de soins, dossiers RH, factures, subventions… La gestion de ces documents est soumise à des exigences de sécurité, de conformité, et d’accessibilité au quotidien.",
+    "titreEnjeux2": "Les défis courants :",
+    "enjeux": [
+      {
+        "title": "Gestion sécurisée des dossiers usagers et résidents",
+        "icone": "iconeSecuriteBouclier"
+      },
+      {
+        "title": "Respect des normes légales (RGPD, archivage à valeur probante)",
+        "icone": "iconeJustice"
+      },
+      {
+        "title": "Accès simple pour les professionnels terrain comme les services administratifs",
+        "icone": "iconeUtilisateur"
+      },
+      {
+        "title": "Suivi et partage sécurisé des documents",
+        "icone": "iconeEchange"
+      },
+      {
+        "title": "Coordination entre plusieurs établissements ou services",
+        "icone": "iconeUtilisateur"
+      }
+    ],
+    "paragrapheEnjeux": "ZeenDoc répond à tous ces enjeux, avec une solution complète et facile à mettre en œuvre.",
+    "titreFonctionnalité": "Les fonctionnalités clés de ZeenDoc pour le médico-social associatif",
+    "fonctionnalites": [
+      {
+        "titre": "Classement automatique des documents par bénéficiaire, service ou établissement",
+        "contenu": "ZeenDoc trie et indexe automatiquement les documents selon les règles métier, facilitant l’accès à chaque dossier."
+      },
+      {
+        "titre": "Recherche instantanée et sécurisée",
+        "contenu": "Accédez rapidement à un contrat, une ordonnance, une fiche RH ou une convention grâce à la recherche OCR, même sur documents scannés."
+      },
+      {
+        "titre": "Gestion des dossiers usagers et RH",
+        "contenu": "Créez une arborescence par résident, bénéficiaire ou salarié. Centralisez et sécurisez toutes les pièces avec des droits d’accès sur mesure."
+      },
+      {
+        "titre": "Partage collaboratif contrôlé",
+        "contenu": "Partagez des documents entre établissements, services sociaux, familles ou partenaires externes, tout en respectant la confidentialité."
+      },
+      {
+        "titre": "Archivage à valeur probante",
+        "contenu": "Conformité aux normes (NF Z42-013, RGPD…) pour conserver les documents sur le long terme, avec traçabilité et sécurité."
+      },
+      {
+        "titre": "Signature électronique intégrée",
+        "contenu": "Faites signer à distance des contrats de séjour, des fiches de liaison ou des documents administratifs, en toute légalité."
+      }
+    ],
+    "conformite": {
+      "titre": "Une solution 100 % française, conforme RGPD et pensée pour le médico-social",
+      "contenu": "ZeenDoc est hébergée en France, sur des serveurs certifiés HDS (Hébergement de Données de Santé) et conforme aux exigences RGPD et sectorielles. Elle garantit la souveraineté et la confidentialité de vos données."
+    },
+    "titrebenefices": "ZeenDoc, un levier d’efficacité pour les établissements médico-sociaux",
+    "imagebenefices": "/secteurs/medico-social/medico2.webp",
+    "benefices": "Grâce à la GED ZeenDoc, les structures médico-sociales gagnent en efficacité et en sérénité. L’automatisation des classements réduit drastiquement les erreurs et les oublis. La recherche instantanée des pièces administratives ou médicales simplifie le quotidien des soignants, éducateurs et agents de direction. En moyenne, les structures utilisant ZeenDoc constatent un gain de temps de 35 % sur le traitement documentaire. L’accessibilité multisite permet une continuité de service, même en cas de mobilité des équipes. Enfin, la GED garantit une traçabilité optimale et sécurise les données sensibles, dans le respect des dernières normes en vigueur.",
+    "prise_en_main": {
+      "titre": "Une prise en main rapide, avec accompagnement humain et sectoriel",
+      "image": "/secteurs/medico-social/medico3.webp",
+      "contenu": "ZeenDoc propose un accompagnement personnalisé à chaque étape : audit, paramétrage, formation. L’outil est adapté aux profils non techniques, pour une adoption fluide par tous les collaborateurs."
+    },
+    "formation": {
+      "titre": "Formation dédiée au secteur médico-social associatif (EHPAD, ESAT, hébergement)",
+      "contenu": [
+        {
+          "title": "Gestion des dossiers usagers / résidents dans le respect du secret médical",
+          "icone": "iconeSecuriteBouclier"
+        },
+        {
+          "title": "Archivage des documents administratifs, médicaux, RH et institutionnels",
+          "icone": "iconeFichierArchive"
+        },
+        {
+          "title": "Conformité aux obligations ARS, HADS et RGPD",
+          "icone": "iconeJustice"
+        },
+        {
+          "title": "Formation des équipes pluridisciplinaires sur la collaboration via la GED",
+          "icone": "iconeUtilisateur"
+        },
+        {
+          "title": "Utilisation intuitive pour des personnels non experts en informatique",
+          "icone": "iconeTemps"
+        }
+      ]
+    },
+    "cta": "Essayez ZeenDoc et optimisez la gestion documentaire de votre structure",
+    "contenu": "Contactez-nous pour une démonstration sur mesure ou une version d’essai. Découvrez comment ZeenDoc facilite la gestion quotidienne des documents dans le médico-social."
+  }
+]
