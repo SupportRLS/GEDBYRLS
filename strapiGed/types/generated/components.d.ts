@@ -223,6 +223,22 @@ export interface UiButtonDuo extends Struct.ComponentSchema {
   };
 }
 
+export interface UiUiTextImgRight extends Struct.ComponentSchema {
+  collectionName: 'components_ui_text_img_right';
+  info: {
+    description: 'Section with text and image aligned right';
+    displayName: 'Ui Text Image Right';
+  };
+  attributes: {
+    accroche: Schema.Attribute.Text;
+    contenu: Schema.Attribute.RichText;
+    image: Schema.Attribute.Media<'images'>;
+    imageAlt: Schema.Attribute.String;
+    reverse: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    titre: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -243,6 +259,7 @@ declare module '@strapi/strapi' {
       'shared.slider': SharedSlider;
       'ui.button-config': UiButtonConfig;
       'ui.button-duo': UiButtonDuo;
+      'ui.ui-text-img-right': UiUiTextImgRight;
     }
   }
 }

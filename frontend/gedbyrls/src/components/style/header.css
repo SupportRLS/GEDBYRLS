@@ -14,17 +14,21 @@
   align-items: center;
   gap: 40px;
 }
+
 .buttonHeader {
   margin-left: 50%;
   display: flex;
 }
+
 a {
   text-decoration: none;
   color: #2e1e21;
 }
+
 .Logo {
   width: 4rem;
 }
+
 .active {
   color: #f71344;
   text-decoration-line: none;
@@ -35,9 +39,11 @@ a {
   width: 1.4rem;
   height: 1.4rem;
 }
+
 .Dropdown {
   position: relative;
 }
+
 .Dropdown > div {
   cursor: pointer;
   display: flex;
@@ -45,20 +51,22 @@ a {
   gap: 5px;
   font-weight: 500;
 }
+
 .Arrow {
   padding-left: 5px;
   transition: transform 0.3s ease;
 }
+
 .Arrow.active {
   transform: rotate(180deg);
 }
 
 .Menu {
   position: absolute;
+  background-color: #ffffff;
   top: 100%;
   left: 0;
   margin-top: 10px;
-  background-color: #fff;
   border-radius: 20px;
   padding: 50px 70px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
@@ -68,6 +76,7 @@ a {
   z-index: 1000;
   animation: fadeSlide 0.3s ease-out forwards;
 }
+
 @keyframes fadeSlide {
   0% {
     opacity: 0;
@@ -76,6 +85,29 @@ a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Animation pour le menu mobile */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -144,66 +176,349 @@ a {
   gap: 40px;
   align-items: center;
 }
+.CloseMenuButton {
+  display: none;
+}
+.TraitContactHeader {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 1410px) {
+  .Menu {
+    padding: 20px 30px;
+  }
+  .Menu a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1330px) {
+  .Menu {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 15px 30px;
+  }
+  .ressources-menu {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+}
 
-@media (max-width: 768px) {
-  .HeaderNav {
-    padding: 20px 15px;
-    margin: 0 1rem;
+@media (max-width: 1300px) {
+  .NavMenu {
+    font-size: 0.9rem;
+  }
+  .TraitContactHeader {
+    display: none;
   }
 
-  /* Afficher burger en mobile */
+  .NavMenu {
+    font-size: 0.9rem;
+  }
+  .TraitContactHeader {
+    display: none;
+  }
+  .ButtonContactHeader a {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+}
+@media (max-width: 1135px) {
+  .metiers-menu a {
+    font-size: 0.8rem;
+  }
+  .metiers-menu {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 1111px) {
+  .ButtonContactHeader a {
+    display: none;
+  }
+}
+@media (max-width: 1010px) {
+  .solutions-menu a {
+    font-size: 0.8rem;
+  }
+  .solutions-menu {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 889px) {
+  .metiers-menu {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+  .solutions-menu {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+@media (max-width: 849px) {
+  .NavMenu {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 778px) {
+  .NavMenu {
+    font-size: 0.75rem;
+  }
+}
+/* RESPONSIVE DESIGN À PARTIR DE 768PX */
+@media (max-width: 768px) {
+  .HeaderNav {
+    background: none;
+    padding: 15px 20px;
+    margin: 0 1rem;
+    position: relative;
+  }
+
+  .LogoNav {
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .Logo {
+    width: 3.5rem;
+  }
+
   .BurgerButton {
+    display: flex;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .BurgerButton:hover {
+    transform: scale(1.1);
+  }
+
+  /* Masquer le burger button quand le menu est ouvert */
+  .NavMenu.open ~ .BurgerButton,
+  .LogoNav:has(.NavMenu.open) .BurgerButton {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .ContactHeader {
+    display: none;
+  }
+
+  .NavMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 85%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 30px 30px;
+    gap: 0;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Améliore le scroll sur iOS */
+  }
+
+  /* Bouton de fermeture dans le menu mobile */
+  .CloseMenuButton {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1001;
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.8);
+    transition: all 0.3s ease;
   }
 
-  /* Cacher menu par défaut */
-  .NavMenu {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background-color: #fff;
-    padding: 2rem;
-    overflow-y: auto;
-    z-index: 1400;
-    gap: 1.5rem;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  .NavMenu.open .CloseMenuButton {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    transition-delay: 0.2s;
   }
 
-  /* Afficher menu quand burger est open */
+  .CloseMenuButton:hover {
+    background-color: rgba(247, 19, 68, 0.1);
+    transform: scale(1.1);
+  }
+
+  .CloseMenuButton:hover svg {
+    color: #f71344 !important;
+  }
+
+  .CloseMenuButton:active {
+    transform: scale(0.95);
+  }
+
   .NavMenu.open {
-    display: flex;
+    transform: translateX(0);
   }
 
-  /* Modifier les Dropdown pour s'adapter */
-  .Dropdown > div {
+  .NavMenu > a {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1rem;
     font-weight: 600;
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    transform: translateX(50px);
+    opacity: 0;
+    animation: slideInItem 0.5s ease-out forwards;
   }
 
-  /* Menu dropdown en mode mobile = simple liste vertical */
+  .NavMenu.open > a:nth-child(2) {
+    animation-delay: 0.1s;
+  } /* Accueil */
+  .NavMenu.open > .Dropdown:nth-child(3) {
+    animation-delay: 0.15s;
+  } /* Solutions */
+  .NavMenu.open > .Dropdown:nth-child(4) {
+    animation-delay: 0.2s;
+  } /* Métiers */
+  .NavMenu.open > .Dropdown:nth-child(5) {
+    animation-delay: 0.25s;
+  } /* Ressources */
+  .NavMenu.open > a:nth-child(6) {
+    animation-delay: 0.3s;
+  } /* Formation */
+  .NavMenu.open > a:nth-child(7) {
+    animation-delay: 0.35s;
+  } /* Contact */
+
+  .NavMenu.open > .Dropdown {
+    animation: slideInItem 0.5s ease-out forwards;
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  @keyframes slideInItem {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .NavMenu > a:hover {
+    color: #f71344;
+    padding-left: 10px;
+    background-color: rgba(247, 19, 68, 0.05);
+  }
+
+  /* Dropdown mobile styling */
+  .Dropdown {
+    width: 100%;
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .Dropdown > div {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+
+  .Dropdown > div:hover {
+    color: #f71344;
+  }
+
   .Menu {
     position: static;
-    margin: 0;
-    padding: 0;
+    background: transparent;
     box-shadow: none;
-    grid-template-columns: unset;
+    padding: 0 0 0 20px;
+    margin: 0;
+    border-radius: 0;
+    grid-template-columns: 1fr;
     gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    border-left: 3px solid #f71344;
+    animation: none;
+  }
+
+  .Dropdown .Menu {
+    max-height: 500px;
+    padding: 10px 0 10px 20px;
   }
 
   .Menu a {
-    padding-left: 1rem;
-    display: block;
-    font-size: 1.1rem;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
   }
 
-  /* ContactHeader dans le menu en mobile */
-  .ContactHeader {
-    display: none;
+  .Menu a:hover {
+    color: #f71344;
+    padding-left: 10px;
+    background-color: rgba(247, 19, 68, 0.05);
+  }
+
+  .Menu svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  /* Animation pour l'overlay */
+  .HeaderNav::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+
+  .NavMenu.open ~ .HeaderNav::before,
+  .HeaderNav:has(.NavMenu.open)::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Responsive pour très petits écrans */
+@media (max-width: 480px) {
+  .HeaderNav {
+    padding: 12px 15px;
+    margin: 0 0.5rem;
+  }
+
+  .Logo {
+    width: 3rem;
+  }
+
+  .NavMenu {
+    width: 100%;
+    padding: 70px 20px 20px;
+  }
+
+  .NavMenu > a {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+
+  .Dropdown > div {
+    font-size: 1rem;
+    padding: 12px 0;
   }
 }

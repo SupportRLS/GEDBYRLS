@@ -1,0 +1,37 @@
+{
+  "kind": "component",
+  "collectionName": "components_ui_text_img_right",
+  "info": {
+    "displayName": "Ui Text Image Right",
+    "description": "Section with text and image aligned right"
+  },
+  "options": {},
+  "attributes": {
+    "titre": {
+      "type": "string",
+      "required": false
+    },
+    "accroche": {
+      "type": "text",
+      "required": false
+    },
+    "contenu": {
+      "type": "richtext",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": false
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

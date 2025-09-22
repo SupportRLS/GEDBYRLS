@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import FeatureCard from "../components/FeatureCard";
-import ButtonContactHeader from "../components/ButtonContactHeader";
+import ButtonComponentsRed from "../components/ButtonComponentsRed";
 import ButtonComponents from "../components/ButtonComponents";
 import FormHomePage from "../components/formHomePage";
 import {
@@ -556,7 +556,10 @@ const CTASection = () => {
               accompagner dans votre transition numérique.
             </p>
             <div className="buttonSection">
-              <ButtonContactHeader />
+              <ButtonComponentsRed
+                text="je veux être contacté"
+                href="/contact"
+              />
               <ButtonComponents
                 text={"Je passe à l'archivage Numérique"}
                 href={"../"}

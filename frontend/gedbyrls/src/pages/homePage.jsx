@@ -4,7 +4,7 @@ import "../components/style/homePage.css";
 //components
 import FormHomePage from "../components/formHomePage";
 import Header from "../components/header";
-import ButtonContactHeader from "../components/ButtonContactHeader";
+import ButtonComponentsRed from "../components/ButtonComponentsRed";
 import Button from "../components/ButtonComponents";
 import FeatureCard from "../components/FeatureCard";
 import UseCaseCard from "../components/UseCaseCard";
@@ -57,7 +57,7 @@ function HomePage() {
             véritable levier de performance.
           </p>
           <div className="flex flex-col sm:flex-row justify-center lg:justify-center items-center gap-4 mt-8">
-            <ButtonContactHeader />
+            <ButtonComponentsRed text="je veux être contacté" href="/contact" />
             <Button text="Télécharger le livre blanc" />
           </div>
         </div>
@@ -188,7 +188,7 @@ function HomePage() {
             accompagner dans votre transition numérique.
           </p>
           <div className="buttonSection">
-            <ButtonContactHeader />
+            <ButtonComponentsRed text="je veux être contacté" href="/contact" />
             <Button text="Demander une démonstration" />
           </div>
         </div>

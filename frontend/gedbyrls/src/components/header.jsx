@@ -114,6 +114,7 @@ function Header() {
   }, []);
 
   const toggleBurger = () => setBurgerOpen(!isBurgerOpen);
+  const closeBurger = () => setBurgerOpen(false);
   const toggleSolutions = () => {
     setOpenSolutions((prev) => !prev);
     setIsActiveSolutions((prev) => !prev);
@@ -152,6 +153,17 @@ function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Fermer le menu lors du clic sur un lien
+  const handleLinkClick = () => {
+    setBurgerOpen(false);
+    setOpenSolutions(false);
+    setIsActiveSolutions(false);
+    setOpenMetiers(false);
+    setIsActiveMetiers(false);
+    setOpenRessources(false);
+    setIsActiveRessources(false);
+  };
+
   return (
     <nav className="HeaderNav poppins-medium">
       <div className="LogoNav">
@@ -170,7 +182,17 @@ function Header() {
         </button>
 
         <div className={`NavMenu ${isBurgerOpen ? "open" : ""}`}>
-          <NavLink to="/">Accueil</NavLink>
+          <button
+            className="CloseMenuButton"
+            onClick={closeBurger}
+            aria-label="Fermer le menu"
+          >
+            <IoMdClose size={24} color="#666" />
+          </button>
+
+          <NavLink to="/" onClick={handleLinkClick}>
+            Accueil
+          </NavLink>
 
           {/* Dropdown Solutions */}
           <div className="Dropdown" ref={solutionsRef}>
@@ -185,11 +207,11 @@ function Header() {
               />
             </div>
             {openSolutions && (
-              <ul className="Menu">
+              <ul className="Menu solutions-menu">
                 {solutions.map(({ path, label, iconKey }) => {
                   const Icon = iconMap[iconKey];
                   return (
-                    <NavLink to={path} key={path}>
+                    <NavLink to={path} key={path} onClick={handleLinkClick}>
                       {Icon && <Icon />} {label}
                     </NavLink>
                   );
@@ -209,14 +231,14 @@ function Header() {
               />
             </div>
             {openMetiers && (
-              <ul className="Menu">
+              <ul className="Menu metiers-menu">
                 {metiersLoading ? (
                   <li>Chargement...</li>
                 ) : metiers.length > 0 ? (
                   metiers.map(({ path, label, iconKey }) => {
                     const Icon = iconMap[iconKey];
                     return (
-                      <NavLink to={path} key={path}>
+                      <NavLink to={path} key={path} onClick={handleLinkClick}>
                         {Icon && <Icon />} {label}
                       </NavLink>
                     );
@@ -241,11 +263,11 @@ function Header() {
               />
             </div>
             {openRessources && (
-              <ul className="Menu">
+              <ul className="Menu ressources-menu">
                 {ressources.map(({ path, label, iconKey }) => {
                   const Icon = iconMap[iconKey];
                   return (
-                    <NavLink to={path} key={path}>
+                    <NavLink to={path} key={path} onClick={handleLinkClick}>
                       {Icon && <Icon />} {label}
                     </NavLink>
                   );
@@ -254,14 +276,20 @@ function Header() {
             )}
           </div>
 
-          <NavLink to="/formation">Formation</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/formation" onClick={handleLinkClick}>
+            Formation
+          </NavLink>
+          <NavLink to="/contact" onClick={handleLinkClick}>
+            Contact
+          </NavLink>
         </div>
       </div>
 
       <div className="ContactHeader">
-        <img src={letter} alt="" /> |
-        <img src={phone} alt="" />
+        <div className="TraitContactHeader">
+          <img src={letter} alt="" /> |
+          <img src={phone} alt="" />
+        </div>
         <ButtonContactHeader />
       </div>
     </nav>
