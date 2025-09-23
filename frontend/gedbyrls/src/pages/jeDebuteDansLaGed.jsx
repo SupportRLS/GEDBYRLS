@@ -12,7 +12,6 @@ import "../components/iconMap";
 import "../components/style/debuteDansLaGed.css";
 import Interface from "../assets/interface_zeendoc.webp";
 import PhotoPersonne from "../assets/personne_devant_pc.webp";
-import Button from "../components/ButtonComponents";
 import ButtonComponentRed from "../components/ButtonComponentsRed";
 import ButtonComponent from "../components/ButtonComponents";
 import Image3 from "../assets/imageGed.webp";
@@ -90,8 +89,8 @@ function JeDebuteDansLaGed() {
           href={"/contact"}
         />
         <ButtonComponent
-          text={"Contactez-nous pour débuter"}
-          href={"/contact"}
+          text={"En savoir plus sur Zeendoc"}
+          href={"https://www.zeendoc.com/"}
         />
       </div>
       <div className="feature-cards">
@@ -136,8 +135,8 @@ function JeDebuteDansLaGed() {
       </p>
       <div className="buttonSection">
         <ButtonComponentRed
-          text={"Contactez-nous pour débuter"}
-          href={"/contact"}
+          text={"Quel logiciel je peu intégrer ?"}
+          href={"/solution/integration-des-logiciels-compatibles"}
         />
         <ButtonComponent text={"Plus de question ?"} href={"/faq"} />
       </div>
@@ -182,10 +181,13 @@ function JeDebuteDansLaGed() {
       </p>
       <div className="buttonSection">
         <ButtonComponentRed
-          text={"Contactez-nous pour débuter"}
+          text={"Obtenez plus d’informations"}
           href={"/contact"}
         />
-        <ButtonComponent text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent
+          text={"Notre FAQ pour les débutants"}
+          href={"/ressources/faq"}
+        />
       </div>
       <div className="bg-white w-full py-16 mt-15">
         <div className="max-w-[1440px] mx-auto px-4 ">
@@ -246,10 +248,13 @@ function JeDebuteDansLaGed() {
       </div>
       <div className="buttonSection">
         <ButtonComponentRed
-          text={"Contactez-nous pour débuter"}
-          href={"/contact"}
+          text={"Téléchargez un cas client"}
+          href={"/ressources/cas-client"}
         />
-        <ButtonComponent text={"plus de question ? "} href={"/faq"} />
+        <ButtonComponent
+          text={"Les informations pour les PME "}
+          href={"/secteur/Tpe-Pme"}
+        />
       </div>
       <div className="featureCardsStartGed">
         <FeatureCard
@@ -299,10 +304,13 @@ function JeDebuteDansLaGed() {
 
       <div className="buttonSection pb-8">
         <ButtonComponentRed
-          text={"Contactez-nous pour débuter"}
+          text={"Commencer mon intégration"}
           href={"/contact"}
         />
-        <ButtonComponent text={"Plus de question ? "} href={"/faq"} />
+        <ButtonComponent
+          text={"Plus d'informations ? "}
+          href={"/ressources/faq"}
+        />
       </div>
       <Footer />
     </div>

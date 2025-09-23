@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import ButtonDuo from "../components/ButtonDuo";
+import SignatureElec from "../assets/signatureElec.webp";
+import SignatureTablette from "../assets/signature_tablette.webp";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
@@ -91,50 +93,24 @@ const HeroSection = () => {
             fichiers. Signez en sécurité tout en assurant la conformité de votre
             entreprise.
           </p>
-          <div className="flex flex-wrap gap-4">
-            <motion.a
-              href="#"
-              className="text-white px-6 py-3 rounded-full font-medium transition-colors flex items-center"
-              style={{ backgroundColor: "#F71344", color: "white" }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#9C0526")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "#F71344")
-              }
-              whileHover={{
-                scale: 1.05,
+          <div>
+            <ButtonDuo
+              redButtonProps={{
+                text: "Demander un RDV",
+                href: "/contact",
+                target: "_blank",
               }}
-              whileTap={{
-                scale: 0.95,
+              orangeButtonProps={{
+                text: "Obtenez plus d’informations",
+                href: "/ressources/faq",
+                target: "_blank",
               }}
-            >
-              Demander une démo gratuite
-            </motion.a>
-            <motion.a
-              href="#"
-              className=" px-6 py-3 rounded-full font-medium hover:bg-orange-500 transition-colors flex items-center"
-              style={{ backgroundColor: "#E9A431", color: "white" }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.backgroundColor = "#C38B2D")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.backgroundColor = "#E9A431")
-              }
-              whileHover={{
-                scale: 1.05,
-              }}
-              whileTap={{
-                scale: 0.95,
-              }}
-            >
-              Essayer Zeendoc
-            </motion.a>
+            />
           </div>
         </div>
         <div className="md:w-1/2">
           <motion.img
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            src={SignatureElec}
             alt="Signature électronique"
             className="rounded-lg shadow-xl w-full"
             initial={{
@@ -442,7 +418,7 @@ const IntegrationSection = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <motion.img
-              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+              src={SignatureTablette}
               alt="Intégration GED"
               className="rounded-lg shadow-xl w-full"
               initial={{
@@ -667,7 +643,7 @@ const CTASection = () => {
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <motion.a
-              href="#"
+              href="/contact"
               className="bg-white text-red-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors flex items-center justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -675,7 +651,7 @@ const CTASection = () => {
               Demander un RDV
             </motion.a>
             <motion.a
-              href="#"
+              href="/secteur/Tpe-Pme"
               className="px-6 py-3 rounded-full font-medium hover:bg-orange-500 transition-colors flex items-center justify-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -687,7 +663,7 @@ const CTASection = () => {
                 (e.currentTarget.style.backgroundColor = "#E9A431")
               }
             >
-              <div className="">Essayer Zeendoc maintenant</div>
+              <div className="">La ged pour les TPE-PME</div>
             </motion.a>
           </div>
         </motion.div>

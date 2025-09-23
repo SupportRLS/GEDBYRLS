@@ -58,7 +58,10 @@ function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center lg:justify-center items-center gap-4 mt-8">
             <ButtonComponentsRed text="je veux être contacté" href="/contact" />
-            <Button text="Télécharger le livre blanc" />
+            <Button
+              text="Télécharger le livre blanc"
+              href="/ressources/livre-blanc"
+            />
           </div>
         </div>
 
@@ -109,27 +112,24 @@ function HomePage() {
         <div className="max-w-[1440px] mt-5 mx-auto px-4 ">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
             <UseCaseCard
-              logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
               title="Gestion des factures"
               description="Centralisez et automatisez le traitement de vos factures fournisseurs."
               buttonText="Solution Comptable"
-              href="/secteur/expert-comptable"
+              href="/secteur/Expert-comptable"
             />
 
             <UseCaseCard
               className="useCaseCardMiddle"
-              logo={<img src={LogoRLS} alt="Logo Use Case 2" />}
               title="Archivage des contrats"
               description="Assurez la conformité et la traçabilité de vos contrats en un clic."
               buttonText="Solution PME"
-              href="/secteur/tpe-pme"
+              href="/secteur/Tpe-Pme"
             />
             <UseCaseCard
-              logo={<img src={LogoRLS} alt="Logo Use Case 1" />}
               title="Gestion des ressources humaines"
               description="Simplifiez la gestion des dossiers du personnel et des documents RH."
               buttonText="Solution RH"
-              href="/secteur/grands-groupes"
+              href="/secteur/Grands-groupes"
             />
           </div>
         </div>

@@ -47,7 +47,7 @@ function FormationPage() {
         >
           <div className="buttonOneSection">
             <Button text={"Je souhaite une démo"} href={"/contact"} />
-            <ButtonRed text={"Je contacte"} />
+            <ButtonRed text={"Voir la FAQ"} href={"//ressources/faq"} />
           </div>
         </TextImageRight>
       </div>
@@ -102,7 +102,10 @@ function FormationPage() {
           list={formationListe}
         >
           <div className="buttonTwoSection">
-            <ButtonRed text="Je contacte" />
+            <ButtonRed
+              text="Télécharger un Cas Client"
+              href="/ressources/cas-client"
+            />
             <Button text="Je souhaite une démo" href="/contact" />
           </div>
         </TextImageLeft>
