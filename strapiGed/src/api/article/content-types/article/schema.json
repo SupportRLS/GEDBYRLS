@@ -39,11 +39,8 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "TexteImageGauche": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.text-image-left"
-      ]
+    "preambule": {
+      "type": "richtext"
     },
     "texte1": {
       "type": "text"
@@ -51,7 +48,9 @@
     "components": {
       "type": "dynamiczone",
       "components": [
-        "ui.button-duo"
+        "ui.button-duo",
+        "sections.text-image-left",
+        "sections.text-image-right"
       ]
     },
     "texte2": {

@@ -415,7 +415,9 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
-    components: Schema.Attribute.DynamicZone<['ui.button-duo']>;
+    components: Schema.Attribute.DynamicZone<
+      ['ui.button-duo', 'sections.text-image-left', 'sections.text-image-right']
+    >;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -430,13 +432,11 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
       'api::article.article'
     > &
       Schema.Attribute.Private;
+    preambule: Schema.Attribute.RichText;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
     texte1: Schema.Attribute.Text;
     texte2: Schema.Attribute.RichText;
-    TexteImageGauche: Schema.Attribute.DynamicZone<
-      ['sections.text-image-left']
-    >;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
