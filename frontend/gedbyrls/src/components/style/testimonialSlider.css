@@ -18,12 +18,10 @@
   margin-bottom: 1rem;
 }
 
-
-
 /* Slider principal */
 .testimonial-slider {
   position: relative;
-  background: linear-gradient(135deg, #FFF7EB 0%, #FFF7EB 100%);
+  background: linear-gradient(135deg, #fff7eb 0%, #fff7eb 100%);
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -37,7 +35,7 @@
   left: 1.5rem;
   width: 3rem;
   height: 3rem;
-  color: #BDAD95;
+  color: #bdad95;
   opacity: 0.5;
 }
 
@@ -47,7 +45,7 @@
   right: 1.5rem;
   width: 3rem;
   height: 3rem;
-  color: #BDAD95;
+  color: #bdad95;
   opacity: 0.5;
   transform: rotate(180deg);
 }
@@ -67,13 +65,12 @@
 }
 
 .testimonial-avatar {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
+  width: 12rem;
+  height: 8rem;
+  border-radius: 10%;
   margin: 0 auto 1rem;
   border: 4px solid white;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
 }
 
 .testimonial-stars {
@@ -89,7 +86,7 @@
 }
 
 .star-filled {
-  color: #E9A431;
+  color: #e9a431;
   fill: currentColor;
 }
 
@@ -100,7 +97,7 @@
 /* Citation */
 .testimonial-quote {
   font-size: 1.25rem;
-  color: #2E1E21;
+  color: #2e1e21;
   font-weight: 500;
   line-height: 1.75;
   margin-bottom: 2rem;
@@ -121,16 +118,17 @@
 .author-name {
   font-weight: bold;
   font-size: 1.125rem;
-  color: #2E1E21;
+  color: #2e1e21;
 }
 
 .author-position {
-  color: #F71344;
+  color: #f71344;
   font-weight: 500;
 }
 
 .author-company {
-  color: #F71344;
+  color: #f71344;
+  font-weight: 500;
 }
 
 /* Boutons de navigation */
@@ -163,7 +161,7 @@
 .nav-icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: #F71344;
+  color: #f71344;
 }
 
 /* Navigation par points */
@@ -184,7 +182,7 @@
 }
 
 .dot-active {
-  background-color: #F71344;
+  background-color: #f71344;
   transform: scale(1.25);
 }
 
@@ -224,10 +222,10 @@
   margin-bottom: 0.5rem;
 }
 
-.color-E9A431{
-  color: #E9A431;
+.color-E9A431 {
+  color: #e9a431;
 }
 
 .statistic-label {
-  color: #2E1D21;
+  color: #2e1d21;
 }

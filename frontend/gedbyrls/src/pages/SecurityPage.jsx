@@ -133,12 +133,9 @@ const SecurityPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <ButtonComponentRed
               text="Découvrir Zeendoc"
-              href="/secteur/architect"
+              href="https://www.zeendoc.com/"
             />
-            <ButtonComponent
-              text="Demander une démo"
-              href="/secteur/architect"
-            />
+            <ButtonComponent text="Demander une démo" href="/contact" />
           </div>
         </TextImageRight>
       </motion.div>
@@ -231,7 +228,7 @@ Ce système est particulièrement utile pour les secteurs réglementés comme la
             accompagner dans votre transition numérique.
           </p>
           <div className="buttonSection">
-            <ButtonComponentRed text="je veux être contacté" href="/contact" />
+            <ButtonComponentRed text="La FAQ" href="/ressources/faq" />
             <ButtonComponent
               text="Demander une démonstration"
               href="/contact"

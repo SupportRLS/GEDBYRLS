@@ -177,7 +177,10 @@ function SecteurPage() {
         <h3>{attrs.cta}</h3>
         <p>{attrs.contenu}</p>
         <Button text="Je contacte" href="/contact" />
-        <ButtonRed text="Télécharger le livre blanc" />
+        <ButtonRed
+          text="Télécharger le livre blanc"
+          href="/ressources/cas-client"
+        />
       </div>
       <Footer />
     </>

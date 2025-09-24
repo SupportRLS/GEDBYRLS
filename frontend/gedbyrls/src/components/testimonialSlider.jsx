@@ -1,6 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { FaChevronLeft, FaChevronRight, FaStar, FaQuoteRight } from "react-icons/fa";
-import './style/testimonialSlider.css';
+import React, { useState, useEffect } from "react";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaStar,
+  FaQuoteRight,
+} from "react-icons/fa";
+import "./style/testimonialSlider.css";
+import groupe_mallet from "../../public/logo_entreprise/groupe_mallet.webp";
+import arkolia from "../../public/logo_entreprise/arkolia.webp";
+import habitat_jeune from "../../public/logo_entreprise/habitat_jeune.webp";
+import psi from "../../public/logo_entreprise/psi.webp";
 
 const TestimonialSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,50 +18,49 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Léo Dubois",
-      position: "Directeur Administratif",
-      company: "TechnoSoft SARL",
-      content: "Grâce à cette solution, nous avons réduit de 70% le temps de traitement de nos factures. L'automatisation a révolutionné notre processus administratif.",
+      // name: "Léo Dubois",   insertion des names et position sous les ID pour de nouveau Client.
+      // position: "Directeur Administratif",
+      company: "Groupe Mallet ",
+      content:
+        "Grâce à cette solution, nous avons réduit de 70% le temps de traitement de nos factures. L'automatisation a révolutionné notre processus administratif.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=3687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      avatar: groupe_mallet,
     },
     {
       id: 2,
-      name: "Pierre Martin",
-      position: "Gérant",
-      company: "Artisan Plus",
-      content: "Interface intuitive et support client exceptionnel. Nos documents sont maintenant organisés et facilement accessibles. Un gain de productivité énorme !",
+
+      company: "Groupe PSI Sécurité",
+      content:
+        "Interface intuitive et support client exceptionnel. Nos documents sont maintenant organisés et facilement accessibles. Un gain de productivité énorme !",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+      avatar: psi,
     },
     {
       id: 3,
-      name: "Sophie Leroy",
-      position: "Responsable RH",
-      company: "InnovCorp",
-      content: "La centralisation de nos documents RH nous fait gagner un temps précieux. La sécurité et la traçabilité sont exemplaires.",
+      company: "Arkolia Énergie",
+      content:
+        "La centralisation de nos documents RH nous fait gagner un temps précieux. La sécurité et la traçabilité sont exemplaires.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+      avatar: arkolia,
     },
     {
       id: 4,
-      name: "Thomas Bernard",
-      position: "Comptable",
-      company: "Expertise Conseil",
-      content: "Solution complète qui répond parfaitement à nos besoins. L'archivage automatique et la recherche intelligente sont des atouts majeurs.",
+      company: "Habitat Jeune Montpellier",
+      content:
+        "Solution complète qui répond parfaitement à nos besoins. L'archivage automatique et la recherche intelligente sont des atouts majeurs.",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
-    }
+      avatar: habitat_jeune,
+    },
   ];
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
@@ -72,9 +80,7 @@ const TestimonialSlider = () => {
     return Array.from({ length: 5 }, (_, index) => (
       <FaStar
         key={index}
-        className={`star-icon ${
-          index < rating ? 'star-filled' : 'star-empty'
-        }`}
+        className={`star-icon ${index < rating ? "star-filled" : "star-empty"}`}
       />
     ));
   };
@@ -82,15 +88,11 @@ const TestimonialSlider = () => {
   return (
     <div className="testimonial-container">
       <div className="testimonial-header">
-        <h2 className="testimonial-title">
-          Ce que disent nos clients
-        </h2>
-        <p>
-          Découvrez les témoignages de nos utilisateurs satisfaits
-        </p>
+        <h2 className="testimonial-title">Ce que disent nos clients</h2>
+        <p>Découvrez les témoignages de nos utilisateurs satisfaits</p>
       </div>
 
-      <div 
+      <div
         className="testimonial-slider"
         onMouseEnter={() => setIsAutoPlay(false)}
         onMouseLeave={() => setIsAutoPlay(true)}
@@ -117,9 +119,7 @@ const TestimonialSlider = () => {
           </blockquote>
 
           <div className="testimonial-author">
-            <div className="author-name">
-              {testimonials[currentIndex].name}
-            </div>
+            <div className="author-name">{testimonials[currentIndex].name}</div>
             <div className="author-position">
               {testimonials[currentIndex].position}
             </div>
@@ -130,17 +130,11 @@ const TestimonialSlider = () => {
         </div>
 
         {/* Navigation arrows */}
-        <button
-          onClick={prevSlide}
-          className="nav-button nav-button-left"
-        >
+        <button onClick={prevSlide} className="nav-button nav-button-left">
           <FaChevronLeft className="nav-icon" />
         </button>
 
-        <button
-          onClick={nextSlide}
-          className="nav-button nav-button-right"
-        >
+        <button onClick={nextSlide} className="nav-button nav-button-right">
           <FaChevronRight className="nav-icon" />
         </button>
       </div>
@@ -152,7 +146,7 @@ const TestimonialSlider = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`dot ${
-              currentIndex === index ? 'dot-active' : 'dot-inactive'
+              currentIndex === index ? "dot-active" : "dot-inactive"
             }`}
           />
         ))}

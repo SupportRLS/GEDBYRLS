@@ -47,7 +47,7 @@ function FormationPage() {
         >
           <div className="buttonOneSection">
             <Button text={"Je souhaite une démo"} href={"/contact"} />
-            <ButtonRed text={"Voir la FAQ"} href={"//ressources/faq"} />
+            <ButtonRed text={"Voir la FAQ"} href={"/ressources/faq"} />
           </div>
         </TextImageRight>
       </div>

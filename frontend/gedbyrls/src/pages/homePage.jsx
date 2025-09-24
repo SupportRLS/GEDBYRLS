@@ -178,7 +178,9 @@ function HomePage() {
       {/* grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center justify-items-center px-6  */}
       <div className="display-grid container mx-auto px-3 lg:grid-cols-[2fr_1fr] items-center justify-items-center">
         <div className="sectionConvesion">
-          <h3>Rejoignez les milliers d'entreprises qui nous font confiance</h3>
+          <h3 className=" font-bold! mb-4!">
+            Rejoignez les milliers d'entreprises qui nous font confiance
+          </h3>
           <p>
             {" "}
             Faites le choix d'une solution moderne, performante et 100%

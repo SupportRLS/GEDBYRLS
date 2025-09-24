@@ -39,39 +39,135 @@ import telechargementDocumentFournisseur from "../assets/capture_ged/fournisseur
 
 // Données
 const accueilPhotos = [
-  { src: accueil, alt: "Page d'accueil Zeendoc", description: "Tableau de bord principal de Zeendoc" },
+  {
+    src: accueil,
+    alt: "Page d'accueil Zeendoc",
+    description: "Tableau de bord principal de Zeendoc",
+  },
 ];
 
 const detailsAccueil = [
-  { src: ClasseurChiffre, alt: "Classeur en chiffre", description: "Aperçu des statistiques des classeurs." },
-  { src: dernierDocAjout, alt: "Derniers documents ajoutés", description: "Liste des documents récemment ajoutés." },
-  { src: rechercheClasseur, alt: "Recherche par classeur", description: "Fonction de recherche par classeur." },
-  { src: rechercheExpert, alt: "Recherche experte", description: "Recherche avancée dans Zeendoc." },
-  { src: rechercheDossierFerme, alt: "Recherche dans dossier fermé", description: "Filtrage dans les archives." },
-  { src: rechercheSimple, alt: "Recherche simple", description: "Recherche rapide dans la GED." },
-  { src: ConnectionAppMobile, alt: "Connexion mobile", description: "Accès via l'application mobile Zeendoc." },
-  { src: exportExcel, alt: "Export Excel", description: "Exporter des données vers Excel." },
+  {
+    src: ClasseurChiffre,
+    alt: "Classeur en chiffre",
+    description: "Aperçu des statistiques des classeurs.",
+  },
+  {
+    src: dernierDocAjout,
+    alt: "Derniers documents ajoutés",
+    description: "Liste des documents récemment ajoutés.",
+  },
+  {
+    src: rechercheClasseur,
+    alt: "Recherche par classeur",
+    description: "Fonction de recherche par classeur.",
+  },
+  {
+    src: rechercheExpert,
+    alt: "Recherche experte",
+    description: "Recherche avancée dans Zeendoc.",
+  },
+  {
+    src: rechercheDossierFerme,
+    alt: "Recherche dans dossier fermé",
+    description: "Filtrage dans les archives.",
+  },
+  {
+    src: rechercheSimple,
+    alt: "Recherche simple",
+    description: "Recherche rapide dans la GED.",
+  },
+  {
+    src: ConnectionAppMobile,
+    alt: "Connexion mobile",
+    description: "Accès via l'application mobile Zeendoc.",
+  },
+  {
+    src: exportExcel,
+    alt: "Export Excel",
+    description: "Exporter des données vers Excel.",
+  },
 ];
 
 const clientPhotos = [
-  { src: pageAccueilClient, alt: "Page client", description: "Tableau de bord client." },
-  { src: factureDiffusion, alt: "Factures à diffuser", description: "Liste des factures en attente de diffusion." },
-  { src: exportXlsClient, alt: "Export client XLS", description: "Export des données clients vers Excel." },
-  { src: selectionFacile, alt: "Sélection de documents", description: "Sélection rapide de documents client." },
+  {
+    src: pageAccueilClient,
+    alt: "Page client",
+    description: "Tableau de bord client.",
+  },
+  {
+    src: factureDiffusion,
+    alt: "Factures à diffuser",
+    description: "Liste des factures en attente de diffusion.",
+  },
+  {
+    src: exportXlsClient,
+    alt: "Export client XLS",
+    description: "Export des données clients vers Excel.",
+  },
+  {
+    src: selectionFacile,
+    alt: "Sélection de documents",
+    description: "Sélection rapide de documents client.",
+  },
 ];
 
 const fournisseurPhotos = [
-  { src: pageAccueilFournisseur, alt: "Page fournisseur", description: "Page d'accueil du module fournisseur." },
-  { src: menuFournisseur, alt: "Menu fournisseur", description: "Navigation dans les options fournisseurs." },
-  { src: appercuChiffre, alt: "Aperçu des chiffres", description: "Vue d'ensemble des indicateurs fournisseurs." },
-  { src: appercuDocument, alt: "Aperçu documents", description: "Affichage des documents fournisseurs." },
-  { src: appercuFacture, alt: "Aperçu factures", description: "Visualisation des factures fournisseurs." },
-  { src: documentTrouve, alt: "Document trouvé", description: "Exemple de recherche réussie." },
-  { src: exportXlsFournisseur, alt: "Export fournisseur XLS", description: "Exporter les données fournisseurs." },
-  { src: indexationDocument, alt: "Indexation document", description: "Ajout d'index sur documents." },
-  { src: rechercheDocumentFournisseur, alt: "Recherche document fournisseur", description: "Recherche par fournisseur." },
-  { src: rechercheDocumentFournisseurGeneral, alt: "Recherche générale", description: "Recherche dans tous les documents." },
-  { src: telechargementDocumentFournisseur, alt: "Téléchargement document", description: "Téléchargement des documents." },
+  {
+    src: pageAccueilFournisseur,
+    alt: "Page fournisseur",
+    description: "Page d'accueil du module fournisseur.",
+  },
+  {
+    src: menuFournisseur,
+    alt: "Menu fournisseur",
+    description: "Navigation dans les options fournisseurs.",
+  },
+  {
+    src: appercuChiffre,
+    alt: "Aperçu des chiffres",
+    description: "Vue d'ensemble des indicateurs fournisseurs.",
+  },
+  {
+    src: appercuDocument,
+    alt: "Aperçu documents",
+    description: "Affichage des documents fournisseurs.",
+  },
+  {
+    src: appercuFacture,
+    alt: "Aperçu factures",
+    description: "Visualisation des factures fournisseurs.",
+  },
+  {
+    src: documentTrouve,
+    alt: "Document trouvé",
+    description: "Exemple de recherche réussie.",
+  },
+  {
+    src: exportXlsFournisseur,
+    alt: "Export fournisseur XLS",
+    description: "Exporter les données fournisseurs.",
+  },
+  {
+    src: indexationDocument,
+    alt: "Indexation document",
+    description: "Ajout d'index sur documents.",
+  },
+  {
+    src: rechercheDocumentFournisseur,
+    alt: "Recherche document fournisseur",
+    description: "Recherche par fournisseur.",
+  },
+  {
+    src: rechercheDocumentFournisseurGeneral,
+    alt: "Recherche générale",
+    description: "Recherche dans tous les documents.",
+  },
+  {
+    src: telechargementDocumentFournisseur,
+    alt: "Téléchargement document",
+    description: "Téléchargement des documents.",
+  },
 ];
 
 const GalleryBlock = ({ images }) => {
@@ -82,9 +178,18 @@ const GalleryBlock = ({ images }) => {
     <>
       <div className={`gallery-grid ${images.length === 1 ? "single" : ""}`}>
         {images.map((img, i) => (
-          <div key={i} className="gallery-item" onClick={() => { setIndex(i); setOpen(true); }}>
+          <div
+            key={i}
+            className="gallery-item"
+            onClick={() => {
+              setIndex(i);
+              setOpen(true);
+            }}
+          >
             <img src={img.src} alt={img.alt || `Image ${i}`} />
-            {img.description && <p className="image-description">{img.description}</p>}
+            {img.description && (
+              <p className="image-description">{img.description}</p>
+            )}
           </div>
         ))}
       </div>
@@ -104,7 +209,7 @@ export default function Gallery() {
     <div className="page-gallery">
       <Header />
       <div className="gallery-container">
-        <h1>Galerie Zeendoc</h1>
+        <h1 className="font-bold">Galerie Zeendoc</h1>
 
         <section>
           <h2>Page d’accueil</h2>
@@ -114,7 +219,9 @@ export default function Gallery() {
 
         <section>
           <h2>Détails de l’accueil</h2>
-          <p>Fonctionnalités et composants visibles depuis la page d’accueil.</p>
+          <p>
+            Fonctionnalités et composants visibles depuis la page d’accueil.
+          </p>
           <GalleryBlock images={detailsAccueil} />
         </section>
 
@@ -126,7 +233,10 @@ export default function Gallery() {
 
         <section>
           <h2>Classeur Fournisseur</h2>
-          <p>Interface dédiée aux documents fournisseurs avec options de recherche, export, et indexation.</p>
+          <p>
+            Interface dédiée aux documents fournisseurs avec options de
+            recherche, export, et indexation.
+          </p>
           <GalleryBlock images={fournisseurPhotos} />
         </section>
       </div>
