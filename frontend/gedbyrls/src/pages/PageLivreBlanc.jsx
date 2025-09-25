@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ButtonComponentsRed from "../components/ButtonComponentsRed";
-
+import { Helmet } from "react-helmet";
 function LivresBlancs() {
   const [livresBlancs, setLivresBlancs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -105,114 +105,123 @@ function LivresBlancs() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title> Livre Blanc - RLS </title>
+        <meta
+          name="description"
+          content="Découvrez notre collection de livres blancs spécialisés pour approfondir vos connaissances dans différents domaines d'expertise. Chaque publication vous apporte des insights précieux et des analyses détaillées."
+        />
+      </Helmet>
+      <div className="min-h-screen flex flex-col">
+        <Header />
 
-      <main className="flex-1 container mx-auto px-4 py-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Nos Livres Blancs
-          </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez notre collection de livres blancs spécialisés pour
-            approfondir vos connaissances dans différents domaines d'expertise.
-            Chaque publication vous apporte des insights précieux et des
-            analyses détaillées.
-          </p>
-        </div>
-
-        {livresBlancs.length === 0 ? (
-          <div className="text-center py-12">
-            <div className="text-gray-400 mb-4">
-              <svg
-                className="w-16 h-16 mx-auto"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-            <p className="text-gray-500 text-lg">
-              Aucun livre blanc disponible pour le moment.
+        <main className="flex-1 container mx-auto px-4 py-8">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+              Nos Livres Blancs
+            </h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Découvrez notre collection de livres blancs spécialisés pour
+              approfondir vos connaissances dans différents domaines
+              d'expertise. Chaque publication vous apporte des insights précieux
+              et des analyses détaillées.
             </p>
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {livresBlancs.map((livreBlanc) => (
-              <div
-                key={livreBlanc.id}
-                className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group"
-              >
-                {/* Image de couverture */}
-                <div className="relative h-50 overflow-hidden">
-                  {getImageUrl(livreBlanc) ? (
-                    <img
-                      src={getImageUrl(livreBlanc)}
-                      alt={
-                        livreBlanc.image?.alternativeText || livreBlanc.Titre
-                      }
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  ) : livreBlanc.PDF && livreBlanc.PDF.url ? (
-                    <div className="text-center text-white h-full flex items-center justify-center bg-gray-700">
-                      <p className="text-sm font-medium opacity-90">
-                        Livre Blanc PDF
+
+          {livresBlancs.length === 0 ? (
+            <div className="text-center py-12">
+              <div className="text-gray-400 mb-4">
+                <svg
+                  className="w-16 h-16 mx-auto"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p className="text-gray-500 text-lg">
+                Aucun livre blanc disponible pour le moment.
+              </p>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {livresBlancs.map((livreBlanc) => (
+                <div
+                  key={livreBlanc.id}
+                  className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden group"
+                >
+                  {/* Image de couverture */}
+                  <div className="relative h-50 overflow-hidden">
+                    {getImageUrl(livreBlanc) ? (
+                      <img
+                        src={getImageUrl(livreBlanc)}
+                        alt={
+                          livreBlanc.image?.alternativeText || livreBlanc.Titre
+                        }
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : livreBlanc.PDF && livreBlanc.PDF.url ? (
+                      <div className="text-center text-white h-full flex items-center justify-center bg-gray-700">
+                        <p className="text-sm font-medium opacity-90">
+                          Livre Blanc PDF
+                        </p>
+                      </div>
+                    ) : null}
+                  </div>
+
+                  {/* Contenu de la card */}
+                  <div className="p-8">
+                    {/* Titre */}
+                    <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 group-hover:text-[#F71344] transition-colors duration-300">
+                      {livreBlanc.Titre || "Titre non défini"}
+                    </h3>
+
+                    {/* Description courte si disponible */}
+                    {livreBlanc.Description && (
+                      <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                        {livreBlanc.Description}
                       </p>
+                    )}
+
+                    {/* Bouton d'action */}
+                    <div className="mt-auto">
+                      <ButtonComponentsRed
+                        text="Télécharger ce livre"
+                        href="/ressources/form-livre-blanc"
+                        target="_self"
+                      />
                     </div>
-                  ) : null}
-                </div>
-
-                {/* Contenu de la card */}
-                <div className="p-8">
-                  {/* Titre */}
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 group-hover:text-[#F71344] transition-colors duration-300">
-                    {livreBlanc.Titre || "Titre non défini"}
-                  </h3>
-
-                  {/* Description courte si disponible */}
-                  {livreBlanc.Description && (
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-3">
-                      {livreBlanc.Description}
-                    </p>
-                  )}
-
-                  {/* Bouton d'action */}
-                  <div className="mt-auto">
-                    <ButtonComponentsRed
-                      text="Télécharger ce livre"
-                      href="/ressources/form-livre-blanc"
-                      target="_self"
-                    />
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          )}
+
+          {/* Section CTA */}
+          <div className="mt-16 text-center bg-white rounded-xl shadow-md p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Besoin d'un livre blanc spécifique ?
+            </h2>
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+              Vous ne trouvez pas le livre blanc qui correspond à vos besoins ?
+              Contactez-nous directement pour discuter de vos attentes.
+            </p>
+            <ButtonComponentsRed
+              text="Nous contacter"
+              href="/contact"
+              target="_self"
+            />
           </div>
-        )}
+        </main>
 
-        {/* Section CTA */}
-        <div className="mt-16 text-center bg-white rounded-xl shadow-md p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Besoin d'un livre blanc spécifique ?
-          </h2>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Vous ne trouvez pas le livre blanc qui correspond à vos besoins ?
-            Contactez-nous directement pour discuter de vos attentes.
-          </p>
-          <ButtonComponentsRed
-            text="Nous contacter"
-            href="/contact"
-            target="_self"
-          />
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

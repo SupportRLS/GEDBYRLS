@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckSquareIcon, ShieldCheckIcon, ClockIcon } from "lucide-react";
-
-import Header from "../components/header";
-import Footer from "../components/footer";
+import { Helmet } from "react-helmet";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import TextImageLeft from "../components/TextImageLeft";
 import TextImageRight from "../components/TextImageRight";
 import ButtonComponentRed from "../components/ButtonComponentsRed";
@@ -101,145 +101,156 @@ const BenefitsSection = () => {
 
 const SecurityPage = () => {
   return (
-    <div className="min-h-screen bg-[#FFFAF4]">
-      <Header />
+    <>
+      <Helmet>
+        <title> Sécurisation | RGPD | Traçabilité `- RLS </title>
+        <meta
+          name="description"
+          content="Découvrez comment Zeendoc assure la sécurisation, la conformité RGPD et la traçabilité des documents pour optimiser la gestion électronique de documents (GED) dans votre entreprise."
+        />
+      </Helmet>
+      <div className="min-h-screen bg-[#FFFAF4]">
+        <Header />
 
-      {/* Hero Section */}
-      <motion.header
-        className="pt-10 px-4 sm:px-6 lg:px-8 text-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeInUp}
-      >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-          Sécurisation, conformité RGPD et traçabilité des documents avec{" "}
-          <span className="text-[#F71344]">Zeendoc</span>
-        </h1>
-      </motion.header>
-
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-      >
-        <TextImageRight
-          title="Une solution complète pour protéger, gérer et tracer vos documents numériques en toute conformité."
-          text="Zeendoc est une GED (Gestion Électronique de Documents) qui répond aux enjeux de sécurité, de conformité RGPD et de traçabilité des documents. Grâce à son infrastructure sécurisée et ses fonctionnalités avancées, Zeendoc garantit la protection de vos données tout en facilitant leur gestion au quotidien."
-          imageSrc={RGPD3}
-          imagesAlt="Sécurisation des documents"
+        {/* Hero Section */}
+        <motion.header
+          className="pt-10 px-4 sm:px-6 lg:px-8 text-center"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
         >
-          <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <ButtonComponentRed
-              text="Découvrir Zeendoc"
-              href="https://www.zeendoc.com/"
-            />
-            <ButtonComponent text="Demander une démo" href="/contact" />
-          </div>
-        </TextImageRight>
-      </motion.div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+            Sécurisation, conformité RGPD et traçabilité des documents avec{" "}
+            <span className="text-[#F71344]">Zeendoc</span>
+          </h1>
+        </motion.header>
 
-      {/* Benefits Section */}
-      <BenefitsSection />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInUp}
+        >
+          <TextImageRight
+            title="Une solution complète pour protéger, gérer et tracer vos documents numériques en toute conformité."
+            text="Zeendoc est une GED (Gestion Électronique de Documents) qui répond aux enjeux de sécurité, de conformité RGPD et de traçabilité des documents. Grâce à son infrastructure sécurisée et ses fonctionnalités avancées, Zeendoc garantit la protection de vos données tout en facilitant leur gestion au quotidien."
+            imageSrc={RGPD3}
+            imageAlt="Image de Zeendoc sur la gestion électronique de document"
+          >
+            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+              <ButtonComponentRed
+                text="Découvrir Zeendoc"
+                href="https://www.zeendoc.com/"
+              />
+              <ButtonComponent text="Demander une démo" href="/contact" />
+            </div>
+          </TextImageRight>
+        </motion.div>
 
-      {/* Section 1 */}
-      <motion.div
-        style={{ backgroundColor: "#fff5e9 " }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-      >
-        <TextImageLeft
-          title="Comment Zeendoc garantit la sécurité des documents numériques ?"
-          text="Zeendoc met en œuvre une protection avancée des données pour répondre aux exigences actuelles de cybersécurité. Chaque document est stocké, chiffré et géré dans un environnement sécurisé, certifié ISO 27001.
+        {/* Benefits Section */}
+        <BenefitsSection />
+
+        {/* Section 1 */}
+        <motion.div
+          style={{ backgroundColor: "#fff5e9 " }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInUp}
+        >
+          <TextImageLeft
+            title="Comment Zeendoc garantit la sécurité des documents numériques ?"
+            text="Zeendoc met en œuvre une protection avancée des données pour répondre aux exigences actuelles de cybersécurité. Chaque document est stocké, chiffré et géré dans un environnement sécurisé, certifié ISO 27001.
 Grâce à l'hébergement en France sur des serveurs redondés, Zeendoc limite les risques liés à la perte de données ou à l'accès non autorisé.
 Toutes les opérations (consultation, modification, suppression) sont historisées de manière inviolable.
 En centralisant les documents dans une plateforme unique, l'entreprise supprime les silos d'information et réduit les erreurs humaines."
-          imageSrc={RGPD1}
-          imageAlt="sécurisation de vos documents"
-        />
-      </motion.div>
+            imageSrc={RGPD1}
+            imageAlt="sécurisation de vos documents"
+          />
+        </motion.div>
 
-      {/* Section RGPD + highlight */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-      >
-        <TextImageRight
-          title="Quels sont les engagements de Zeendoc en matière de RGPD ?"
-          text="Zeendoc est pleinement conforme au Règlement Général sur la Protection des Données. Il intègre dès la conception des fonctionnalités pensées pour la protection de la vie privée.
+        {/* Section RGPD + highlight */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInUp}
+        >
+          <TextImageRight
+            title="Quels sont les engagements de Zeendoc en matière de RGPD ?"
+            text="Zeendoc est pleinement conforme au Règlement Général sur la Protection des Données. Il intègre dès la conception des fonctionnalités pensées pour la protection de la vie privée.
 L'utilisateur dispose à tout moment de droits clairs sur ses données : accès, modification, anonymisation et suppression.
 Zeendoc respecte ainsi les principes fondamentaux du RGPD, tels que la minimisation des données et la limitation de finalité."
-          imageSrc={RGPD2}
-          imageAlt="Conformité RGPD"
-        >
-          {highlights.map((section, index) => (
-            <section key={index}>
-              <div className="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-[#F71344] mt-6">
-                <p className="text-lg leading-relaxed text-[#2E1D21]/90">
-                  {section.highlight.text}
-                  <span className="text-3xl font-bold text-[#F71344]">
-                    {section.highlight.stat}
-                  </span>
-                  {section.highlight.extra}
-                </p>
-              </div>
-            </section>
-          ))}
-        </TextImageRight>
-      </motion.div>
+            imageSrc={RGPD2}
+            imageAlt="Conformité RGPD"
+          >
+            {highlights.map((section, index) => (
+              <section key={index}>
+                <div className="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-[#F71344] mt-6">
+                  <p className="text-lg leading-relaxed text-[#2E1D21]/90">
+                    {section.highlight.text}
+                    <span className="text-3xl font-bold text-[#F71344]">
+                      {section.highlight.stat}
+                    </span>
+                    {section.highlight.extra}
+                  </p>
+                </div>
+              </section>
+            ))}
+          </TextImageRight>
+        </motion.div>
 
-      {/* Section traçabilité */}
-      <motion.div
-        className="mb-20"
-        style={{ backgroundColor: "#fff5e9" }}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={fadeInUp}
-      >
-        <TextImageLeft
-          title="Comment la traçabilité des documents est-elle assurée ?"
-          text="Avec Zeendoc, chaque action sur un document est enregistrée, datée et liée à un utilisateur.
+        {/* Section traçabilité */}
+        <motion.div
+          className="mb-20"
+          style={{ backgroundColor: "#fff5e9" }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={fadeInUp}
+        >
+          <TextImageLeft
+            title="Comment la traçabilité des documents est-elle assurée ?"
+            text="Avec Zeendoc, chaque action sur un document est enregistrée, datée et liée à un utilisateur.
 Toutes les étapes de vie du document sont conservées dans un journal infalsifiable.
 Ce système est particulièrement utile pour les secteurs réglementés comme la santé, l’assurance ou les marchés publics."
-          imageSrc={RGPD4}
-          imageAlt="Traçabilité des documents"
-        />
-      </motion.div>
-      <h2 className=" font-bold ">
-        {" "}
-        Prêt à simplifier la gestion de vos documents ?
-      </h2>
-      {/* grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center justify-items-center px-6  */}
-      <div className="display-grid container mx-auto px-3 lg:grid-cols-[2fr_1fr] items-center justify-items-center ">
-        <div className="sectionConvesion">
-          <h3>Rejoignez les milliers d'entreprises qui nous font confiance</h3>
-          <p>
-            {" "}
-            Faites le choix d'une solution moderne, performante et 100%
-            sécurisée. Reprenez le contrôle sur vos informations, réduisez les
-            tâches administratives et boostez la productivité de vos équipes.
-            Nos experts sont à votre écoute pour analyser vos besoins et vous
-            accompagner dans votre transition numérique.
-          </p>
-          <div className="buttonSection">
-            <ButtonComponentRed text="La FAQ" href="/ressources/faq" />
-            <ButtonComponent
-              text="Demander une démonstration"
-              href="/contact"
-            />
+            imageSrc={RGPD4}
+            imageAlt="Traçabilité des documents"
+          />
+        </motion.div>
+        <h2 className=" font-bold ">
+          {" "}
+          Prêt à simplifier la gestion de vos documents ?
+        </h2>
+        {/* grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center justify-items-center px-6  */}
+        <div className="display-grid container mx-auto px-3 lg:grid-cols-[2fr_1fr] items-center justify-items-center ">
+          <div className="sectionConvesion">
+            <h3>
+              Rejoignez les milliers d'entreprises qui nous font confiance
+            </h3>
+            <p>
+              {" "}
+              Faites le choix d'une solution moderne, performante et 100%
+              sécurisée. Reprenez le contrôle sur vos informations, réduisez les
+              tâches administratives et boostez la productivité de vos équipes.
+              Nos experts sont à votre écoute pour analyser vos besoins et vous
+              accompagner dans votre transition numérique.
+            </p>
+            <div className="buttonSection">
+              <ButtonComponentRed text="La FAQ" href="/ressources/faq" />
+              <ButtonComponent
+                text="Demander une démonstration"
+                href="/contact"
+              />
+            </div>
           </div>
-        </div>
 
-        <FormHomePage />
+          <FormHomePage />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

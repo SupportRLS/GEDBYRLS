@@ -25,6 +25,7 @@ const TestimonialSlider = () => {
         "Grâce à cette solution, nous avons réduit de 70% le temps de traitement de nos factures. L'automatisation a révolutionné notre processus administratif.",
       rating: 5,
       avatar: groupe_mallet,
+      alt: "Logo du Groupe Mallet",
     },
     {
       id: 2,
@@ -34,6 +35,7 @@ const TestimonialSlider = () => {
         "Interface intuitive et support client exceptionnel. Nos documents sont maintenant organisés et facilement accessibles. Un gain de productivité énorme !",
       rating: 5,
       avatar: psi,
+      alt: "Logo du Groupe PSI Sécurité",
     },
     {
       id: 3,
@@ -42,6 +44,7 @@ const TestimonialSlider = () => {
         "La centralisation de nos documents RH nous fait gagner un temps précieux. La sécurité et la traçabilité sont exemplaires.",
       rating: 5,
       avatar: arkolia,
+      alt: "Logo d'Arkolia Énergie",
     },
     {
       id: 4,
@@ -50,6 +53,7 @@ const TestimonialSlider = () => {
         "Solution complète qui répond parfaitement à nos besoins. L'archivage automatique et la recherche intelligente sont des atouts majeurs.",
       rating: 5,
       avatar: habitat_jeune,
+      alt: "Logo d'Habitat Jeune Montpellier",
     },
   ];
 
@@ -106,7 +110,7 @@ const TestimonialSlider = () => {
           <div className="testimonial-avatar-section">
             <img
               src={testimonials[currentIndex].avatar}
-              alt={testimonials[currentIndex].name}
+              alt={testimonials[currentIndex].alt}
               className="testimonial-avatar"
             />
             <div className="testimonial-stars">
@@ -131,11 +135,11 @@ const TestimonialSlider = () => {
 
         {/* Navigation arrows */}
         <button onClick={prevSlide} className="nav-button nav-button-left">
-          <FaChevronLeft className="nav-icon" />
+          <FaChevronLeft className="nav-icon" aria-label="Précédent" />
         </button>
 
         <button onClick={nextSlide} className="nav-button nav-button-right">
-          <FaChevronRight className="nav-icon" />
+          <FaChevronRight className="nav-icon" aria-label="Suivant" />
         </button>
       </div>
 
@@ -148,6 +152,8 @@ const TestimonialSlider = () => {
             className={`dot ${
               currentIndex === index ? "dot-active" : "dot-inactive"
             }`}
+            aria-label={`Aller au témoignage ${index + 1}`}
+            aria-current={currentIndex === index ? "true" : undefined}
           />
         ))}
       </div>

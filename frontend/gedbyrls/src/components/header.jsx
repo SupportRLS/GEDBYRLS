@@ -167,7 +167,7 @@ function Header() {
   return (
     <nav className="HeaderNav poppins-medium">
       <div className="LogoNav">
-        <img src={logo} alt="logo" className="Logo" />
+        <img src={logo} alt="logo de l'entreprise RLS" className="Logo" />
 
         <button
           className="BurgerButton"
@@ -287,8 +287,8 @@ function Header() {
 
       <div className="ContactHeader">
         <div className="TraitContactHeader">
-          <img src={letter} alt="" /> |
-          <img src={phone} alt="" />
+          <img src={letter} alt="lettre pour envoie de mail" /> |
+          <img src={phone} alt="téléphone pour l'affichage du numéro" />
         </div>
         <ButtonContactHeader />
       </div>

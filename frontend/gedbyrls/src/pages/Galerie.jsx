@@ -2,10 +2,10 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-
+import { Helmet } from "react-helmet";
 import "../components/style/gallery.css";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 // Accueil
 import ClasseurChiffre from "../assets/capture_ged/accueil/classeur-en-chiffre.webp";
@@ -176,6 +176,13 @@ const GalleryBlock = ({ images }) => {
 
   return (
     <>
+      <Helmet>
+        <title>Galerie ZeenDoc - RLS </title>
+        <meta
+          name="description"
+          content="Découvrez la galerie d'images de Zeendoc, illustrant les fonctionnalités clés de notre solution de gestion électronique de documents (GED) pour optimiser l'archivage, la sécurité et l'accès à vos documents professionnels."
+        />
+      </Helmet>
       <div className={`gallery-grid ${images.length === 1 ? "single" : ""}`}>
         {images.map((img, i) => (
           <div

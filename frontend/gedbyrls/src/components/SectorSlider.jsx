@@ -8,8 +8,14 @@ import image5 from "../../public/secteurs/slider/avocat_slider_5.webp";
 import image6 from "../../public/secteurs/slider/avocat_slider_6.webp";
 import image7 from "../../public/secteurs/slider/avocat_slider_7.webp";
 
-const images = [image2, image3, image4, image5, image6, image7];
-
+const images = [
+  { src: image2, alt: "image du slider secteur - Slider 2" },
+  { src: image3, alt: "image du slider secteur - Slider 3" },
+  { src: image4, alt: "image du slider secteur - Slider 4" },
+  { src: image5, alt: "image du slider secteur - Slider 5" },
+  { src: image6, alt: "image du slider secteur - Slider 6" },
+  { src: image7, alt: "image du slider secteur - Slider 7" },
+];
 function FonctionnaliteSlider({ fonctionnalites }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 

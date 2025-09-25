@@ -3,14 +3,16 @@ import React from "react";
 import "../components/style/homePage.css";
 //components
 import FormHomePage from "../components/formHomePage";
-import Header from "../components/header";
+import Header from "../components/Header.jsx";
 import ButtonComponentsRed from "../components/ButtonComponentsRed";
 import Button from "../components/ButtonComponents";
 import FeatureCard from "../components/FeatureCard";
 import UseCaseCard from "../components/UseCaseCard";
 import TestimonialSlider from "../components/testimonialSlider";
 import TextImageLeft from "../components/TextImageLeft";
-import Footer from "../components/footer";
+import Footer from "../components/Footer.jsx";
+import { Helmet } from "react-helmet";
+
 //icons
 import {
   FaCloudUploadAlt,
@@ -27,7 +29,6 @@ import {
   FaPlug,
   FaDatabase,
 } from "react-icons/fa";
-import LogoRLS from "../assets/logoRLS.webp";
 import ImageAccueil from "../assets/infographieFonctionnalités.png";
 
 function HomePage() {
@@ -40,6 +41,13 @@ function HomePage() {
 
   return (
     <>
+      <Helmet>
+        <title>Accueil - Zeendoc GED</title>
+        <meta
+          name="description"
+          content="Zeendoc facilite l’archivage numérique et la gestion électronique de documents pour toutes les entreprises."
+        />
+      </Helmet>
       <Header />
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] items-center justify-items-center px-6 ">
         <div className="text-center lg:text-left">
@@ -191,7 +199,10 @@ function HomePage() {
           </p>
           <div className="buttonSection">
             <ButtonComponentsRed text="je veux être contacté" href="/contact" />
-            <Button text="Demander une démonstration" />
+            <Button
+              text="Demander un cas-client"
+              href="/ressources/cas-client"
+            />
           </div>
         </div>
 

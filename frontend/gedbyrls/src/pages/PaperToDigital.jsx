@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-
+import { Helmet } from "react-helmet";
 import { useInView } from "react-intersection-observer";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import FeatureCard from "../components/FeatureCard";
 import ButtonDuo from "../components/ButtonDuo";
 import ButtonComponentsRed from "../components/ButtonComponentsRed";
@@ -25,6 +25,13 @@ function ArchivageNumeriquePage() {
   return (
     <div>
       <main>
+        <Helmet>
+          <title>Du papier au numérique - RLS </title>
+          <meta
+            name="description"
+            content="Découvrez comment passer de l'archivage papier à l'archivage numérique avec Zeendoc, la solution de gestion électronique de documents (GED) qui optimise la productivité, la sécurité et l'accessibilité de vos documents professionnels."
+          />
+        </Helmet>
         <Header />
         {/* Hero Section */}
         <HeroSection />

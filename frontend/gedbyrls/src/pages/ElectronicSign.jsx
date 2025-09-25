@@ -4,8 +4,9 @@ import { useInView } from "react-intersection-observer";
 import ButtonDuo from "../components/ButtonDuo";
 import SignatureElec from "../assets/signatureElec.webp";
 import SignatureTablette from "../assets/signature_tablette.webp";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { Helmet } from "react-helmet";
 
 import {
   ArrowRightIcon,
@@ -19,6 +20,13 @@ function ElectronicSign() {
   return (
     <div>
       <main>
+        <Helmet>
+          <title>La signature élctronique - RLS </title>
+          <meta
+            name="description"
+            content="Découvrez comment la signature électronique avec Zeendoc simplifie et sécurise la validation de vos documents en ligne, tout en assurant leur conformité légale."
+          />
+        </Helmet>
         <Header />
         {/* Hero Section */}
         <HeroSection />

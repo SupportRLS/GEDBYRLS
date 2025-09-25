@@ -2,6 +2,8 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import DynamicComponent from "../components/DynamicComponent";
 import { useArticleBySlug } from "../hooks/useStrapi";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const ArticleDetail = () => {
   // Récupérer l'ID depuis les paramètres de l'URL
@@ -76,9 +78,10 @@ const ArticleDetail = () => {
   const attributes = articleData.attributes || articleData;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
+      <Header />
       {/* Header de l'article */}
-      <div className="bg-white shadow-sm border-b">
+      <div className="shadow-sm border-b">
         <div className="container mx-auto px-4 py-6">
           <div className="max-w-4xl mx-auto">
             {/* Breadcrumb */}
@@ -381,6 +384,7 @@ const ArticleDetail = () => {
           )}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

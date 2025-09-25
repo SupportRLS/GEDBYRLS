@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ReactMarkdown from "react-markdown";
-
+import { Helmet } from "react-helmet";
 function MentionsLegalesPage() {
   const [content, setContent] = useState(null);
 
@@ -28,25 +28,34 @@ function MentionsLegalesPage() {
   }
 
   return (
-    <div>
-      <Header />
-      <main className="!max-w-4xl !mx-auto !px-4 !py-10">
-        <h1 className="!text-4xl !font-bold text-[#2E1D21] !mb-10">
-          {content.titre}
-        </h1>
+    <>
+      <Helmet>
+        <title>Mentions Légales - RLS </title>
+        <meta
+          name="description"
+          content="Consultez les Mentions Légales de notre site web pour comprendre les informations légales et réglementaires concernant l'éditeur, l'hébergement et l'utilisation du site."
+        />
+      </Helmet>
+      <div>
+        <Header />
+        <main className="!max-w-4xl !mx-auto !px-4 !py-10">
+          <h1 className="!text-4xl !font-bold text-[#2E1D21] !mb-10">
+            {content.titre}
+          </h1>
 
-        <div
-          className="!prose max-w-none !leading-relaxed !space-y-6 
+          <div
+            className="!prose max-w-none !leading-relaxed !space-y-6 
                         !prose-headings:mt-8 !prose-headings:mb-4 
                         !prose-headings:text-[#2E1D21] 
                         !prose-a:text-[#F71344] 
                         !prose-strong:text-[#E9A431]"
-        >
-          <ReactMarkdown breaks>{content.texte}</ReactMarkdown>
-        </div>
-      </main>
-      <Footer />
-    </div>
+          >
+            <ReactMarkdown breaks>{content.texte}</ReactMarkdown>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 

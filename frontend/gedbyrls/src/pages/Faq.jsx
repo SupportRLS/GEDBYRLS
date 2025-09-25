@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import FaqComponents from "../components/FaqComponents";
-
+import { Helmet } from "react-helmet";
 const STRAPI_URL = "http://localhost:1337/api";
 
 function FaqAccordion() {
@@ -30,46 +30,56 @@ function FaqAccordion() {
   };
 
   return (
-    <div className="faqAccordion">
-      <Header />
-      <div className="section" style={{ marginTop: "5%" }}>
-        <h1>Foire aux questions (FAQ)</h1>
-        {faqCategories.map((cat, idx) => (
-          <div key={cat.id} className="faqCategory">
-            <h3
-              onClick={() => toggleCategory(idx)}
-              style={{
-                cursor: "pointer",
-                userSelect: "none",
-                backgroundColor: "#EBE2D4",
-                padding: "10px",
-                marginTop: "15px",
-                borderRadius: "25px",
-                marginLeft: "15%",
-                marginRight: "15%",
-                textAlign: "center",
-              }}
-            >
-              {cat.category || "Sans titre"}{" "}
-              {openCategoryIndex === idx ? "▲" : "▼"}
-            </h3>
+    <>
+      <Helmet>
+        <title>Foire aux questions - RLS </title>
+        <meta
+          name="description"
+          content="Trouvez des réponses aux questions fréquentes sur la gestion électronique de documents (GED) avec Zeendoc, incluant l'archivage, la sécurité et l'accès aux documents."
+        />
+      </Helmet>
 
-            {openCategoryIndex === idx && (
-              <div className="faqList" style={{ paddingLeft: "15px" }}>
-                {cat.faqs?.map((faq) => (
-                  <FaqComponents
-                    key={faq.id}
-                    question={faq.question}
-                    answer={faq.answer}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
+      <div className="faqAccordion">
+        <Header />
+        <div className="section" style={{ marginTop: "5%" }}>
+          <h1>Foire aux questions (FAQ)</h1>
+          {faqCategories.map((cat, idx) => (
+            <div key={cat.id} className="faqCategory">
+              <h3
+                onClick={() => toggleCategory(idx)}
+                style={{
+                  cursor: "pointer",
+                  userSelect: "none",
+                  backgroundColor: "#EBE2D4",
+                  padding: "10px",
+                  marginTop: "15px",
+                  borderRadius: "25px",
+                  marginLeft: "15%",
+                  marginRight: "15%",
+                  textAlign: "center",
+                }}
+              >
+                {cat.category || "Sans titre"}{" "}
+                {openCategoryIndex === idx ? "▲" : "▼"}
+              </h3>
+
+              {openCategoryIndex === idx && (
+                <div className="faqList" style={{ paddingLeft: "15px" }}>
+                  {cat.faqs?.map((faq) => (
+                    <FaqComponents
+                      key={faq.id}
+                      question={faq.question}
+                      answer={faq.answer}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 }
 

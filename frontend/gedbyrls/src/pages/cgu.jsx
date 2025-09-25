@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ReactMarkdown from "react-markdown";
-
+import { Helmet } from "react-helmet";
 function CGUPage() {
   const [content, setContent] = useState(null);
 
@@ -27,6 +27,13 @@ function CGUPage() {
 
   return (
     <div>
+      <Helmet>
+        <title>CGU - RLS </title>
+        <meta
+          name="description"
+          content="Consultez les Conditions Générales d'Utilisation (CGU) de notre site web pour comprendre vos droits et responsabilités en tant qu'utilisateur."
+        />
+      </Helmet>
       <Header />
       <main className="!max-w-4xl !mx-auto !px-4 !py-10">
         <h1 className="!text-4xl !font-bold text-[#2E1D21] !mb-10">

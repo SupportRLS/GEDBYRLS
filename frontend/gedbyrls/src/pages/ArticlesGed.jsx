@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getArticles } from "../api/articles";
 import { Link } from "react-router-dom";
-import Header from "../components/header.jsx";
-import Footer from "../components/footer.jsx";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import { Helmet } from "react-helmet";
 
 const ArticlesGed = () => {
   const [articles, setArticles] = useState([]);
@@ -24,6 +25,13 @@ const ArticlesGed = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Article - Ged</title>
+        <meta
+          name="description"
+          content="Consultez nos articles sur la gestion électronique de documents avec Zeendoc pour simplifier l’archivage, la traçabilité et la productivité de votre entreprise."
+        />
+      </Helmet>
       <Header />
 
       <div className="max-w-6xl mx-auto px-4 py-10">

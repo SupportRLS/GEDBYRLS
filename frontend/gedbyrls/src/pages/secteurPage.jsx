@@ -2,9 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { iconMap } from "../components/iconMap";
-
-import Header from "../components/header.jsx";
-import Footer from "../components/footer.jsx";
+import { Helmet } from "react-helmet";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
 import FonctionnaliteSlider from "../components/SectorSlider";
 import FeatureList from "../components/FeatureList.jsx";
 import Button from "../components/ButtonComponents.jsx";
@@ -76,6 +76,13 @@ function SecteurPage() {
   if (loading) {
     return (
       <div>
+        <Helmet>
+          <title> La ged en fonction des métiers - RLS </title>
+          <meta
+            name="description"
+            content="Découvrez comment la gestion électronique de documents (GED) s'adapte aux besoins spécifiques de différents secteurs d'activité, optimisant ainsi la productivité et la conformité réglementaire."
+          />
+        </Helmet>
         <Header />
         <div style={{ padding: "2rem", textAlign: "center" }}>
           <p>Chargement...</p>
