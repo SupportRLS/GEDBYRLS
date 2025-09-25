@@ -42,11 +42,11 @@ const solutions = [
     iconKey: "iconeRGPD",
   },
   { path: "/solution/Articles", label: "Articles", iconKey: "iconeArticles" },
-  {
-    path: "/solution/fonctionnalites",
-    label: "Fonctionnalités",
-    iconKey: "iconeFonctionnalites",
-  },
+  // {
+  //   path: "/solution/fonctionnalites",
+  //   label: "Fonctionnalités",
+  //   iconKey: "iconeFonctionnalites",
+  // },
   { path: "/solution/galerie", label: "Galerie", iconKey: "iconeGalerie" },
 ];
 

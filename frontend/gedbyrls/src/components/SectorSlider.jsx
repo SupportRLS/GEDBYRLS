@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import "../components/style/sectorSlider.css";
-import image2 from "../../public/secteurs/slider/avocat_slider_2.webp";
-import image3 from "../../public/secteurs/slider/avocat_slider_3.webp";
-import image4 from "../../public/secteurs/slider/avocat_slider_4.webp";
-import image5 from "../../public/secteurs/slider/avocat_slider_5.webp";
-import image6 from "../../public/secteurs/slider/avocat_slider_6.webp";
-import image7 from "../../public/secteurs/slider/avocat_slider_7.webp";
+import image1 from "../assets/RGPD4.png";
+
+import image2 from "../assets/mockupTel.webp";
+import image3 from "../assets/image_accueil.png";
+import image4 from "../assets/telxOrdi.webp";
+
+import image5 from "../assets/mockuphomeboard.webp";
+import image6 from "../assets/mockupFacturation.webp";
 
 const images = [
-  { src: image2, alt: "image du slider secteur - Slider 2" },
-  { src: image3, alt: "image du slider secteur - Slider 3" },
-  { src: image4, alt: "image du slider secteur - Slider 4" },
-  { src: image5, alt: "image du slider secteur - Slider 5" },
-  { src: image6, alt: "image du slider secteur - Slider 6" },
-  { src: image7, alt: "image du slider secteur - Slider 7" },
+  { src: image1, alt: "image du fonctionnement global de Zeendoc" },
+  { src: image2, alt: "image du slider secteur - Slider 3" },
+  { src: image3, alt: "image du slider secteur - Slider 4" },
+  { src: image4, alt: "image du slider secteur - Slider 5" },
+  { src: image5, alt: "image du slider secteur - Slider 6" },
+  { src: image6, alt: "image du slider secteur - Slider 7" },
 ];
 function FonctionnaliteSlider({ fonctionnalites }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,8 +47,8 @@ function FonctionnaliteSlider({ fonctionnalites }) {
           </div>
           <img
             className="slider-image"
-            src={images[currentIndex]}
-            alt={current.titre}
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
           />
         </div>
 
