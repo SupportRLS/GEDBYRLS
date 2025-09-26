@@ -10,7 +10,7 @@ function Footer() {
       style={{ backgroundColor: "#fff5e9" }}
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8 border-b border-gray-700 pb-8">
-        <div className="flex flex-col items-center md:items-start mb-8 md:mb-0">
+        <div className="flex flex-col items-center md:items-center mb-8 md:mb-0">
           <img src={logo} alt="Logo RLS" className="w-24 mb-3" />
           <p className="font-semibold text-center md:text-center">
             A votre service depuis plus de 40 ans
@@ -20,9 +20,9 @@ function Footer() {
         <div className="flex flex-col md:flex-row md:gap-3 md:items-start">
           {/* Colonne RLS */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-bold mb-3 text-lg text-red-400 text-center md:text-left">
+            <p className="font-bold mb-3 text-lg text-red-400! text-center md:text-left">
               RLS
-            </h4>
+            </p>
             <ul className="space-y-2 text-center md:text-left">
               <li>
                 <Link
@@ -55,9 +55,9 @@ function Footer() {
 
           {/* Colonne Informations */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-bold mb-3 text-lg text-red-400 text-center md:text-left">
+            <p className="font-bold mb-3 text-lg text-red-400! text-center md:text-left">
               Informations
-            </h4>
+            </p>
             <ul className="space-y-2 text-center md:text-left">
               <li>
                 <Link to="/cgu" className="hover:text-red-400">
@@ -87,9 +87,9 @@ function Footer() {
 
           {/* Colonne Coordonnées */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-bold mb-3 text-lg text-red-400 text-center md:text-left">
+            <p className="font-bold mb-3 text-lg text-red-400! text-center md:text-left">
               Coordonnées
-            </h4>
+            </p>
             <ul className="space-y-2 text-center md:text-left">
               <li className="flex items-start gap-3">
                 <FaPhoneAlt className="text-red-400 mt-1 flex-shrink-0" />

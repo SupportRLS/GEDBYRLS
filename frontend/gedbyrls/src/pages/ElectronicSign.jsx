@@ -140,7 +140,7 @@ const ProcessSection = () => {
   return (
     <AnimatedSection className="bg-white py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           Comment se déroule la signature avec Zeendoc ?
         </h2>
         <div className="relative">
@@ -265,7 +265,7 @@ const BenefitsSection = () => {
   return (
     <AnimatedSection className="py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           Quels bénéfices concrets pour mon entreprise ?
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -309,7 +309,7 @@ const SecuritySection = () => {
   return (
     <AnimatedSection className="bg-white py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           La signature électronique est-elle vraiment sécurisée ?
         </h2>
         <div className="flex flex-col md:flex-row items-center">
@@ -420,7 +420,7 @@ const IntegrationSection = () => {
   return (
     <AnimatedSection className="py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           Comment l'intégrer efficacement dans ma GED ?
         </h2>
         <div className="flex flex-col md:flex-row items-center">
@@ -504,7 +504,7 @@ const FutureSection = () => {
   return (
     <AnimatedSection className="bg-white py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           Quelles évolutions attendues dans les prochaines années ?
         </h2>
         <div className="grid md:grid-cols-3 gap-8">

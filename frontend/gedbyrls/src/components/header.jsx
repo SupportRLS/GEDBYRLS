@@ -287,8 +287,20 @@ function Header() {
 
       <div className="ContactHeader">
         <div className="TraitContactHeader">
-          <img src={letter} alt="lettre pour envoie de mail" /> |
-          <img src={phone} alt="téléphone pour l'affichage du numéro" />
+          <a
+            href="mailto:contact@reprolanguedoc.fr"
+            aria-label="Envoyer un email"
+          >
+            <img src={letter} alt="lettre pour envoie de mail" />
+          </a>
+          |
+          <a href="/contact">
+            <img
+              src={phone}
+              alt="téléphone pour l'affichage du numéro"
+              aria-label="Aller à la page de contact"
+            />
+          </a>
         </div>
         <ButtonContactHeader />
       </div>

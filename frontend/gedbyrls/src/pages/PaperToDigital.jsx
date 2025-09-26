@@ -219,7 +219,7 @@ const AbandonPaper = () => {
   return (
     <AnimatedSection className="bg-white py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           Pourquoi abandonner{" "}
           <span className="text-red-500 font-bold">l’archivage papier</span>{" "}
           aujourd’hui ?
@@ -332,7 +332,7 @@ const AdvantagesSection = () => {
   return (
     <AnimatedSection className="py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-16!">
           Quels avantages concrets offre l’archivage numérique ?
         </h2>
         <div className="flex flex-col md:flex-row items-center">
@@ -446,7 +446,7 @@ const OpportunitiesSection = () => {
     <section className="py-16 px-4 bg-[#FFFAF4]">
       <div className="max-w-5xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-[#2E1D21] mb-6"
+          className="text-3xl md:text-4xl font-bold text-[#2E1D21] mb-6!"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -485,7 +485,7 @@ const ZeendocSection = () => {
     <section className="py-16 px-4">
       <div className="max-w-5xl mx-auto">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-[#2E1D21] mb-6"
+          className="text-3xl md:text-4xl font-bold text-[#2E1D21] mb-6!"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

@@ -127,7 +127,7 @@ function SecteurPage() {
           <p className="descriptionEnjeux">{attrs.descriptionEnjeux}</p>
         </div>
 
-        <h2 className="titreEnjeux2">{attrs.titreEnjeux2}</h2>
+        <h2 className="titreEnjeux2 font-bold! mt-6!">{attrs.titreEnjeux2}</h2>
 
         <div className="displayGrid">
           <FeatureList type="enjeux" list={attrs.enjeux || []} />

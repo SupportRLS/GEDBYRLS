@@ -11,7 +11,7 @@ import CardSlider from "../components/CardSlider";
 import { Helmet } from "react-helmet";
 import "../components/iconMap";
 import "../components/style/debuteDansLaGed.css";
-import Interface from "../assets/interface_zeendoc.webp";
+import Interface from "../assets/mockuphomeboard.webp";
 import PhotoPersonne from "../assets/personne_devant_pc.webp";
 import ButtonComponentRed from "../components/ButtonComponentsRed";
 import ButtonComponent from "../components/ButtonComponents";
@@ -142,13 +142,7 @@ function JeDebuteDansLaGed() {
           documents égarés et les processus manuels par un système numérique
           intelligent.
         </p>
-        <div className="buttonSection">
-          <ButtonComponentRed
-            text={"Quel logiciel je peu intégrer ?"}
-            href={"/solution/integration-des-logiciels-compatibles"}
-          />
-          <ButtonComponent text={"Plus de question ?"} href={"/faq"} />
-        </div>
+
         <TextImageLeft
           title={"Pourquoi débuter la GED avec Zeendoc ?"}
           text={
